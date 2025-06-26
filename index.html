@@ -98,32 +98,32 @@
       <h2 class="performance-heading">PERFORMANCE & IMPACT INDICATORS</h2>
       <div class="performance-stats">
         <div class="stat-item">
-          <div class="stat-number">4</div>
+          <div class="stat-number" data-target="4">0</div>
           <div class="stat-label">InnovateTN LABS</div>
           <div class="stat-desc">Industrial Innovation Labs</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">320</div>
+          <div class="stat-number" data-target="320">0</div>
           <div class="stat-label">EDUCATORS</div>
           <div class="stat-desc">Trained</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">70</div>
+          <div class="stat-number" data-target="70">0</div>
           <div class="stat-label">INNOVATIONS</div>
           <div class="stat-desc">Prototyped</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">5800+</div>
+          <div class="stat-number" data-target="5800" data-suffix="+">0</div>
           <div class="stat-label">STUDENTS</div>
           <div class="stat-desc">Trained</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">38</div>
+          <div class="stat-number" data-target="38">0</div>
           <div class="stat-label">INNOVATION PROJECTS</div>
           <div class="stat-desc">Industry-sponsored</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">19.8k</div>
+          <div class="stat-number" data-target="19.8" data-suffix="k">0</div>
           <div class="stat-label">LAB AREA</div>
           <div class="stat-desc">sq. ft.</div>
         </div>
@@ -263,6 +263,54 @@
     <script src="js/script.js"></script>
     <script src="footer-input.js"></script>
     <script src="scroll-animation.js"></script>
-
+    <script>
+      // Counter animation for performance metrics
+      function animateCounter(element, target, suffix = '') {
+        const duration = 2000; // 2 seconds
+        const increment = target / (duration / 16); // 60fps
+        let current = 0;
+        
+        // Reset to 0 before starting animation
+        element.textContent = suffix ? '0' + suffix : '0';
+        
+        const updateCounter = () => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            element.textContent = target + suffix;
+          } else {
+            element.textContent = Math.floor(current) + suffix;
+            requestAnimationFrame(updateCounter);
+          }
+        };
+        
+        updateCounter();
+      }
+      
+      // Intersection Observer to trigger animation when section is visible
+      const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px 0px -100px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const statNumbers = entry.target.querySelectorAll('.stat-number');
+            statNumbers.forEach(statNumber => {
+              const target = parseFloat(statNumber.dataset.target);
+              const suffix = statNumber.dataset.suffix || '';
+              animateCounter(statNumber, target, suffix);
+            });
+          }
+        });
+      }, observerOptions);
+      
+      // Start observing the performance section
+      const performanceSection = document.querySelector('.performance-section');
+      if (performanceSection) {
+        observer.observe(performanceSection);
+      }
+    </script>
   </body>
 </html>

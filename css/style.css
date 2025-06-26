@@ -90,7 +90,7 @@ nav {
 
 /* Hero Section */
 .hero {
-  width: 100%;
+    width: 100%;
   min-width: 100%;
   height: 818px;
   flex-shrink: 0;
@@ -123,8 +123,8 @@ nav {
 }
 
 .hero-content-right {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
   justify-content: flex-start;
   padding-left: 181px;
   padding-top: 0;
@@ -132,9 +132,9 @@ nav {
 
 .hero-content-left {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   align-items: flex-end;
   padding-right: 181px;
   padding-top: 0;
@@ -170,6 +170,298 @@ nav {
   height: 100%;
   z-index: 1;
   pointer-events: none;
+}
+
+/* Innovation Practicum Section */
+.innovation-practicum-section {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.innovation-practicum-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+  padding: 0 181px;
+}
+
+.innovation-practicum-left {
+  flex: 0 0 auto;
+  min-width: 400px;
+}
+
+.innovation-practicum-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 32px;
+  color: #23336A;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.innovation-text {
+  font-weight: 500; /* INNOVATION - Medium */
+}
+
+.practicum-text {
+  font-weight: 800; /* PRACTICUM - ExtraBold */
+}
+
+.innovation-practicum-right {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.innovation-practicum-title {
+  color: #23336A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.8px; /* 120% */
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+}
+
+.innovation-practicum-desc {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px; /* 120% */
+  margin: 0;
+}
+
+/* Responsive styles for Innovation Practicum */
+@media (max-width: 1400px) {
+  .innovation-practicum-container {
+    padding: 0 120px;
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .innovation-practicum-container {
+    flex-direction: column;
+    padding: 0 60px;
+    gap: 40px;
+  }
+  
+  .innovation-practicum-left {
+    min-width: auto;
+  }
+  
+  .innovation-practicum-right {
+    padding-left: 0;
+  }
+  
+  .innovation-practicum-heading {
+    font-size: 32px;
+  }
+  
+  .innovation-practicum-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .innovation-practicum-section {
+    padding: 60px 0;
+  }
+  
+  .innovation-practicum-container {
+    padding: 0 40px;
+  }
+  
+  .innovation-practicum-heading {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  
+  .innovation-practicum-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .innovation-practicum-desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+/* Large Container Section */
+.large-container-section {
+  width: 2137px;
+  height: 1786px;
+  flex-shrink: 0;
+  background: #FFF0DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+.large-container-content {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 181px;
+  box-sizing: border-box;
+}
+
+/* Innovation Education Section */
+.innovation-education-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+  margin-bottom: 80px;
+}
+
+.innovation-education-left {
+  flex: 0 0 auto;
+  min-width: 400px;
+}
+
+.innovation-education-heading {
+  color: #23336A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.8px; /* 120% */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.innovation-education-right {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.innovation-education-title {
+  color: #23336A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.8px; /* 120% */
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+}
+
+.innovation-education-desc {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px; /* 120% */
+  margin: 0;
+}
+
+/* Responsive styles for Large Container */
+@media (max-width: 2200px) {
+  .large-container-section {
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .large-container-content {
+    padding: 0 120px;
+  }
+  
+  .innovation-education-container {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .innovation-education-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .innovation-education-left {
+    min-width: auto;
+  }
+  
+  .innovation-education-right {
+    padding-left: 0;
+  }
+  
+  .large-container-content {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .large-container-section {
+    padding: 60px 0;
+  }
+  
+  .large-container-content {
+    padding: 0 40px;
+  }
+  
+  .innovation-education-heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .innovation-education-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .innovation-education-desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .performance-section-container {
+    margin-top: 60px;
+  }
+  
+  .performance-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+  }
+  
+  .stat-item:nth-child(5),
+  .stat-item:nth-child(6),
+  .stat-item:nth-child(7) {
+    grid-column: auto;
+    justify-self: center;
+  }
+  
+  .stat-item {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .performance-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .stat-item:nth-child(5),
+  .stat-item:nth-child(6),
+  .stat-item:nth-child(7) {
+    grid-column: auto;
+    justify-self: center;
+  }
 }
 
 /* Labs Section */
@@ -232,32 +524,51 @@ nav {
   display: block;
 }
 
-/* Performance Section */
-.performance-section {
-  padding: 60px 302px;
-  margin: 80px auto;
+/* Performance Section Container (Inside Large Container) */
+.performance-section-container {
+  margin-top: 100px;
   width: 100%;
-  min-width: 100%;
-  background-color: #fff;
   text-align: left;
   box-sizing: border-box;
 }
 
 .performance-heading {
-  color: #23336A;
+  color: #F6AC1F;
+  text-align: center;
   font-family: Roboto, sans-serif;
-  font-size: 32px;
+  font-size: 38px;
+  font-style: normal;
   font-weight: 700;
+  line-height: 45.6px; /* 120% */
   text-transform: uppercase;
   margin-bottom: 40px;
-  text-align: center;
 }
 
 .performance-stats {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 40px 60px;
+  justify-items: center;
   align-items: flex-start;
-  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style the bottom row items to span properly */
+.stat-item:nth-child(5) {
+  grid-column: 1 / 2;
+  justify-self: center;
+}
+
+.stat-item:nth-child(6) {
+  grid-column: 2 / 4;
+  justify-self: center;
+}
+
+.stat-item:nth-child(7) {
+  grid-column: 4 / 5;
+  justify-self: center;
 }
 
 .stat-item {
@@ -267,32 +578,36 @@ nav {
 }
 
 .stat-number {
-  color: #F6AC1F;
+  color: #23336A;
+  text-align: center;
   font-family: Roboto, sans-serif;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
+  font-weight: 500;
+  line-height: 48px; /* 120% */
   margin-bottom: 8px;
 }
 
 .stat-label {
-  color: #23336A;
+  color: #333;
+  text-align: center;
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 21px;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
   text-transform: uppercase;
   margin-bottom: 4px;
 }
 
 .stat-desc {
-  color: #000;
+  color: #333;
+  text-align: center;
   font-family: Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 27px; /* 150% */
 }
 
 /* Partners Section */

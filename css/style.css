@@ -12,28 +12,40 @@
   font-family: "Roboto", sans-serif !important;
 }
 
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}
+
+section, div, nav {
+  max-width: 100%;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: inherit;
   overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
 }
 
 /* Navigation */
 nav {
-  width: 1920px;
+  width: 100%;
+  min-width: 100%;
   height: 161.54px;
   flex-shrink: 0;
   z-index: 1000;
   color: white;
   background-color: #23336A;
   transition: background-color 0.3s ease;
-  max-width: 100%;
   padding: 0 86px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .nav-logos-container {
@@ -78,7 +90,8 @@ nav {
 
 /* Hero Section */
 .hero {
-  width: 1920px;
+  width: 100%;
+  min-width: 100%;
   height: 818px;
   flex-shrink: 0;
   background: #090400;
@@ -89,7 +102,7 @@ nav {
   position: relative;
   opacity: 1;
   gap: 257.48px;
-  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-bg-video {
@@ -170,6 +183,7 @@ nav {
   margin-top: 110px;
   padding-bottom: 60px;
   width: 100%;
+  min-width: 100%;
   box-sizing: border-box;
   gap: 60px;
 }
@@ -222,9 +236,11 @@ nav {
 .performance-section {
   padding: 60px 302px;
   margin: 80px auto;
-  max-width: 1920px;
+  width: 100%;
+  min-width: 100%;
   background-color: #fff;
   text-align: left;
+  box-sizing: border-box;
 }
 
 .performance-heading {
@@ -282,6 +298,9 @@ nav {
 /* Partners Section */
 .partners {
   padding: 50px 183px;
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
 }
 
 .partners .head {

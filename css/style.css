@@ -95,12 +95,27 @@ nav li a .nav-opacity {
   gap: 257.48px;
 }
 
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-content-right, .hero-content-left, .overlay-black-linear-gradient {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-content-right {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 181px;
-  z-index: 2;
   padding-top: 0;
 }
 
@@ -111,7 +126,6 @@ nav li a .nav-opacity {
   justify-content: center;
   align-items: flex-end;
   padding-right: 181px;
-  z-index: 2;
   padding-top: 0;
 }
 
@@ -221,13 +235,14 @@ nav li a .nav-opacity {
 }
 
 .overlay-black-linear-gradient {
-  background: #23336A;
-  opacity: 0.63;
+  background: rgba(0,0,0,0.45);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-content {
@@ -2353,3 +2368,61 @@ ul {
 
 /* Remove old hero-left-logo styles if present */
 .hero-left-logo-container, .hero-left-logo { display: none !important; }
+
+.labs-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 257px;
+  padding-right: 302.64px;
+  padding-top: 0;
+  margin-top: 110px;
+  padding-bottom: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 60px;
+}
+
+.labs-section-left {
+  flex: 1;
+  max-width: 600px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.labs-section-heading {
+  align-self: stretch;
+  color: #23336A;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.labs-section-desc {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+  margin: 0;
+}
+
+.labs-section-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.labs-section-map {
+  width: 606.356px;
+  height: 490px;
+  flex-shrink: 0;
+  aspect-ratio: 606.36/490.00;
+  object-fit: cover;
+  display: block;
+}

@@ -416,7 +416,7 @@
                  </div>
                  
                  <!-- Slide 3: Innovation Certification -->
-                 <div class="swiper-slide">
+                 <div class="swiper-slide slide-innovation-certification">
                    <div class="certified-professionals-container">
                      <h2 class="certified-professionals-heading">INNOVATION CERTIFICATION</h2>
                      <h3 class="certified-professionals-subheading">FOSTERING TECHNOLOGY ORIENTED INNOVATION AND ENTREPRENEURSHIP</h3>
@@ -434,7 +434,7 @@
                  </div>
                  
                  <!-- Slide 4: Grassroot Innovators Product Accelerator -->
-                 <div class="swiper-slide">
+                 <div class="swiper-slide slide-grassroot-innovators">
                    <div class="certified-professionals-container">
                      <h2 class="certified-professionals-heading">GRASSROOT INNOVATORS PRODUCT ACCELERATOR</h2>
                      <p class="certified-professionals-desc">
@@ -447,9 +447,13 @@
                  </div>
                </div>
                
-               <!-- Navigation arrows -->
-               <div class="swiper-button-next professionals-swiper-button-next"></div>
-               <div class="swiper-button-prev professionals-swiper-button-prev"></div>
+               <!-- Custom Navigation arrows -->
+               <div class="professionals-custom-button professionals-custom-prev">
+                 <img src="assets/images/arrows/arrow-left.png" alt="Previous" />
+               </div>
+               <div class="professionals-custom-button professionals-custom-next">
+                 <img src="assets/images/arrows/arrow-right.png" alt="Next" />
+               </div>
                
                <!-- Pagination -->
                <div class="swiper-pagination professionals-swiper-pagination"></div>
@@ -829,8 +833,8 @@
             disableOnInteraction: false,
           },
           navigation: {
-            nextEl: ".professionals-swiper-button-next",
-            prevEl: ".professionals-swiper-button-prev",
+            nextEl: ".professionals-custom-next",
+            prevEl: ".professionals-custom-prev",
           },
           pagination: {
             el: ".professionals-swiper-pagination",

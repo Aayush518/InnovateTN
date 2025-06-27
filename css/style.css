@@ -615,7 +615,9 @@ nav {
   padding: 60px 40px;
   margin: 100px auto 0 auto;
   width: 1520px;
-  height: 636px;
+  height: 700px;
+  min-height: 700px;
+  max-height: 700px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
@@ -627,8 +629,16 @@ nav {
   margin: 0 auto;
   padding-left: 132px;
   padding-right: 40px;
+  padding-top: 20px;
   padding-bottom: 30px;
   position: relative;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  height: 100% !important;
+  min-height: 700px !important;
 }
 
 .certified-professionals-heading {
@@ -678,6 +688,12 @@ nav {
   overflow: hidden;
   margin: 0;
   position: relative;
+  background: transparent;
+}
+
+/* Wrapper for proper arrow positioning */
+.certified-professionals-section {
+  position: relative;
 }
 
 .professionals-swiper .swiper-wrapper {
@@ -686,12 +702,34 @@ nav {
 }
 
 .professionals-swiper .swiper-slide {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  min-height: 636px;
-  width: 100%;
-  overflow: hidden;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  height: 700px !important;
+  min-height: 700px !important;
+  max-height: 700px !important;
+  width: 100% !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  position: relative !important;
+  background: transparent !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure consistent slide positioning for loop */
+.professionals-swiper .swiper-slide-duplicate {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  height: 700px !important;
+  min-height: 700px !important;
+  max-height: 700px !important;
+  width: 100% !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  position: relative !important;
+  background: transparent !important;
+  box-sizing: border-box !important;
 }
 
 .phase-content {
@@ -721,8 +759,10 @@ nav {
   align-items: flex-start;
   width: 100%;
   overflow: visible;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding-bottom: 30px;
+  flex: 1;
+  min-height: 400px;
 }
 
 .phase-item {
@@ -781,9 +821,11 @@ nav {
   align-items: flex-start;
   width: 100%;
   overflow: visible;
-  margin: 0;
+  margin: 20px 0 0 0;
   flex-wrap: nowrap;
   padding-bottom: 30px;
+  flex: 1;
+  min-height: 400px;
 }
 
 .slide-2-phase {
@@ -855,8 +897,9 @@ nav {
   object-fit: contain;
 }
 
-/* Slide 4 Heading Specifications */
-.swiper-slide:nth-child(4) .certified-professionals-heading {
+/* Slide 4 Heading Specifications - Works on both original and duplicate slides */
+.slide-grassroot-innovators .certified-professionals-heading,
+.swiper-slide-duplicate.slide-grassroot-innovators .certified-professionals-heading {
   width: 994px;
   color: #FFF;
   font-family: Roboto, sans-serif;
@@ -868,45 +911,35 @@ nav {
   margin: 0 0 73px 0;
 }
 
-/* Slide 3 Description Text Specifications */
-.swiper-slide:nth-child(3) .certified-professionals-desc {
+/* Slide 3 Description Text Specifications - Works on both original and duplicate slides */
+.slide-innovation-certification .certified-professionals-desc,
+.swiper-slide-duplicate.slide-innovation-certification .certified-professionals-desc {
   font-size: 16px;
   line-height: 24px;
   margin: 0 0 20px 0;
 }
 
 /* Professionals Swiper Navigation Arrows */
-.professionals-swiper-button-next,
-.professionals-swiper-button-prev {
-  color: #F6AC1F !important;
-  background: rgba(255, 255, 255, 0.1);
-  width: 50px !important;
-  height: 50px !important;
-  border-radius: 50%;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(246, 172, 31, 0.3);
-  transition: all 0.3s ease;
+.professionals-custom-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
 }
 
-.professionals-swiper-button-next:hover,
-.professionals-swiper-button-prev:hover {
-  background: rgba(246, 172, 31, 0.2);
-  border-color: #F6AC1F;
-  transform: scale(1.05);
+.professionals-custom-button.professionals-custom-prev {
+  left: 15px;
 }
 
-.professionals-swiper-button-next::after,
-.professionals-swiper-button-prev::after {
-  font-size: 18px !important;
-  font-weight: bold;
+.professionals-custom-button.professionals-custom-next {
+  right: 15px;
 }
 
-.professionals-swiper-button-next {
-  right: -25px;
-}
-
-.professionals-swiper-button-prev {
-  left: -25px;
+.professionals-custom-button img {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 /* Professionals Swiper Pagination */
@@ -950,12 +983,12 @@ nav {
     line-height: 28.8px;
   }
   
-  .professionals-swiper-button-next {
-    right: -15px;
+  .professionals-custom-button.professionals-custom-next {
+    right: 10px;
   }
   
-  .professionals-swiper-button-prev {
-    left: -15px;
+  .professionals-custom-button.professionals-custom-prev {
+    left: 10px;
   }
   
   .phases-wrapper {
@@ -996,7 +1029,8 @@ nav {
     width: 250px;
   }
   
-  .swiper-slide:nth-child(4) .certified-professionals-heading {
+  .slide-grassroot-innovators .certified-professionals-heading,
+  .swiper-slide-duplicate.slide-grassroot-innovators .certified-professionals-heading {
     width: auto;
     max-width: 800px;
   }
@@ -1013,8 +1047,20 @@ nav {
   .certified-professionals-section {
     width: 100%;
     max-width: 1520px;
-    height: auto;
-    min-height: 636px;
+    height: 700px;
+    min-height: 700px;
+  }
+  
+  .professionals-swiper .swiper-slide {
+    height: 700px !important;
+    min-height: 700px !important;
+    max-height: 700px !important;
+  }
+  
+  .professionals-swiper .swiper-slide-duplicate {
+    height: 700px !important;
+    min-height: 700px !important;
+    max-height: 700px !important;
   }
   
   .slide-2-phases {
@@ -1041,7 +1087,20 @@ nav {
     padding: 40px 20px;
     margin-top: 60px;
     width: 100%;
-    height: auto;
+    height: 620px;
+    min-height: 620px;
+  }
+  
+  .professionals-swiper .swiper-slide {
+    height: 620px !important;
+    min-height: 620px !important;
+    max-height: 620px !important;
+  }
+  
+  .professionals-swiper .swiper-slide-duplicate {
+    height: 620px !important;
+    min-height: 620px !important;
+    max-height: 620px !important;
   }
   
   .certified-professionals-container {
@@ -1072,17 +1131,16 @@ nav {
     margin: 0 auto 50px auto;
   }
   
-  .professionals-swiper-button-next,
-  .professionals-swiper-button-prev {
-    width: 40px !important;
-    height: 40px !important;
+  .professionals-custom-button img {
+    width: 28px;
+    height: 28px;
   }
   
-  .professionals-swiper-button-next {
+  .professionals-custom-button.professionals-custom-next {
     right: 10px;
   }
   
-  .professionals-swiper-button-prev {
+  .professionals-custom-button.professionals-custom-prev {
     left: 10px;
   }
   
@@ -1118,7 +1176,8 @@ nav {
     width: 200px;
   }
   
-  .swiper-slide:nth-child(4) .certified-professionals-heading {
+  .slide-grassroot-innovators .certified-professionals-heading,
+  .swiper-slide-duplicate.slide-grassroot-innovators .certified-professionals-heading {
     width: auto;
     max-width: 600px;
   }
@@ -1136,9 +1195,27 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .certified-professionals-section {
+    height: 570px;
+    min-height: 570px;
+  }
+  
+  .professionals-swiper .swiper-slide {
+    height: 570px !important;
+    min-height: 570px !important;
+    max-height: 570px !important;
+  }
+  
+  .professionals-swiper .swiper-slide-duplicate {
+    height: 570px !important;
+    min-height: 570px !important;
+    max-height: 570px !important;
+  }
+
   .certified-professionals-container {
     padding-left: 40px;
     padding-bottom: 30px;
+    min-height: 570px;
   }
   
   .certified-professionals-heading {
@@ -1160,9 +1237,13 @@ nav {
     line-height: 20px;
   }
   
-  .professionals-swiper-button-next,
-  .professionals-swiper-button-prev {
+  .professionals-custom-button {
     display: none !important;
+  }
+  
+  .professionals-custom-button img {
+    width: 24px;
+    height: 24px;
   }
   
   .professionals-swiper-pagination {
@@ -1210,7 +1291,8 @@ nav {
     margin-top: 20px;
   }
   
-  .swiper-slide:nth-child(4) .certified-professionals-heading {
+  .slide-grassroot-innovators .certified-professionals-heading,
+  .swiper-slide-duplicate.slide-grassroot-innovators .certified-professionals-heading {
     width: auto;
     max-width: 400px;
   }
@@ -1220,12 +1302,26 @@ nav {
   .certified-professionals-section {
     padding: 30px 15px;
     width: 100%;
-    height: auto;
+    height: 520px;
+    min-height: 520px;
+  }
+  
+  .professionals-swiper .swiper-slide {
+    height: 520px !important;
+    min-height: 520px !important;
+    max-height: 520px !important;
+  }
+  
+  .professionals-swiper .swiper-slide-duplicate {
+    height: 520px !important;
+    min-height: 520px !important;
+    max-height: 520px !important;
   }
   
   .certified-professionals-container {
     padding-left: 20px;
     padding-bottom: 30px;
+    min-height: 520px;
   }
   
   .certified-professionals-heading {
@@ -1279,7 +1375,8 @@ nav {
     margin-top: 20px;
   }
   
-  .swiper-slide:nth-child(4) .certified-professionals-heading {
+  .slide-grassroot-innovators .certified-professionals-heading,
+  .swiper-slide-duplicate.slide-grassroot-innovators .certified-professionals-heading {
     width: auto;
     max-width: 300px;
   }
@@ -2244,6 +2341,19 @@ nav {
   .custom-button img {
     width: 24px;
     height: 24px;
+  }
+  
+  .professionals-custom-button.professionals-custom-prev {
+    left: 5px;
+  }
+
+  .professionals-custom-button.professionals-custom-next {
+    right: 5px;
+  }
+
+  .professionals-custom-button img {
+    width: 20px;
+    height: 20px;
   }
 }
 

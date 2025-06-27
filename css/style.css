@@ -464,6 +464,288 @@ nav {
   }
 }
 
+/* Certified Innovation Professionals Section */
+.certified-professionals-section {
+  background: #23336A;
+  border-radius: 24px;
+  padding: 60px 40px;
+  margin: 100px auto 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.certified-professionals-container {
+  text-align: left;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 113px;
+  position: relative;
+}
+
+.certified-professionals-heading {
+  width: 735px;
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 75% */
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  text-align: left;
+}
+
+.certified-professionals-subheading {
+  display: flex;
+  width: 832px;
+  height: 29px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #F6AC1F;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.8px; /* 120% */
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+  text-align: left;
+}
+
+.certified-professionals-desc {
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin: 0 0 50px 0;
+  text-align: left;
+  max-width: none;
+}
+
+.phases-wrapper {
+  display: flex !important;
+  gap: 154.82px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  overflow: visible;
+  margin: 0;
+}
+
+.phase-item {
+  display: flex !important;
+  flex-direction: column;
+  height: auto;
+  min-height: 400px;
+  flex: 1;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.phase-image {
+  width: 250px;
+  height: 160px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.phase-description {
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  text-align: left !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
+  max-width: 307.18px;
+  height: 168px;
+}
+
+/* Ensure everything stays left aligned */
+.phase-item * {
+  text-align: left !important;
+}
+
+/* Responsive styles for Certified Professionals */
+@media (max-width: 1200px) {
+  .certified-professionals-container {
+    padding-left: 60px;
+  }
+  
+  .certified-professionals-heading {
+    width: 600px;
+    font-size: 28px;
+  }
+  
+  .certified-professionals-subheading {
+    width: 700px;
+    font-size: 20px;
+  }
+  
+  .phases-wrapper {
+    gap: 96.75px;
+  }
+  
+  .phase-item {
+    max-width: 300px;
+  }
+  
+  .phase-image {
+    width: 240px;
+    height: 131px;
+  }
+  
+  .phase-description {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .certified-professionals-section {
+    padding: 40px 20px;
+    margin-top: 60px;
+  }
+  
+  .certified-professionals-container {
+    padding-left: 40px;
+    text-align: center;
+  }
+  
+  .certified-professionals-heading {
+    width: auto;
+    max-width: 500px;
+    font-size: 26px;
+    margin: 0 auto 16px auto;
+  }
+  
+  .certified-professionals-subheading {
+    width: auto;
+    max-width: 600px;
+    font-size: 18px;
+    margin: 0 auto 24px auto;
+  }
+  
+  .certified-professionals-desc {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+  }
+  
+  .phases-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .phase-item {
+    max-width: 280px;
+    min-height: 380px;
+  }
+  
+  .phase-image {
+    width: 215px;
+    height: 118px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certified-professionals-container {
+    padding-left: 20px;
+  }
+  
+  .certified-professionals-heading {
+    width: auto;
+    max-width: 400px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .certified-professionals-subheading {
+    width: auto;
+    max-width: 450px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .certified-professionals-desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .phases-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .phase-item {
+    max-width: 260px;
+    min-height: 320px;
+  }
+  
+  .phase-image {
+    width: 200px;
+    height: 109px;
+  }
+}
+
+@media (max-width: 576px) {
+  .certified-professionals-section {
+    padding: 30px 15px;
+  }
+  
+  .certified-professionals-container {
+    padding-left: 10px;
+  }
+  
+  .certified-professionals-heading {
+    max-width: 300px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .certified-professionals-subheading {
+    max-width: 350px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .certified-professionals-desc {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  
+  .phase-item {
+    max-width: 220px;
+    min-height: 280px;
+    padding: 15px;
+  }
+  
+  .phase-image {
+    width: 170px;
+    height: 93px;
+  }
+  
+  .phase-description {
+    font-size: 12px !important;
+  }
+}
+
 /* Labs Section */
 .labs-section {
   display: flex;

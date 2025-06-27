@@ -1,4 +1,88 @@
-/* --- Workforce Tab Slide Alignment Fix --- */
+/* Practicum Workforce Table Layout & Lines */
+.practicum-workforce-table {
+  border-collapse: separate;
+  border-spacing: 0 0;
+  width: 100%;
+  max-width: 900px;
+  color: #fff;
+  background: transparent;
+  table-layout: fixed;
+  font-family: "Roboto", "Akhand", sans-serif;
+}
+.practicum-workforce-table thead {
+  background: transparent;
+}
+.practicum-workforce-table th,
+.practicum-workforce-table td {
+  border: none;
+  padding: 14px 16px 14px 0;
+  text-align: left;
+  font-size: 16px;
+  background: transparent;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+.practicum-workforce-table th {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  letter-spacing: 0.02em;
+  background: transparent;
+}
+.practicum-workforce-table td:first-child,
+.practicum-workforce-table th:first-child {
+  color: #ffb32c;
+  font-weight: 700;
+  width: 26%;
+  padding-right: 20px;
+  font-size: 20px;
+}
+.practicum-workforce-table td {
+  font-weight: 400;
+  background: transparent;
+  font-size: 16px;
+}
+.practicum-workforce-table tbody tr {
+  border-bottom: 1.5px solid #fff;
+  transition: background 0.2s;
+}
+.practicum-workforce-table tr:last-child {
+  border-bottom: none;
+}
+.practicum-workforce-table tr {
+  min-height: 48px;
+  display: table-row;
+}
+.advanced-industrial-table .table-group-header td {
+  color: #ffb32c !important;
+  font-weight: 700;
+  font-size: 20px;
+  background: transparent !important;
+  border-bottom: none !important;
+  padding-top: 24px !important;
+  padding-bottom: 0 !important;
+}
+.practicum-workforce-table th,
+.practicum-workforce-table td {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+@media (max-width: 900px) {
+  .practicum-workforce-table th,
+  .practicum-workforce-table td {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  .practicum-workforce-table td:first-child,
+  .practicum-workforce-table th:first-child {
+    width: 40%;
+  }
+  .practicum-workforce-table tr {
+    height: 48px;
+  }
+}
 .tab-left-content {
   display: flex;
   flex-direction: row;

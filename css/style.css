@@ -1153,10 +1153,13 @@ nav {
   box-sizing: border-box;
   padding-left: 190px;
   padding-right: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .product-innovations-heading {
-  width: 451px;
+  width: auto;
   color: #23336A;
   font-family: Roboto, sans-serif;
   font-size: 32px;
@@ -1164,18 +1167,20 @@ nav {
   font-weight: 800;
   line-height: 44px;
   text-transform: uppercase;
-  margin: 0 0 12px 0;
+  margin: 0 0 24px 0;
   text-align: left;
+  align-self: flex-start;
 }
 
 .product-innovations-swiper {
   max-width: 1100px;
-  width: 1100px;
+  width: 100%;
   overflow: visible;
   height: 174px !important;
   position: relative !important;
   margin: 0;
   text-align: left;
+  align-self: flex-start;
 }
 
 .product-innovations-swiper .swiper-wrapper {
@@ -1183,17 +1188,18 @@ nav {
   align-items: center !important;
   justify-content: flex-start !important;
   height: 174px !important;
-  width: 1100px !important;
+  width: 100% !important;
   transform-style: preserve-3d !important;
   transition-property: transform !important;
+  gap: 20px !important;
 }
 
 .product-innovations-swiper .swiper-slide {
   display: flex !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   align-items: center !important;
   width: 260px !important;
-  height: 193.86px !important;
+  height: 174px !important;
   flex-shrink: 0 !important;
   box-sizing: border-box !important;
   position: relative !important;
@@ -1206,7 +1212,7 @@ nav {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   display: block;
-  margin: 0 auto;
+  margin: 0;
 }
 
 
@@ -1214,24 +1220,24 @@ nav {
 /* Responsive styles for Product Innovations */
 @media (max-width: 1400px) {
   .product-innovations-container {
-    padding-left: 235px;
-    padding-right: 235px;
+    padding-left: 67px;
+    padding-right: 67px;
   }
 }
 
 @media (max-width: 1024px) {
   .product-innovations-container {
     margin-top: 200px;
-    padding-left: 190px;
-    padding-right: 190px;
+    padding-left: 67px;
+    padding-right: 67px;
   }
   
   .product-innovations-heading {
     width: auto;
-    max-width: 400px;
+    max-width: none;
     font-size: 28px;
     line-height: 32px;
-    margin: 0 0 12px 0;
+    margin: 0 0 20px 0;
     text-align: left;
   }
   
@@ -1248,7 +1254,8 @@ nav {
   
   .product-innovations-swiper .swiper-wrapper {
     height: 160px !important;
-    width: auto !important;
+    width: 100% !important;
+    gap: 15px !important;
   }
   
   .product-innovations-swiper .swiper-slide {
@@ -1260,16 +1267,16 @@ nav {
 @media (max-width: 768px) {
   .product-innovations-container {
     margin-top: 150px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 67px;
+    padding-right: 40px;
   }
   
   .product-innovations-heading {
     width: auto;
-    max-width: 350px;
+    max-width: none;
     font-size: 24px;
     line-height: 28px;
-    margin: 0 0 12px 0;
+    margin: 0 0 18px 0;
     text-align: left;
   }
   
@@ -1286,7 +1293,8 @@ nav {
   
   .product-innovations-swiper .swiper-wrapper {
     height: 140px !important;
-    width: auto !important;
+    width: 100% !important;
+    gap: 12px !important;
   }
   
   .product-innovations-swiper .swiper-slide {
@@ -1298,16 +1306,16 @@ nav {
 @media (max-width: 576px) {
   .product-innovations-container {
     margin-top: 100px;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 67px;
+    padding-right: 20px;
   }
   
   .product-innovations-heading {
     width: auto;
-    max-width: 300px;
+    max-width: none;
     font-size: 20px;
     line-height: 24px;
-    margin: 0 0 12px 0;
+    margin: 0 0 15px 0;
     text-align: left;
   }
   
@@ -1324,7 +1332,8 @@ nav {
   
   .product-innovations-swiper .swiper-wrapper {
     height: 120px !important;
-    width: auto !important;
+    width: 100% !important;
+    gap: 10px !important;
   }
   
   .product-innovations-swiper .swiper-slide {
@@ -1643,7 +1652,7 @@ nav {
 }
 
 .practicum-banner {
-  background: #FFF0DC;
+  background: white;
   padding: 80px 181px;
 }
 
@@ -2063,7 +2072,7 @@ nav {
 }
 
 .practicum-banner {
-  background: #FFF0DC;
+  background: white;
   padding: 80px 181px;
 }
 
@@ -2557,7 +2566,7 @@ nav {
   height: 649px !important;
   background: #23336A !important;
   border-radius: 20px !important;
-  padding: 40px !important;
+  padding: 0 !important;
   margin: 0 auto !important;
   overflow: hidden !important;
   position: relative !important;
@@ -2565,98 +2574,164 @@ nav {
 }
 
 .main-tab-container .tabSwiper {
-  height: calc(100% - 80px) !important;
+  height: calc(100% - 120px) !important;
   overflow: hidden !important;
+  width: 100% !important;
 }
 
 .main-tab-container .tab-slide {
   display: flex !important;
   flex-direction: row !important;
   align-items: flex-start !important;
-  gap: 30px !important;
-  padding: 30px !important;
+  gap: 40px !important;
+  padding: 20px 40px 30px 40px !important;
   background: transparent !important;
   border-radius: 0 !important;
   height: 100% !important;
-  overflow: visible !important;
+  overflow: hidden !important;
   box-sizing: border-box !important;
+  width: 100% !important;
 }
 
 .main-tab-container .tab-image {
-  width: 260px !important;
-  height: 200px !important;
+  width: 100% !important;
+  height: 160px !important;
   flex-shrink: 0 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   overflow: hidden !important;
   border-radius: 10px !important;
-  background: rgba(255,255,255,0.05) !important;
+  background: transparent !important;
   margin-bottom: 0 !important;
 }
 
 .main-tab-container .tab-image img {
-  width: 100% !important;
-  height: auto !important;
-  max-height: 100% !important;
+  width: 160px !important;
+  height: 140px !important;
   object-fit: contain !important;
   border-radius: 8px !important;
 }
 
 .main-tab-container .table {
+  width: 100% !important;
   flex: 1 !important;
+  height: calc(100% - 40px) !important;
+  min-height: 400px !important;
   background: transparent !important;
-  border: 1px solid rgba(255,255,255,0.2) !important;
-  border-radius: 10px !important;
+  border: 2px solid rgba(255,255,255,0.3) !important;
+  border-radius: 12px !important;
   overflow: hidden !important;
   margin: 0 !important;
-  max-height: 320px !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  table-layout: fixed !important;
 }
 
 .main-tab-container .table thead th {
-  background: rgba(26, 37, 80, 0.8) !important;
+  background: rgba(26, 37, 80, 0.9) !important;
   color: white !important;
-  padding: 12px 8px !important;
-  font-size: 12px !important;
+  padding: 20px 8px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
   text-align: center !important;
-  border: 1px solid rgba(255,255,255,0.1) !important;
+  border: none !important;
+  border-bottom: 2px solid rgba(255,255,255,0.2) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  height: 60px !important;
 }
 
 .main-tab-container .table tbody td {
-  background: rgba(35, 51, 106, 0.6) !important;
+  background: rgba(35, 51, 106, 0.4) !important;
   color: white !important;
-  padding: 10px 8px !important;
-  font-size: 11px !important;
-  line-height: 1.3 !important;
-  text-align: center !important;
-  border: 1px solid rgba(255,255,255,0.1) !important;
-  vertical-align: middle !important;
+  padding: 15px 8px !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  text-align: left !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+  border-right: 1px solid rgba(255,255,255,0.15) !important;
+  vertical-align: top !important;
+  min-height: 80px !important;
 }
 
 .main-tab-container .table-left {
-  background: rgba(26, 37, 80, 0.9) !important;
+  background: rgba(26, 37, 80, 0.95) !important;
   color: #F6AC1F !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.3px !important;
+  border-right: 2px solid rgba(255,255,255,0.2) !important;
 }
 
 .main-tab-container .outcome-tab p {
-  font-size: 10px !important;
-  line-height: 1.2 !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
   color: white !important;
   text-align: left !important;
   margin: 0 !important;
-  padding: 2px !important;
+  padding: 6px 0 !important;
+  font-weight: 400 !important;
 }
 
 .main-tab-container .table-hline {
-  width: 90% !important;
+  width: 80% !important;
   height: 1px !important;
-  background: rgba(255,255,255,0.3) !important;
-  margin: 2px auto !important;
+  background: rgba(255,255,255,0.4) !important;
+  margin: 6px auto !important;
   border: none !important;
+  opacity: 0.6 !important;
+}
+
+/* ENHANCED TABLE COLUMN LAYOUT */
+.main-tab-container .table thead th:first-child,
+.main-tab-container .table tbody td:first-child {
+  width: 32% !important;
+}
+
+.main-tab-container .table thead th:nth-child(2),
+.main-tab-container .table tbody td:nth-child(2) {
+  width: 28% !important;
+  text-align: center !important;
+}
+
+.main-tab-container .table thead th:nth-child(3),
+.main-tab-container .table tbody td:nth-child(3) {
+  width: 40% !important;
+}
+
+/* DOUBLE ROW STYLING FOR COURSES COLUMN */
+.main-tab-container .double-row {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-align: center !important;
+  padding: 8px 4px !important;
+}
+
+.main-tab-container .double-row > div {
+  font-size: 11px !important;
+  line-height: 1.3 !important;
+  color: white !important;
+  text-align: center !important;
+  font-weight: 500 !important;
+}
+
+.main-tab-container .custom-swiper-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  height: calc(100% - 120px) !important;
 }
 
 .main-tab-container .custom-button {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
   width: 35px !important;
   height: 35px !important;
   background: white !important;
@@ -2664,6 +2739,15 @@ nav {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  z-index: 10 !important;
+}
+
+.main-tab-container .custom-prev {
+  left: 20px !important;
+}
+
+.main-tab-container .custom-next {
+  right: 20px !important;
 }
 
 .main-tab-container .custom-button img {
@@ -2672,13 +2756,23 @@ nav {
   object-fit: contain !important;
 }
 
+.tab-card-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 50px !important;
+  padding: 40px 0 !important;
+  width: 100% !important;
+}
+
 .main-tab-container .tab-header {
   color: white !important;
-  font-size: 16px !important;
+  font-size: 20px !important;
   font-weight: 400 !important;
-  padding: 8px 16px !important;
+  padding: 0 !important;
   cursor: pointer !important;
   text-transform: uppercase !important;
+  text-align: center !important;
 }
 
 .main-tab-container .tab-header.active {
@@ -2688,21 +2782,21 @@ nav {
 
 /* LEFT CONTENT AREA STYLING - WORKING LAYOUT */
 .tab-left-content {
-  width: 300px !important;
+  width: 350px !important;
   flex-shrink: 0 !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 20px !important;
+  gap: 15px !important;
   height: 100% !important;
 }
 
 .tab-content-description {
-  padding: 0 10px !important;
+  padding: 0 !important;
   color: white !important;
   width: 100% !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 15px !important;
+  gap: 10px !important;
 }
 
 .tab-description {
@@ -2732,11 +2826,11 @@ nav {
 .tab-heading-text {
   width: 100% !important;
   font-weight: 700 !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   letter-spacing: 0% !important;
   color: white !important;
-  margin: 0 0 12px 0 !important;
-  line-height: 1.3 !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.2 !important;
   text-align: left !important;
   padding: 0 !important;
 }
@@ -2753,16 +2847,16 @@ nav {
 }
 
 .tab-bullet-points-custom li {
-  font-size: 14px !important;
-  line-height: 1.4 !important;
+  font-size: 13px !important;
+  line-height: 1.3 !important;
   color: white !important;
-  margin-bottom: 8px !important;
+  margin-bottom: 6px !important;
   text-align: left !important;
 }
 
 /* ENHANCED WORKFORCE SECTION HEADER STYLING */
 .practicum-banner {
-  background: #FFF0DC !important;
+  background: white !important;
   padding: 80px 181px !important;
   min-height: auto !important;
 }
@@ -2801,5 +2895,128 @@ nav {
   font-weight: 400 !important;
   margin: 0 !important;
   text-align: left !important;
+}
+
+/* tables for sliders - Reference-based styles adapted to blue color scheme */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  z-index: 1;
+  color: white;
+  position: relative;
+}
+
+.table tr > td:first-child,
+.table thead tr > th:first-child {
+  color: #F6AC1F;
+  padding-right: 20px;
+}
+
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 25%;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 25%;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 50%;
+}
+
+.table tbody tr td:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.table tbody {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.table th {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.table tr {
+  display: flex;
+  height: 100%;
+  min-height: 90px;
+}
+
+.table th,
+.table td {
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  text-align: left;
+}
+
+.table td {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 12px 0px;
+}
+
+.table-left {
+  display: flex;
+}
+
+.table .table-left {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px 0px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.double-row {
+  display: flex !important;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.double-row > div:first-child {
+  width: 100%;
+  padding-bottom: 12px;
+  font-weight: 500;
+}
+
+.double-row > div:last-child {
+  width: 100%;
+  padding-top: 12px;
+  font-weight: 500;
+}
+
+.double-row > hr {
+  z-index: 100 !important;
+  width: 100%;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.table-hline {
+  position: absolute;
+}
+
+/* Outcome text optimization */
+.outcome-tab p {
+  font-size: 15px !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
 }
 

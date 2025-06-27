@@ -1733,76 +1733,67 @@ nav {
 
 /* --- Workforce Section: Uniform Alignment & Distribution Fix --- */
 .practicum-workforce-container {
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
-  gap: 40px;
-  width: 100%;
-  min-height: auto;
-  box-sizing: border-box;
+  align-items: flex-start;
+  gap: 120px;
+  padding: 0 181px;
 }
 
 .practicum-workforce-title-wrapper {
-  flex: 0 0 32%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 260px;
-  max-width: 400px;
+  flex: 0 0 auto;
+  min-width: 400px;
 }
 
 .practicum-workforce-description-wrapper {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 32px;
-  gap: 18px;
-  min-width: 0;
+  flex: 1;
+  padding-left: 40px;
 }
 
 .practicum-workforce-title {
   margin: 0;
   text-transform: uppercase;
   font-size: 32px;
-  line-height: 120%;
-  font-weight: 900;
-  color: #E01E2C;
+  line-height: 32px;
+  font-weight: 800;
+  color: #23336A;
   font-family: "Roboto", sans-serif !important;
   text-align: left;
   width: 100%;
-  max-width: 400px;
+  max-width: 550px;
   word-break: break-word;
+  letter-spacing: 0%;
 }
 
 .practicum-workforce-title .title-light {
-  font-weight: 400;
+  font-weight: 500;
 }
 .practicum-workforce-title .title-bold {
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .practicum-workforce-subtitle {
-  color: #E01E2C;
+  color: #23336A;
   font-size: 24px;
   line-height: 28.8px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
-  margin: 0 0 8px 0;
+  margin: 0 0 24px 0;
   font-family: "Roboto", sans-serif !important;
+  letter-spacing: 0%;
 }
 
 .practicum-workforce-description {
-  color: #000;
-  font-size: 18px;
-  line-height: 140%;
+  color: #000000;
+  font-size: 16px;
+  line-height: 19.2px;
   font-weight: 400;
   font-family: "Roboto", sans-serif !important;
   margin: 0;
   text-align: left;
   max-width: 100%;
+  letter-spacing: 0%;
 }
 
 /* --- Table Alignment for Courses/Outcomes --- */
@@ -2009,14 +2000,15 @@ nav {
 }
 
 /* Large Desktop */
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   .practicum-workforce-container {
-    gap: 35px;
+    padding: 0 120px;
+    gap: 80px;
   }
   
   .practicum-workforce-title {
     font-size: 30px;
-    width: 380px;
+    width: 500px;
   }
   
   .practicum-workforce-subtitle {
@@ -2030,14 +2022,24 @@ nav {
 }
 
 /* Medium Desktop */
-@media (max-width: 1360px) {
+@media (max-width: 1024px) {
   .practicum-workforce-container {
-    gap: 30px;
+    flex-direction: column;
+    padding: 0 60px;
+    gap: 40px;
+  }
+  
+  .practicum-workforce-title-wrapper {
+    min-width: auto;
+  }
+  
+  .practicum-workforce-description-wrapper {
+    padding-left: 0;
   }
   
   .practicum-workforce-title {
     font-size: 28px;
-    width: 360px;
+    width: 480px;
   }
   
   .practicum-workforce-subtitle {
@@ -2051,68 +2053,15 @@ nav {
 }
 
 /* Small Desktop */
-@media (max-width: 1275px) {
+@media (max-width: 768px) {
   .practicum-workforce-container {
-    gap: 25px;
+    padding: 0 40px;
   }
   
   .practicum-workforce-title {
-    font-size: 26px;
-    width: 340px;
-  }
-  
-  .practicum-workforce-subtitle {
     font-size: 20px;
-    line-height: 24px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 15px;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 15px;
-  }
-}
-
-/* Large Tablet */
-@media (max-width: 1120px) {
-  .practicum-workforce-container {
-    gap: 20px;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 24px;
-    width: 320px;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 19px;
-    line-height: 23px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 14px;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 10px;
-  }
-}
-
-/* Medium Tablet */
-@media (max-width: 920px) {
-  .practicum-workforce-container {
-    gap: 18px;
-  }
-  
-  .practicum-workforce-title-wrapper {
-    flex: 0 0 40%;
-  }
-  
-  .practicum-workforce-title {
-    font-size: 22px;
-    width: 300px;
+    width: auto;
+    max-width: 100%;
   }
   
   .practicum-workforce-subtitle {
@@ -2121,44 +2070,8 @@ nav {
   }
   
   .practicum-workforce-description {
-    font-size: 13px;
-    line-height: 1.5;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 8px;
-  }
-}
-
-/* Tablet Portrait */
-@media (max-width: 768px) {
-  .practicum-workforce-container {
-    gap: 15px;
-  }
-  
-  .practicum-workforce-title-wrapper {
-    flex: 0 0 45%;
-  }
-
-  .practicum-workforce-title {
-    font-size: 20px;
-    width: auto;
-    max-width: 100%;
-  }
-  
-  .practicum-workforce-subtitle {
-    font-size: 17px;
-    line-height: 20px;
-  }
-  
-  .practicum-workforce-description {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-  
-  .practicum-workforce-description-wrapper {
-    padding-left: 5px;
-    gap: 12px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -2552,31 +2465,34 @@ nav {
 
 /* Ensure title stands out prominently */
 .practicum-workforce-title {
-  color: #E01E2C !important;
+  color: #23336A !important;
   font-size: 32px !important;
-  line-height: 120% !important;
-  font-weight: 900 !important;
+  line-height: 32px !important;
+  font-weight: 800 !important;
   text-transform: uppercase !important;
   font-family: "Roboto", sans-serif !important;
   margin-bottom: 0 !important;
+  letter-spacing: 0% !important;
 }
 
 .practicum-workforce-subtitle {
-  color: #E01E2C !important;
+  color: #23336A !important;
   font-size: 24px !important;
   line-height: 28.8px !important;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   text-transform: uppercase !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 24px !important;
+  letter-spacing: 0% !important;
 }
 
 .practicum-workforce-description {
-  color: #000 !important;
-  font-size: 18px !important;
-  line-height: 140% !important;
+  color: #000000 !important;
+  font-size: 16px !important;
+  line-height: 19.2px !important;
   font-weight: 400 !important;
   margin: 0 !important;
   text-align: left !important;
+  letter-spacing: 0% !important;
 }
 
 /* tables for sliders - Reference-based styles adapted to blue color scheme */

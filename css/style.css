@@ -1145,6 +1145,194 @@ nav {
   }
 }
 
+/* Product Innovations Section (Inside Large Container) */
+.product-innovations-container {
+  margin-top: 286px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 190px;
+  padding-right: 190px;
+}
+
+.product-innovations-heading {
+  width: 451px;
+  color: #23336A;
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  text-align: left;
+}
+
+.product-innovations-swiper {
+  max-width: 1100px;
+  width: 1100px;
+  overflow: visible;
+  height: 174px !important;
+  position: relative !important;
+  margin: 0;
+  text-align: left;
+}
+
+.product-innovations-swiper .swiper-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  height: 174px !important;
+  width: 1100px !important;
+  transform-style: preserve-3d !important;
+  transition-property: transform !important;
+}
+
+.product-innovations-swiper .swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 260px !important;
+  height: 193.86px !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+}
+
+.product-innovation-image {
+  width: 260px;
+  height: 174px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* Responsive styles for Product Innovations */
+@media (max-width: 1400px) {
+  .product-innovations-container {
+    padding-left: 235px;
+    padding-right: 235px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-innovations-container {
+    margin-top: 200px;
+    padding-left: 190px;
+    padding-right: 190px;
+  }
+  
+  .product-innovations-heading {
+    width: auto;
+    max-width: 400px;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 12px 0;
+    text-align: left;
+  }
+  
+  .product-innovation-image {
+    width: 220px;
+    height: 147px;
+  }
+  
+  .product-innovations-swiper {
+    height: 160px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .product-innovations-swiper .swiper-wrapper {
+    height: 160px !important;
+    width: auto !important;
+  }
+  
+  .product-innovations-swiper .swiper-slide {
+    width: 220px !important;
+    height: 160px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-innovations-container {
+    margin-top: 150px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  
+  .product-innovations-heading {
+    width: auto;
+    max-width: 350px;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 12px 0;
+    text-align: left;
+  }
+  
+  .product-innovation-image {
+    width: 200px;
+    height: 134px;
+  }
+  
+  .product-innovations-swiper {
+    height: 140px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .product-innovations-swiper .swiper-wrapper {
+    height: 140px !important;
+    width: auto !important;
+  }
+  
+  .product-innovations-swiper .swiper-slide {
+    width: 200px !important;
+    height: 140px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-innovations-container {
+    margin-top: 100px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  
+  .product-innovations-heading {
+    width: auto;
+    max-width: 300px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 12px 0;
+    text-align: left;
+  }
+  
+  .product-innovation-image {
+    width: 180px;
+    height: 120px;
+  }
+  
+  .product-innovations-swiper {
+    height: 120px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .product-innovations-swiper .swiper-wrapper {
+    height: 120px !important;
+    width: auto !important;
+  }
+  
+  .product-innovations-swiper .swiper-slide {
+    width: 180px !important;
+    height: 120px !important;
+  }
+}
+
 /* Labs Section */
 .labs-section {
   display: flex;

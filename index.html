@@ -456,6 +456,29 @@
              </div>
            </div>
            
+           <!-- Product Innovations Section (Inside Yellow Container) -->
+           <div class="product-innovations-container">
+             <h2 class="product-innovations-heading">PRODUCT INNOVATIONS</h2>
+             
+             <!-- Product Innovations Swiper -->
+             <div class="swiper product-innovations-swiper">
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                   <img src="assets/images/product_innovations/1.png" alt="Product Innovation 1" class="product-innovation-image">
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="assets/images/product_innovations/2.png" alt="Product Innovation 2" class="product-innovation-image">
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="assets/images/product_innovations/3.png" alt="Product Innovation 3" class="product-innovation-image">
+                 </div>
+                 <div class="swiper-slide">
+                   <img src="assets/images/product_innovations/4.png" alt="Product Innovation 4" class="product-innovation-image">
+                 </div>
+               </div>
+             </div>
+           </div>
+           
          </div>
        </section>
 
@@ -621,6 +644,46 @@
               spaceBetween: 30
             }
           },
+        });
+
+        // Product Innovations Swiper - Show all 4 images
+        const productInnovationsSwiper = new Swiper(".product-innovations-swiper", {
+          slidesPerView: 4,
+          spaceBetween: 20,
+          loop: false,
+          autoHeight: false,
+          allowTouchMove: false,
+          grabCursor: false,
+          autoplay: false,
+          pagination: {
+            el: ".product-innovations-pagination",
+            clickable: false,
+            enabled: false,
+          },
+          effect: 'slide',
+          speed: 0,
+          centeredSlides: false,
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0,
+          preventInteractionOnTransition: true,
+          breakpoints: {
+            320: { 
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            640: { 
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            768: { 
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            1024: { 
+              slidesPerView: 4,
+              spaceBetween: 20
+            }
+          }
         });
       });
     </script>

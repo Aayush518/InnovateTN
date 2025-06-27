@@ -907,10 +907,14 @@
         const workforceTabSwiper = new Swiper(".tabSwiper", {
           slidesPerView: 1,
           spaceBetween: 30,
-          loop: false,
+          loop: true,
           autoHeight: true,
           allowTouchMove: true,
           grabCursor: true,
+          autoplay: {
+            delay: 5000, // Auto slide every 5 seconds
+            disableOnInteraction: false, // Don't stop autoplay after user interaction
+          },
           navigation: {
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
@@ -918,7 +922,7 @@
           on: {
             slideChange: function () {
               // Update active tab header
-              const activeSlide = this.activeIndex;
+              const activeSlide = this.realIndex; // Use realIndex for looped swipers
               $('.tab-header').removeClass('active');
               $(`.tab-header[data-tab="${activeSlide}"]`).addClass('active');
             }
@@ -934,8 +938,8 @@
           // Add active class to clicked tab header
           $(this).addClass('active');
           
-          // Slide to corresponding tab content
-          workforceTabSwiper.slideTo(tabIndex);
+          // Slide to corresponding tab content (use slideToLoop for looped swipers)
+          workforceTabSwiper.slideToLoop(tabIndex);
         });
       });
     </script>

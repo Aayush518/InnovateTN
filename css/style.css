@@ -489,7 +489,7 @@ nav {
 
 .certified-professionals-heading {
   width: auto;
-  max-width: 735px;
+  max-width: 994px;
   color: #FFFFFF;
   font-family: Roboto, sans-serif;
   font-size: 32px;
@@ -697,6 +697,33 @@ nav {
   object-fit: contain;
 }
 
+/* Slide 4 Layout (Grassroot Innovators) */
+.slide-4-logo-wrapper {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  z-index: 10;
+}
+
+.grassroot-logo {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Slide 4 Heading Specifications */
+.swiper-slide:nth-child(4) .certified-professionals-heading {
+  width: 994px;
+  color: #FFF;
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0 0 73px 0;
+}
+
 /* Slide 3 Description Text Specifications */
 .swiper-slide:nth-child(3) .certified-professionals-desc {
   font-size: 16px;
@@ -821,6 +848,15 @@ nav {
     width: 250px;
   }
   
+  .grassroot-logo {
+    width: 250px;
+  }
+  
+  .swiper-slide:nth-child(4) .certified-professionals-heading {
+    width: auto;
+    max-width: 800px;
+  }
+  
 
   
   .phase-description {
@@ -926,14 +962,21 @@ nav {
     line-height: 20px;
   }
   
-  .slide-3-logo-wrapper {
+  .slide-3-logo-wrapper,
+  .slide-4-logo-wrapper {
     position: static;
     text-align: center;
     margin-top: 30px;
   }
   
-  .protosem-logo {
+  .protosem-logo,
+  .grassroot-logo {
     width: 200px;
+  }
+  
+  .swiper-slide:nth-child(4) .certified-professionals-heading {
+    width: auto;
+    max-width: 600px;
   }
   
   .phase-item {
@@ -1013,12 +1056,19 @@ nav {
     line-height: 18px;
   }
   
-  .protosem-logo {
+  .protosem-logo,
+  .grassroot-logo {
     width: 180px;
   }
   
-  .slide-3-logo-wrapper {
+  .slide-3-logo-wrapper,
+  .slide-4-logo-wrapper {
     margin-top: 20px;
+  }
+  
+  .swiper-slide:nth-child(4) .certified-professionals-heading {
+    width: auto;
+    max-width: 400px;
   }
 }
 
@@ -1075,12 +1125,19 @@ nav {
     line-height: 16px;
   }
   
-  .protosem-logo {
+  .protosem-logo,
+  .grassroot-logo {
     width: 150px;
   }
   
-  .slide-3-logo-wrapper {
+  .slide-3-logo-wrapper,
+  .slide-4-logo-wrapper {
     margin-top: 20px;
+  }
+  
+  .swiper-slide:nth-child(4) .certified-professionals-heading {
+    width: auto;
+    max-width: 300px;
   }
   
   .phase-description {

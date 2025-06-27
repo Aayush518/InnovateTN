@@ -470,46 +470,48 @@ nav {
   border-radius: 24px;
   padding: 60px 40px;
   margin: 100px auto 0 auto;
-  width: 100%;
-  max-width: 1600px;
+  width: 1520px;
+  height: 636px;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 }
 
 .certified-professionals-container {
   text-align: left;
   max-width: 1400px;
   margin: 0 auto;
-  padding-left: 113px;
+  padding-left: 132px;
+  padding-right: 40px;
+  padding-bottom: 30px;
   position: relative;
 }
 
 .certified-professionals-heading {
-  width: 735px;
+  width: auto;
+  max-width: 735px;
   color: #FFFFFF;
   font-family: Roboto, sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 75% */
+  line-height: 38px;
   text-transform: uppercase;
   margin: 0 0 16px 0;
   text-align: left;
 }
 
 .certified-professionals-subheading {
-  display: flex;
-  width: 832px;
-  height: 29px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
+  display: block;
+  width: auto;
+  max-width: 832px;
+  height: auto;
   color: #F6AC1F;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28.8px; /* 120% */
+  line-height: 28.8px;
   text-transform: uppercase;
   margin: 0 0 24px 0;
   text-align: left;
@@ -527,6 +529,47 @@ nav {
   max-width: none;
 }
 
+.professionals-swiper {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+}
+
+.professionals-swiper .swiper-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.professionals-swiper .swiper-slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 636px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.phase-content {
+  margin-top: 50px;
+}
+
+.phase-title {
+  color: #F6AC1F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  text-align: left;
+}
+
+.phase-text-content {
+  margin-left: 20px;
+}
+
 .phases-wrapper {
   display: flex !important;
   gap: 154.82px;
@@ -535,6 +578,7 @@ nav {
   width: 100%;
   overflow: visible;
   margin: 0;
+  padding-bottom: 30px;
 }
 
 .phase-item {
@@ -550,6 +594,7 @@ nav {
   border: none;
   text-align: left;
   align-items: flex-start;
+  overflow: hidden;
 }
 
 .phase-image {
@@ -563,10 +608,10 @@ nav {
 .phase-description {
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
   margin: 0;
   text-align: left !important;
   word-wrap: break-word;
@@ -575,6 +620,8 @@ nav {
   width: 100%;
   max-width: 307.18px;
   height: 168px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 /* Ensure everything stays left aligned */
@@ -582,28 +629,175 @@ nav {
   text-align: left !important;
 }
 
+/* Second Slide Phases Layout (4 phases) */
+.slide-2-phases {
+  display: flex !important;
+  gap: 60px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  overflow: visible;
+  margin: 0;
+  flex-wrap: nowrap;
+  padding-bottom: 30px;
+}
+
+.slide-2-phase {
+  display: flex !important;
+  flex-direction: column;
+  height: auto;
+  min-height: 400px;
+  flex: 1;
+  max-width: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.slide-2-phase .phase-image {
+  width: 230px;
+  height: 110px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.slide-2-phase .phase-description {
+  width: 230px;
+  height: 192px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  text-align: left !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Slide 3 Layout (Innovation Certification) */
+.slide-3-logo-wrapper {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  z-index: 10;
+}
+
+.protosem-logo {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Slide 3 Description Text Specifications */
+.swiper-slide:nth-child(3) .certified-professionals-desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 20px 0;
+}
+
+/* Professionals Swiper Navigation Arrows */
+.professionals-swiper-button-next,
+.professionals-swiper-button-prev {
+  color: #F6AC1F !important;
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(246, 172, 31, 0.3);
+  transition: all 0.3s ease;
+}
+
+.professionals-swiper-button-next:hover,
+.professionals-swiper-button-prev:hover {
+  background: rgba(246, 172, 31, 0.2);
+  border-color: #F6AC1F;
+  transform: scale(1.05);
+}
+
+.professionals-swiper-button-next::after,
+.professionals-swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.professionals-swiper-button-next {
+  right: -25px;
+}
+
+.professionals-swiper-button-prev {
+  left: -25px;
+}
+
+/* Professionals Swiper Pagination */
+.professionals-swiper-pagination {
+  bottom: -50px !important;
+  text-align: center;
+}
+
+.professionals-swiper-pagination .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.professionals-swiper-pagination .swiper-pagination-bullet-active {
+  background: #F6AC1F;
+  transform: scale(1.2);
+}
+
 /* Responsive styles for Certified Professionals */
 @media (max-width: 1200px) {
   .certified-professionals-container {
-    padding-left: 60px;
+    padding-left: 80px;
+    padding-bottom: 30px;
   }
   
   .certified-professionals-heading {
-    width: 600px;
-    font-size: 28px;
+    width: auto;
+    max-width: 600px;
+    font-size: 32px;
+    line-height: 38px;
   }
   
   .certified-professionals-subheading {
-    width: 700px;
-    font-size: 20px;
+    width: auto;
+    max-width: 700px;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  
+  .professionals-swiper-button-next {
+    right: -15px;
+  }
+  
+  .professionals-swiper-button-prev {
+    left: -15px;
   }
   
   .phases-wrapper {
     gap: 96.75px;
   }
   
+  .slide-2-phases {
+    gap: 50px;
+  }
+  
   .phase-item {
     max-width: 300px;
+    overflow: hidden;
   }
   
   .phase-image {
@@ -611,8 +805,54 @@ nav {
     height: 131px;
   }
   
+  .slide-2-phase .phase-image {
+    width: 230px;
+    height: 101px;
+  }
+  
+  .slide-2-phase .phase-description {
+    width: 240px;
+    height: 175px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .protosem-logo {
+    width: 250px;
+  }
+  
+
+  
   .phase-description {
-    font-size: 13px !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+}
+
+@media (max-width: 1600px) {
+  .certified-professionals-section {
+    width: 100%;
+    max-width: 1520px;
+    height: auto;
+    min-height: 636px;
+  }
+  
+  .slide-2-phases {
+    gap: 40px;
+  }
+  
+  .slide-2-phase {
+    max-width: 220px;
+  }
+  
+  .slide-2-phase .phase-image {
+    width: 200px;
+    height: 96px;
+  }
+  
+  .slide-2-phase .phase-description {
+    width: 200px;
+    height: 180px;
   }
 }
 
@@ -620,24 +860,29 @@ nav {
   .certified-professionals-section {
     padding: 40px 20px;
     margin-top: 60px;
+    width: 100%;
+    height: auto;
   }
   
   .certified-professionals-container {
-    padding-left: 40px;
-    text-align: center;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    text-align: left;
   }
   
   .certified-professionals-heading {
     width: auto;
     max-width: 500px;
-    font-size: 26px;
+    font-size: 28px;
+    line-height: 32px;
     margin: 0 auto 16px auto;
   }
   
   .certified-professionals-subheading {
     width: auto;
     max-width: 600px;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 24px;
     margin: 0 auto 24px auto;
   }
   
@@ -647,15 +892,54 @@ nav {
     margin: 0 auto 50px auto;
   }
   
-  .phases-wrapper {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
+  .professionals-swiper-button-next,
+  .professionals-swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .professionals-swiper-button-next {
+    right: 10px;
+  }
+  
+  .professionals-swiper-button-prev {
+    left: 10px;
+  }
+  
+  .slide-2-phases {
+    gap: 40px;
+  }
+  
+  .slide-2-phase {
+    max-width: 240px;
+  }
+  
+  .slide-2-phase .phase-image {
+    width: 200px;
+    height: 88px;
+  }
+  
+  .slide-2-phase .phase-description {
+    width: 220px;
+    height: 160px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .slide-3-logo-wrapper {
+    position: static;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .protosem-logo {
+    width: 200px;
   }
   
   .phase-item {
     max-width: 280px;
     min-height: 380px;
+    overflow: hidden;
   }
   
   .phase-image {
@@ -666,21 +950,22 @@ nav {
 
 @media (max-width: 768px) {
   .certified-professionals-container {
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-bottom: 30px;
   }
   
   .certified-professionals-heading {
     width: auto;
     max-width: 400px;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 26px;
+    line-height: 30px;
   }
   
   .certified-professionals-subheading {
     width: auto;
     max-width: 450px;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
   
   .certified-professionals-desc {
@@ -688,41 +973,77 @@ nav {
     line-height: 20px;
   }
   
-  .phases-wrapper {
+  .professionals-swiper-button-next,
+  .professionals-swiper-button-prev {
+    display: none !important;
+  }
+  
+  .professionals-swiper-pagination {
+    bottom: -40px !important;
+  }
+  
+  .phases-wrapper,
+  .slide-2-phases {
     flex-direction: column;
     gap: 30px;
+    align-items: center;
+    padding-bottom: 30px;
   }
   
   .phase-item {
     max-width: 260px;
     min-height: 320px;
+    overflow: hidden;
   }
   
   .phase-image {
     width: 200px;
     height: 109px;
   }
+  
+  .slide-2-phase .phase-image {
+    width: 180px;
+    height: 79px;
+  }
+  
+  .slide-2-phase .phase-description {
+    width: 240px;
+    height: 150px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  
+  .protosem-logo {
+    width: 180px;
+  }
+  
+  .slide-3-logo-wrapper {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 576px) {
   .certified-professionals-section {
     padding: 30px 15px;
+    width: 100%;
+    height: auto;
   }
   
   .certified-professionals-container {
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
   }
   
   .certified-professionals-heading {
     max-width: 300px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 26px;
   }
   
   .certified-professionals-subheading {
     max-width: 350px;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
   }
   
   .certified-professionals-desc {
@@ -730,7 +1051,8 @@ nav {
     line-height: 18px;
   }
   
-  .phase-item {
+  .phase-item,
+  .slide-2-phase {
     max-width: 220px;
     min-height: 280px;
     padding: 15px;
@@ -739,6 +1061,26 @@ nav {
   .phase-image {
     width: 170px;
     height: 93px;
+  }
+  
+  .slide-2-phase .phase-image {
+    width: 150px;
+    height: 66px;
+  }
+  
+  .slide-2-phase .phase-description {
+    width: 190px;
+    height: 140px;
+    font-size: 12px !important;
+    line-height: 16px;
+  }
+  
+  .protosem-logo {
+    width: 150px;
+  }
+  
+  .slide-3-logo-wrapper {
+    margin-top: 20px;
   }
   
   .phase-description {

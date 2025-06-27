@@ -318,7 +318,6 @@ nav {
 
 /* Innovation Practicum Section */
 .innovation-practicum-section {
-  background-color: #f5f5f5;
   padding: 80px 0;
   width: 100%;
 }
@@ -1738,14 +1737,21 @@ nav {
 }
 
 .partners .head {
+  width: 630px;
+  height: 46px;
   font-size: 38px;
-  font-weight: bold;
-  width: fit-content;
+  font-weight: 700;
+  line-height: 45.6px;
+  letter-spacing: 0%;
   margin: 0 auto;
-  color: #F6AC1F;
-  font-family: "DIN", sans-serif;
+  color: #23336A;
+  font-family: "Roboto", sans-serif;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .partners span {
@@ -1774,9 +1780,10 @@ nav {
 }
 
 .partners .swiper-slide img {
+  width: 365px;
   height: 100px;
-  max-width: var(--width-365, 365px);
-  max-height: var(--height-100, 100px);
+  max-width: 365px;
+  max-height: 100px;
   flex-shrink: 0;
   align-self: stretch;
 }

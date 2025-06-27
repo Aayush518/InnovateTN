@@ -1,3 +1,63 @@
+/* --- Workforce Tab Slide Alignment Fix --- */
+.tab-left-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.tab-image {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+}
+
+.tab-content-description {
+  flex: 1 1 0;
+  text-align: left;
+  margin-left: 24px;
+  max-width: 520px;
+  min-width: 220px;
+}
+
+.tab-heading-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #23336A;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.tab-bullet-points-custom {
+  padding-left: 18px;
+  margin: 0;
+  text-align: left;
+}
+.tab-bullet-points-custom li {
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .tab-left-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .tab-content-description {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .tab-image {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+}
 @import "./assets/Fonts/stylesheet.css";
 
 :root {
@@ -1586,29 +1646,37 @@ nav {
   }
 }
 
-/* Innovation Practicum Workforce Section Styles */
+
+/* --- Workforce Section: Uniform Alignment & Distribution Fix --- */
 .practicum-workforce-container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
   gap: 40px;
   width: 100%;
   min-height: auto;
+  box-sizing: border-box;
 }
 
 .practicum-workforce-title-wrapper {
-  flex: 0 0 35%;
+  flex: 0 0 32%;
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 260px;
+  max-width: 400px;
 }
 
 .practicum-workforce-description-wrapper {
-  flex: 1;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 20px;
-  gap: 15px;
+  justify-content: flex-start;
+  padding-left: 32px;
+  gap: 18px;
+  min-width: 0;
 }
 
 .practicum-workforce-title {
@@ -1620,13 +1688,14 @@ nav {
   color: #E01E2C;
   font-family: "Roboto", sans-serif !important;
   text-align: left;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  word-break: break-word;
 }
 
 .practicum-workforce-title .title-light {
   font-weight: 400;
 }
-
 .practicum-workforce-title .title-bold {
   font-weight: 900;
 }
@@ -1637,7 +1706,7 @@ nav {
   line-height: 28.8px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 8px 0;
   font-family: "Roboto", sans-serif !important;
 }
 
@@ -1649,6 +1718,85 @@ nav {
   font-family: "Roboto", sans-serif !important;
   margin: 0;
   text-align: left;
+  max-width: 100%;
+}
+
+/* --- Table Alignment for Courses/Outcomes --- */
+.practicum-workforce-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.practicum-workforce-table th, .practicum-workforce-table td {
+  padding: 16px 18px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid #e0e0e0;
+}
+.practicum-workforce-table th {
+  background: #23336A;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.practicum-workforce-table tr:last-child td {
+  border-bottom: none;
+}
+.practicum-workforce-table td {
+  background: #fff;
+  color: #222;
+  font-weight: 400;
+}
+.practicum-workforce-table td.courses-col {
+  width: 260px;
+  font-weight: 500;
+  color: #23336A;
+}
+.practicum-workforce-table td.outcomes-col {
+  width: 100%;
+}
+
+/* Responsive Fixes for Workforce Table */
+@media (max-width: 900px) {
+  .practicum-workforce-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .practicum-workforce-title-wrapper {
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .practicum-workforce-description-wrapper {
+    padding-left: 0;
+    width: 100%;
+  }
+  .practicum-workforce-table th, .practicum-workforce-table td {
+    padding: 12px 8px;
+    font-size: 15px;
+  }
+  .practicum-workforce-title {
+    font-size: 26px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .practicum-workforce-table th, .practicum-workforce-table td {
+    padding: 8px 4px;
+    font-size: 13px;
+  }
+  .practicum-workforce-title {
+    font-size: 20px;
+  }
 }
 
 .practicum-banner {
@@ -1658,7 +1806,7 @@ nav {
 
 .main-tab-container {
   width: min(1520px, 95vw);
-  height: 649px;
+  height: auto;
   flex-shrink: 0;
   border-radius: 20px;
   background: #23336A;
@@ -1759,60 +1907,6 @@ nav {
   border-radius: 10px;
 }
 
-.table {
-  flex: 1;
-  background: #23336A;
-  border-radius: 15px;
-  overflow: hidden;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 0;
-}
-
-.table thead th {
-  background: #1a2550;
-  color: white;
-  padding: 20px 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-  border: none;
-  text-align: center;
-}
-
-.table thead th p {
-  margin: 0;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.table tbody td {
-  background: #23336A;
-  color: white;
-  padding: 20px 15px;
-  border: none;
-  vertical-align: top;
-}
-
-.table-left {
-  font-weight: 600;
-  text-align: center;
-  background: #1a2550 !important;
-}
-
-.double-row {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  text-align: center;
-}
-
-.table-hline {
-  width: 100%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 10px 0;
-}
 
 .outcome-tab p {
   margin: 0;
@@ -2076,508 +2170,22 @@ nav {
   padding: 80px 181px;
 }
 
-/* Duplicate styles removed - using the updated styles above */
 
-.custom-button {
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-}
 
-.custom-button:hover {
-  background: #f0f0f0;
-  transform: scale(1.1);
-}
 
-.custom-button img {
-  width: 24px;
-  height: 24px;
-}
 
-.tabSwiper {
-  flex: 1;
-  overflow: hidden;
-  border-radius: 15px;
-}
 
-.tab-slide {
-  background: white;
-  border-radius: 15px;
-  padding: 30px;
-  gap: 30px;
-}
 
-.tab-image {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.tab-image img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-}
 
-.table {
-  flex: 1;
-  background: #23336A;
-  border-radius: 15px;
-  overflow: hidden;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 0;
-}
 
-.table thead th {
-  background: #1a2550;
-  color: white;
-  padding: 20px 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-  border: none;
-  text-align: center;
-}
 
-.table thead th p {
-  margin: 0;
-  font-size: inherit;
-  font-weight: inherit;
-}
 
-.table tbody td {
-  background: #23336A;
-  color: white;
-  padding: 20px 15px;
-  border: none;
-  vertical-align: top;
-}
 
-.table-left {
-  font-weight: 600;
-  text-align: center;
-  background: #1a2550 !important;
-}
 
-.double-row {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  text-align: center;
-}
 
-.table-hline {
-  width: 100%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 10px 0;
-}
 
-.outcome-tab p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: left;
-}
 
-/* Tab Responsive Styles */
-@media (max-width: 1275px) {
-  .practicum-banner {
-    padding: 60px 80px;
-  }
-}
-
-@media (max-width: 1120px) {
-  .practicum-banner {
-    padding: 50px 60px;
-  }
-  
-  .tab-slide {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .tab-image img {
-    max-width: 250px;
-  }
-}
-
-@media (max-width: 920px) {
-  .tab-header {
-    padding: 12px 20px;
-    font-size: 16px;
-    min-width: 120px;
-  }
-}
-
-@media (max-width: 768px) {
-  .practicum-banner {
-    padding: 40px;
-  }
-  
-  .main-tab-container {
-    padding: 20px !important;
-    width: 95% !important;
-    height: auto !important;
-    min-height: 500px !important;
-  }
-  
-  .tab-header {
-    padding: 8px 12px;
-    font-size: 12px;
-    min-width: 80px;
-  }
-  
-  .tab-slide {
-    flex-direction: column !important;
-    padding: 15px !important;
-    gap: 15px !important;
-    background: transparent !important;
-    border-radius: 0 !important;
-  }
-  
-     .tab-image {
-     width: 100% !important;
-     height: 180px !important;
-     max-width: 300px !important;
-     margin: 0 auto !important;
-   }
-   
-   .tab-image img {
-     max-height: 160px !important;
-     width: auto !important;
-   }
-  
-  .table {
-    width: 100% !important;
-    max-height: 250px !important;
-    font-size: 10px !important;
-  }
-  
-  .table thead th {
-    padding: 8px 5px !important;
-    font-size: 9px !important;
-  }
-  
-  .table tbody td {
-    padding: 6px 4px !important;
-    font-size: 8px !important;
-  }
-  
-  .outcome-tab p {
-    font-size: 7px !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .practicum-banner {
-    padding: 30px 20px;
-  }
-  
-  .main-tab-container {
-    padding: 20px 15px;
-  }
-  
-  .custom-swiper-wrapper {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .custom-button {
-    display: none;
-  }
-  
-  .tab-card-container {
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .tab-header {
-    border-radius: 8px !important;
-    margin-bottom: 5px;
-  }
-  
-  .tab-slide {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .practicum-banner {
-    padding: 25px 15px;
-  }
-}
-
-@media (max-width: 375px) {
-  .practicum-banner {
-    padding: 20px 10px;
-  }
-}
-
-/* Additional styles from reference CSS for proper table formatting */
-.double-row {
-  display: flex !important;
-  align-items: center;
-  font-size: 16px;
-  line-height: 1.3;
-}
-
-.double-row > div:first-child {
-  width: 100%;
-  padding-bottom: 12px;
-  font-weight: 500;
-}
-
-.double-row > div:last-child {
-  width: 100%;
-  padding-top: 12px;
-  font-weight: 500;
-}
-
-.table-hline {
-  position: absolute;
-  width: 100%;
-  border-bottom: 1px solid #fcfaf6;
-}
-
-/* Additional containment styles for proper layout */
-.tabSwiper {
-  height: 100% !important;
-  max-height: 450px !important;
-  overflow: hidden !important;
-}
-
-.tab-slide {
-  height: 100% !important;
-  display: flex !important;
-  align-items: stretch !important;
-  padding: 30px !important;
-  gap: 24px !important;
-  background: transparent !important;
-  border-radius: 0 !important;
-  margin: 0 !important;
-}
-
-.tab-image {
-  width: 300px !important;
-  height: 350px !important;
-  flex-shrink: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  overflow: hidden !important;
-  margin-right: 24px !important;
-  z-index: 10 !important;
-  position: relative !important;
-}
-
-.tab-image img {
-  width: 100% !important;
-  height: auto !important;
-  max-height: 400px !important;
-  object-fit: contain !important;
-  border-radius: 0 !important;
-  z-index: 15 !important;
-  position: relative !important;
-  display: block !important;
-  opacity: 1 !important;
-}
-
-.table {
-  width: calc(100% - 324px) !important;
-  max-width: 750px !important;
-  height: auto !important;
-  min-height: 128px !important;
-  overflow: hidden !important;
-  font-size: 14px !important;
-  background: transparent !important;
-  border: 1px solid rgba(255,255,255,0.2) !important;
-  border-radius: 8px !important;
-  margin: 0 !important;
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  table-layout: fixed !important;
-}
-
-.table thead th {
-  padding: 12px 16px !important;
-  font-size: 14px !important;
-  background: rgba(26, 37, 80, 0.8) !important;
-  color: white !important;
-  border: 1px solid rgba(255,255,255,0.2) !important;
-  text-align: center !important;
-  vertical-align: middle !important;
-}
-
-.table thead th:first-child {
-  width: 25% !important;
-}
-
-.table thead th:nth-child(2) {
-  width: 25% !important;
-}
-
-.table thead th:nth-child(3) {
-  width: 50% !important;
-}
-
-.table tbody td {
-  padding: 12px 16px !important;
-  font-size: 12px !important;
-  line-height: 1.3 !important;
-  background: rgba(35, 51, 106, 0.6) !important;
-  color: white !important;
-  border: 1px solid rgba(255,255,255,0.1) !important;
-  text-align: center !important;
-  vertical-align: top !important;
-}
-
-.table tbody td:first-child {
-  width: 25% !important;
-}
-
-.table tbody td:nth-child(2) {
-  width: 25% !important;
-}
-
-.table tbody td:nth-child(3) {
-  width: 50% !important;
-}
-
-.outcome-tab p {
-  font-size: 11px !important;
-  line-height: 1.3 !important;
-  margin: 0 !important;
-  color: white !important;
-  text-align: left !important;
-  padding: 4px !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-.table-left {
-  background: rgba(26, 37, 80, 0.9) !important;
-  color: #F6AC1F !important;
-  font-weight: 600 !important;
-  text-align: center !important;
-  width: 25% !important;
-}
-
-.double-row {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 8px !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.double-row > div {
-  width: 100% !important;
-  text-align: center !important;
-  padding: 4px 0 !important;
-}
-
-.table-hline {
-  width: 90% !important;
-  height: 1px !important;
-  background: rgba(255,255,255,0.3) !important;
-  margin: 4px auto !important;
-  border: none !important;
-  position: relative !important;
-}
-
-/* Custom navigation buttons for workforce section */
-.main-tab-container .custom-button {
-  width: 35px !important;
-  height: 35px !important;
-  background: white !important;
-  border-radius: 50% !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
-  z-index: 10 !important;
-}
-
-.main-tab-container .custom-button img {
-  width: 16px !important;
-  height: 16px !important;
-}
-
-.main-tab-container .custom-swiper-wrapper {
-  height: calc(100% - 80px) !important;
-  margin-top: 10px !important;
-}
-
-/* Override any existing white backgrounds and ensure proper containment */
-.main-tab-container .tab-slide {
-  background: transparent !important;
-  overflow: hidden !important;
-  z-index: 1 !important;
-}
-
-.main-tab-container .swiper-slide {
-  background: transparent !important;
-  overflow: hidden !important;
-  z-index: 1 !important;
-}
-
-.main-tab-container .table {
-  width: calc(100% - 324px) !important;
-  max-width: 750px !important;
-  box-sizing: border-box !important;
-}
-
-.main-tab-container .table-hline {
-  position: relative !important;
-  width: 90% !important;
-  margin: 4px auto !important;
-  border-bottom: 1px solid rgba(255,255,255,0.3) !important;
-  height: 1px !important;
-  overflow: hidden !important;
-}
-
-/* Ensure images are visible - proper containment */
-.main-tab-container .tab-image {
-  overflow: hidden !important;
-  z-index: 10 !important;
-}
-
-.main-tab-container .tab-image img {
-  opacity: 1 !important;
-  visibility: visible !important;
-  z-index: 15 !important;
-  width: 100% !important;
-  height: auto !important;
-  max-height: 100% !important;
-}
-
-/* CLEAN WORKFORCE SECTION OVERRIDE - FIX LAYOUT */
-.main-tab-container {
-  width: min(1520px, 95vw) !important;
-  height: 649px !important;
-  background: #23336A !important;
-  border-radius: 20px !important;
-  padding: 0 !important;
-  margin: 0 auto !important;
-  overflow: hidden !important;
-  position: relative !important;
-  box-sizing: border-box !important;
-}
-
-.main-tab-container .tabSwiper {
-  height: calc(100% - 120px) !important;
-  overflow: hidden !important;
-  width: 100% !important;
-}
 
 .main-tab-container .tab-slide {
   display: flex !important;
@@ -2612,36 +2220,6 @@ nav {
   object-fit: contain !important;
   border-radius: 8px !important;
 }
-
-.main-tab-container .table {
-  width: 100% !important;
-  flex: 1 !important;
-  height: calc(100% - 40px) !important;
-  min-height: 400px !important;
-  background: transparent !important;
-  border: 2px solid rgba(255,255,255,0.3) !important;
-  border-radius: 12px !important;
-  overflow: hidden !important;
-  margin: 0 !important;
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  table-layout: fixed !important;
-}
-
-.main-tab-container .table thead th {
-  background: rgba(26, 37, 80, 0.9) !important;
-  color: white !important;
-  padding: 20px 8px !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  text-align: center !important;
-  border: none !important;
-  border-bottom: 2px solid rgba(255,255,255,0.2) !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.5px !important;
-  height: 60px !important;
-}
-
 .main-tab-container .table tbody td {
   background: rgba(35, 51, 106, 0.4) !important;
   color: white !important;
@@ -2686,61 +2264,6 @@ nav {
   opacity: 0.6 !important;
 }
 
-/* ENHANCED TABLE COLUMN LAYOUT */
-.main-tab-container .table thead th:first-child,
-.main-tab-container .table tbody td:first-child {
-  width: 32% !important;
-}
-
-.main-tab-container .table thead th:nth-child(2),
-.main-tab-container .table tbody td:nth-child(2) {
-  width: 28% !important;
-  text-align: center !important;
-}
-
-.main-tab-container .table thead th:nth-child(3),
-.main-tab-container .table tbody td:nth-child(3) {
-  width: 40% !important;
-}
-
-/* DOUBLE ROW STYLING FOR COURSES COLUMN */
-.main-tab-container .double-row {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 8px !important;
-  text-align: center !important;
-  padding: 8px 4px !important;
-}
-
-.main-tab-container .double-row > div {
-  font-size: 11px !important;
-  line-height: 1.3 !important;
-  color: white !important;
-  text-align: center !important;
-  font-weight: 500 !important;
-}
-
-.main-tab-container .custom-swiper-wrapper {
-  position: relative !important;
-  width: 100% !important;
-  height: calc(100% - 120px) !important;
-}
-
-.main-tab-container .custom-button {
-  position: absolute !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  width: 35px !important;
-  height: 35px !important;
-  background: white !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  z-index: 10 !important;
-}
 
 .main-tab-container .custom-prev {
   left: 20px !important;
@@ -2761,7 +2284,7 @@ nav {
   justify-content: center !important;
   align-items: center !important;
   gap: 50px !important;
-  padding: 40px 0 !important;
+  padding: 0 0 !important;
   width: 100% !important;
 }
 
@@ -2824,21 +2347,21 @@ nav {
 
 /* TEXT CONTENT BELOW IMAGES - WORKING LAYOUT */
 .tab-heading-text {
-  width: 100% !important;
+  width: 435px !important;
   font-weight: 700 !important;
-  font-size: 15px !important;
+  font-size: 28px !important;
   letter-spacing: 0% !important;
   color: white !important;
-  margin: 0 0 8px 0 !important;
-  line-height: 1.2 !important;
+  margin: 25px 0 35px 0 !important;
+  line-height: 30px !important;
   text-align: left !important;
   padding: 0 !important;
 }
 
 .tab-bullet-points-custom {
   width: 100% !important;
-  font-size: 13px !important;
-  line-height: 1.4 !important;
+  font-size: 18px !important;
+  line-height: 0 !important;
   letter-spacing: 0% !important;
   margin: 0 !important;
   padding-left: 18px !important;
@@ -2847,11 +2370,12 @@ nav {
 }
 
 .tab-bullet-points-custom li {
-  font-size: 13px !important;
+  font-size: 18px !important;
   line-height: 1.3 !important;
   color: white !important;
   margin-bottom: 6px !important;
   text-align: left !important;
+  width: 435px;
 }
 
 /* ENHANCED WORKFORCE SECTION HEADER STYLING */

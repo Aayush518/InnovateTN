@@ -3631,3 +3631,351 @@ nav {
   }
 }
 
+/* Managed Innovation Projects & Services Section */
+.managed-innovation-section {
+  background: white;
+  padding: 80px 0;
+}
+
+.managed-innovation-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+  padding: 0 181px;
+  box-sizing: border-box;
+}
+
+.managed-innovation-left {
+  flex: 0 0 auto;
+  min-width: 400px;
+}
+
+.managed-innovation-heading {
+  color: #23336A;
+  font-family: Roboto;
+  font-size: var(--font-size-32, 32px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--line-height-38_4, 38.4px); /* 120% */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.managed-innovation-heading .managed-text {
+  font-weight: 800;
+}
+
+.managed-innovation-heading .innovation-text {
+  font-weight: 800;
+}
+
+.managed-innovation-heading .projects-text {
+  font-weight: 800;
+}
+
+.managed-innovation-right {
+  flex: 1;
+  padding-left: 24px;
+}
+
+.managed-innovation-desc {
+  color: var(--labs-forge-iv-co-shark, var(--color-azure-15, #212529));
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--font-size-16, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: var(--line-height-24, 24px); /* 150% */
+  margin: 0;
+  text-align: left;
+  max-width: 100%;
+}
+
+/* Platform Offerings Labs Wrapper */
+.platform-offerings-labs-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 181px;
+  margin-top: 40px;
+  margin-bottom: 79.64px;
+}
+
+/* Platform Offerings Labs Section */
+.platform-offerings-labs-section {
+  background: #23336A;
+  border-radius: 16px;
+  padding: 60px 132px;
+  box-shadow: 0 8px 24px rgba(35, 51, 106, 0.15);
+}
+
+.platform-labs-header {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.platform-labs-title {
+  display: flex;
+  width: 300.347px;
+  height: 34px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #F6AC1F;
+  text-align: center;
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--font-size-28, 28px);
+  font-style: normal;
+  font-weight: var(--font-weight-700, 700);
+  line-height: var(--line-height-33_6, 33.6px); /* 120% */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.platform-labs-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 59px;
+  width: 100%;
+  min-height: 300px;
+}
+
+.platform-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+  height: 100%;
+}
+
+.platform-category-image {
+  width: 262px;
+  height: 137px;
+  flex-shrink: 0;
+  aspect-ratio: 262/137;
+  background: lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  align-self: flex-start;
+}
+
+/* Specific background images for each platform category */
+.platform-category-container:nth-child(1) .platform-category-image {
+  background: url('../assets/images/InvInfras/1.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.platform-category-container:nth-child(2) .platform-category-image {
+  background: url('../assets/images/InvInfras/2.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.platform-category-container:nth-child(3) .platform-category-image {
+  background: url('../assets/images/InvInfras/3.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.platform-category-container:nth-child(4) .platform-category-image {
+  background: url('../assets/images/InvInfras/4.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.platform-category-text {
+  text-align: left;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.platform-category-title {
+  color: var(--lighthouse-forge-iv-co-white, var(--color-white-solid, #FFF));
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: var(--font-weight-700, 700);
+  line-height: 32px; /* 114.286% */
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+}
+
+.platform-category-description {
+  width: 262px;
+  color: var(--academy-forge-iv-co-white, #FFF);
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--font-size-16, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: var(--line-height-24, 24px); /* 150% */
+  margin: 0;
+}
+
+/* Responsive Design for Managed Innovation Section */
+@media (max-width: 1400px) {
+  .managed-innovation-container {
+    padding: 0 120px;
+    gap: 80px;
+  }
+  
+  .platform-offerings-labs-wrapper {
+    padding: 0 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .managed-innovation-section {
+    padding: 60px 0;
+  }
+  
+  .managed-innovation-container {
+    flex-direction: column;
+    padding: 0 60px;
+    gap: 40px;
+  }
+  
+  .managed-innovation-left {
+    min-width: auto;
+  }
+  
+  .managed-innovation-right {
+    padding-left: 0;
+  }
+  
+  .managed-innovation-heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+  .platform-offerings-labs-wrapper {
+    padding: 0 60px;
+  }
+  
+  .platform-offerings-labs-section {
+    padding: 40px 30px;
+  }
+  
+  .platform-labs-slide {
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 20px;
+  }
+  
+  .platform-category-image {
+    width: 220px;
+    height: 115px;
+  }
+  
+  .platform-labs-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .managed-innovation-section {
+    padding: 40px 0;
+  }
+  
+  .managed-innovation-container {
+    padding: 0 40px;
+  }
+  
+  .managed-innovation-heading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  
+  .managed-innovation-desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .platform-offerings-labs-wrapper {
+    padding: 0 40px;
+  }
+  
+  .platform-offerings-labs-section {
+    padding: 30px 20px;
+  }
+  
+  .platform-labs-slide {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+  }
+  
+  .platform-category-container {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .platform-category-image {
+    width: 100%;
+    max-width: 262px;
+    height: 137px;
+    margin: 0 auto;
+  }
+  
+  .platform-labs-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .platform-category-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .managed-innovation-section {
+    padding: 30px 0;
+  }
+  
+  .managed-innovation-container {
+    padding: 0 20px;
+  }
+  
+  .managed-innovation-heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .platform-offerings-labs-wrapper {
+    padding: 0 20px;
+  }
+  
+  .platform-labs-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .platform-labs-slide {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .platform-category-image {
+    width: 90%;
+    max-width: 240px;
+    height: 125px;
+  }
+  
+  .platform-category-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .platform-category-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+

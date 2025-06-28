@@ -1757,7 +1757,7 @@ nav {
 .partners span {
   font-size: 28px;
   color: black;
-  font-family: "DIN", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -1922,7 +1922,7 @@ nav {
 .practicum-workforce-table th {
   background: #23336A;
   color: #fff;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -2026,7 +2026,7 @@ nav {
 
 .tab-header.active {
   color: #F6AC1F;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .custom-swiper-wrapper {
@@ -3201,7 +3201,7 @@ nav {
 .product-labs-title {
   color: white;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 40px;
   letter-spacing: 0%;
   text-transform: uppercase;
@@ -3327,7 +3327,7 @@ nav {
   font-family: var(--font-family-Font-1, Roboto);
   font-size: 28px;
   font-style: normal;
-  font-weight: var(--font-weight-700, 700);
+  font-weight: var(--font-weight-800, 800);
   line-height: 32px; /* 114.286% */
   text-transform: uppercase;
   margin: 0 0 16px 0;
@@ -3725,7 +3725,7 @@ nav {
 
 .platform-labs-title {
   display: flex;
-  width: 300.347px;
+  width: 100%;
   height: 34px;
   flex-direction: column;
   justify-content: center;
@@ -3735,7 +3735,7 @@ nav {
   font-family: var(--font-family-Font-1, Roboto);
   font-size: var(--font-size-28, 28px);
   font-style: normal;
-  font-weight: var(--font-weight-700, 700);
+  font-weight: var(--font-weight-800, 800);
   line-height: var(--line-height-33_6, 33.6px); /* 120% */
   text-transform: uppercase;
   margin: 0;

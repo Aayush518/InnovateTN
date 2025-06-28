@@ -3263,48 +3263,55 @@ nav {
 }
 
 .lab-category-image {
-  width: 262px;
+  width: 262.39px;
   height: 137px;
   flex-shrink: 0;
-  aspect-ratio: 262/137;
-  background: lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  aspect-ratio: 262.39/137.00;
+  background: #D0D0D0 -21.292px 0px / 116.229% 100% no-repeat;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 24px;
   align-self: flex-start;
+  filter: sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.8) contrast(1.2);
+  position: relative;
+}
+
+.lab-category-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(35, 51, 106, 0.3);
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 /* Specific background images for each lab category */
 .lab-category-container:nth-child(1) .lab-category-image {
-  background: url('../assets/images/InvInfras/1.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/InvInfras/1.png') #D0D0D0 -21.292px 0px / 116.229% 100% no-repeat;
 }
 
 .lab-category-container:nth-child(2) .lab-category-image {
-  background: url('../assets/images/InvInfras/2.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/InvInfras/2.png') #D0D0D0 -21.292px 0px / 116.229% 100% no-repeat;
 }
 
 .lab-category-container:nth-child(3) .lab-category-image {
-  background: url('../assets/images/InvInfras/3.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/InvInfras/3.png') #D0D0D0 -21.292px 0px / 116.229% 100% no-repeat;
 }
 
 /* Second slide images */
 .swiper-slide:nth-child(2) .lab-category-container:nth-child(1) .lab-category-image {
-  background: url('../assets/images/InvInfras/4.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/InvInfras/4.png') #D0D0D0 -21.292px 0px / 116.229% 100% no-repeat;
 }
 
 .swiper-slide:nth-child(2) .lab-category-container:nth-child(2) .lab-category-image {
-  background: url('../assets/images/InvInfras/5.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/InvInfras/5.png') #D0D0D0 -21.292px 0px / 116.229% 100% no-repeat;
 }
 
 .swiper-slide:nth-child(2) .lab-category-container:nth-child(3) .lab-category-image {
-  background: url('../assets/images/InvInfras/6.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/InvInfras/6.png') #D0D0D0 -21.292px 0px / 116.229% 100% no-repeat;
 }
 
 .lab-category-text {
@@ -3456,7 +3463,7 @@ nav {
   }
   
   .lab-category-image {
-    width: 220px;
+    width: 220.33px;
     height: 115px;
   }
   
@@ -3523,7 +3530,7 @@ nav {
   
   .lab-category-image {
     width: 100%;
-    max-width: 262px;
+    max-width: 262.39px;
     height: 137px;
     margin: 0 auto;
   }
@@ -3607,7 +3614,7 @@ nav {
   
   .lab-category-image {
     width: 90%;
-    max-width: 240px;
+    max-width: 240.35px;
     height: 125px;
   }
   

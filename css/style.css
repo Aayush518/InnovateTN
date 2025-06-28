@@ -3737,7 +3737,7 @@ nav {
 .platform-labs-slide {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 59px;
   width: 100%;
   min-height: 300px;
@@ -3750,40 +3750,34 @@ nav {
   text-align: left;
   flex: 1;
   height: 100%;
+  justify-content: flex-start;
 }
 
 .platform-category-image {
-  width: 262px;
-  height: 137px;
+  width: 100px;
+  height: 100px;
   flex-shrink: 0;
-  aspect-ratio: 262/137;
-  background: lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   align-self: flex-start;
 }
 
 /* Specific background images for each platform category */
 .platform-category-container:nth-child(1) .platform-category-image {
-  background: url('../assets/images/InvInfras/1.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/PlatformOfferings/1.png') transparent 0px 6.319px / 100% 87.363% no-repeat;
 }
 
 .platform-category-container:nth-child(2) .platform-category-image {
-  background: url('../assets/images/InvInfras/2.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/PlatformOfferings/2.png') transparent 0px 6.319px / 100% 87.363% no-repeat;
 }
 
 .platform-category-container:nth-child(3) .platform-category-image {
-  background: url('../assets/images/InvInfras/3.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/PlatformOfferings/3.png') transparent 0px 6.319px / 100% 87.363% no-repeat;
 }
 
 .platform-category-container:nth-child(4) .platform-category-image {
-  background: url('../assets/images/InvInfras/4.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
-  mix-blend-mode: luminosity;
+  background: url('../assets/images/PlatformOfferings/4.png') transparent 0px 6.319px / 100% 87.363% no-repeat;
 }
 
 .platform-category-text {
@@ -3795,25 +3789,33 @@ nav {
 }
 
 .platform-category-title {
-  color: var(--lighthouse-forge-iv-co-white, var(--color-white-solid, #FFF));
+  width: 260px;
+  height: 73.6px;
+  color: #F6AC1F;
   font-family: var(--font-family-Font-1, Roboto);
-  font-size: 28px;
+  font-size: var(--font-size-24, 24px);
   font-style: normal;
-  font-weight: var(--font-weight-700, 700);
-  line-height: 32px; /* 114.286% */
+  font-weight: var(--font-weight-500, 500);
+  line-height: var(--line-height-28_8, 28.8px); /* 120% */
   text-transform: uppercase;
   margin: 0 0 16px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .platform-category-description {
-  width: 262px;
-  color: var(--academy-forge-iv-co-white, #FFF);
+  width: 260px;
+  color: #FFF;
   font-family: var(--font-family-Font-1, Roboto);
   font-size: var(--font-size-16, 16px);
   font-style: normal;
-  font-weight: var(--font-weight-400, 400);
-  line-height: var(--line-height-24, 24px); /* 150% */
+  font-weight: 400;
+  line-height: var(--font-size-24, 24px); /* 150% */
   margin: 0;
+  text-align: left;
+  flex: 1;
 }
 
 /* Responsive Design for Managed Innovation Section */
@@ -3867,8 +3869,8 @@ nav {
   }
   
   .platform-category-image {
-    width: 220px;
-    height: 115px;
+    width: 90px;
+    height: 90px;
   }
   
   .platform-labs-title {
@@ -3917,9 +3919,8 @@ nav {
   }
   
   .platform-category-image {
-    width: 100%;
-    max-width: 262px;
-    height: 137px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
   }
   
@@ -3929,7 +3930,16 @@ nav {
   }
   
   .platform-category-title {
-    font-size: 18px;
+    width: 260px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 12px 0;
+  }
+  
+  .platform-category-description {
+    width: 260px;
+    font-size: 15px;
     line-height: 22px;
   }
 }
@@ -3963,19 +3973,22 @@ nav {
   }
   
   .platform-category-image {
-    width: 90%;
-    max-width: 240px;
-    height: 125px;
+    width: 70px;
+    height: 70px;
   }
   
   .platform-category-title {
-    font-size: 16px;
-    line-height: 20px;
+    width: 260px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 12px 0;
   }
   
   .platform-category-description {
-    font-size: 12px;
-    line-height: 18px;
+    width: 260px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

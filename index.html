@@ -722,47 +722,111 @@
             </p>
           </div>
 
-          <!-- Three columns for lab categories -->
-          <div class="product-labs-grid">
-            <div class="lab-category">
-              <div class="lab-image">
-                <img src="assets/images/InvInfras/1.png" alt="Electronics Design" />
-              </div>
-              <h5 class="lab-category-title">
-                ELECTRONICS<br>
-                DESIGN, TEST<br>
-                & VERIFICATION
-              </h5>
-              <p class="lab-category-description">
-                Multifunctional & Mixed-Signal Oscilloscopes, Function/Signal Generator Network/Spectrum Analysers, Industrial Grade Simulators
-              </p>
-            </div>
+          <!-- Innovation Labs Swiper -->
+          <div class="innovation-labs-swiper-container">
+            <div class="swiper innovation-labs-swiper">
+              <div class="swiper-wrapper">
+                                 <!-- First slide with 3 lab categories -->
+                 <div class="swiper-slide">
+                   <div class="innovation-labs-slide">
+                     <div class="lab-category-container">
+                       <div class="lab-category-image" aria-label="Electronics Design"></div>
+                       <div class="lab-category-text">
+                         <h5 class="lab-category-title">
+                           ELECTRONICS<br>
+                           DESIGN, TEST<br>
+                           & VERIFICATION
+                         </h5>
+                         <p class="lab-category-description">
+                           Multifunctional & Mixed-Signal Oscilloscopes, Function/Signal Generator Network/Spectrum Analysers, Industrial Grade Simulators
+                         </p>
+                       </div>
+                     </div>
 
-            <div class="lab-category">
-              <div class="lab-image">
-                <img src="assets/images/InvInfras/2.png" alt="Industrial Design" />
-              </div>
-              <h5 class="lab-category-title">
-                INDUSTRIAL DESIGN<br>
-                & FABRICATION
-              </h5>
-              <p class="lab-category-description">
-                Machining Workbench Tools, Power Tools & Laser Cutters, Advanced CAD/CAM/CAE Design & Simulation Tools
-              </p>
-            </div>
+                     <div class="lab-category-container">
+                       <div class="lab-category-image" aria-label="Industrial Design"></div>
+                       <div class="lab-category-text">
+                         <h5 class="lab-category-title">
+                           INDUSTRIAL DESIGN<br>
+                           & FABRICATION
+                         </h5>
+                         <p class="lab-category-description">
+                           Machining Workbench Tools, Power Tools & Laser Cutters, Advanced CAD/CAM/CAE Design & Simulation Tools
+                         </p>
+                       </div>
+                     </div>
 
-            <div class="lab-category">
-              <div class="lab-image">
-                <img src="assets/images/InvInfras/3.png" alt="Accelerated Computing" />
+                     <div class="lab-category-container">
+                       <div class="lab-category-image" aria-label="Accelerated Computing"></div>
+                       <div class="lab-category-text">
+                         <h5 class="lab-category-title">
+                           ACCELERATED<br>
+                           COMPUTING<br>
+                           SYSTEMS
+                         </h5>
+                         <p class="lab-category-description">
+                           Edge IoT & Edge AI Processors, Advanced Workstations
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+                                 <!-- Second slide with 3 lab categories -->
+                 <div class="swiper-slide">
+                   <div class="innovation-labs-slide">
+                     <div class="lab-category-container">
+                       <div class="lab-category-image" aria-label="Cyber Physical Control Systems"></div>
+                       <div class="lab-category-text">
+                         <h5 class="lab-category-title">
+                           CYBER PHYSICAL<br>
+                           CONTROL SYSTEMS
+                         </h5>
+                         <p class="lab-category-description">
+                           Vision Intelligence Systems, Drives & Actuators for Automation & Mechatronics, HMI & PLC Systems
+                         </p>
+                       </div>
+                     </div>
+
+                     <div class="lab-category-container">
+                       <div class="lab-category-image" aria-label="Additive Manufacturing"></div>
+                       <div class="lab-category-text">
+                         <h5 class="lab-category-title">
+                           ADDITIVE<br>
+                           MANUFACTURING
+                         </h5>
+                         <p class="lab-category-description">
+                           Industrial-Grade Multi-material 3D Printers, 3D Scanners
+                         </p>
+                       </div>
+                     </div>
+
+                     <div class="lab-category-container">
+                       <div class="lab-category-image" aria-label="Electronics Rapid Prototyping"></div>
+                       <div class="lab-category-text">
+                         <h5 class="lab-category-title">
+                           ELECTRONICS RAPID<br>
+                           PROTOTYPING
+                         </h5>
+                         <p class="lab-category-description">
+                           PCB Assembly & Testing Station, PCB Design Software, Electronics Prototyping Toolkits
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
               </div>
-              <h5 class="lab-category-title">
-                ACCELERATED<br>
-                COMPUTING<br>
-                SYSTEMS
-              </h5>
-              <p class="lab-category-description">
-                Edge IoT & Edge AI Processors, Advanced Workstations
-              </p>
+              
+              <!-- Custom Navigation arrows -->
+              <div class="innovation-labs-custom-button innovation-labs-custom-prev">
+                <img src="assets/images/arrows/arrow-left.png" alt="Previous" />
+              </div>
+              <div class="innovation-labs-custom-button innovation-labs-custom-next">
+                <img src="assets/images/arrows/arrow-right.png" alt="Next" />
+              </div>
+              
+              <!-- Pagination -->
+              <div class="swiper-pagination innovation-labs-swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -1010,6 +1074,42 @@
           
           // Slide to corresponding tab content (use slideToLoop for looped swipers)
           workforceTabSwiper.slideToLoop(tabIndex);
+        });
+
+        // Innovation Labs Swiper
+        const innovationLabsSwiper = new Swiper(".innovation-labs-swiper", {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop: true,
+          autoplay: {
+            delay: 5000, // Auto slide every 5 seconds
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".innovation-labs-custom-next",
+            prevEl: ".innovation-labs-custom-prev",
+          },
+          pagination: {
+            el: ".innovation-labs-swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          effect: 'slide',
+          speed: 800,
+          breakpoints: {
+            640: { 
+              slidesPerView: 1,
+              spaceBetween: 0
+            },
+            768: { 
+              slidesPerView: 1,
+              spaceBetween: 0
+            },
+            1024: { 
+              slidesPerView: 1,
+              spaceBetween: 0
+            }
+          },
         });
       });
     </script>

@@ -3173,7 +3173,7 @@ nav {
 .product-innovation-labs-section {
   background: #23336A;
   border-radius: 16px;
-  padding: 60px 50px;
+  padding: 60px 132px;
   box-shadow: 0 8px 24px rgba(35, 51, 106, 0.15);
 }
 
@@ -3205,63 +3205,167 @@ nav {
 }
 
 .product-labs-description {
-  color: white;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0%;
-  font-family: "Roboto", sans-serif;
+  width: 1258px;
+  color: var(--academy-forge-iv-co-white, #FFF);
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--font-size-16, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: var(--line-height-24, 24px); /* 150% */
   margin: 0;
-  max-width: 800px;
 }
 
-/* Product Labs Grid */
-.product-labs-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+/* Innovation Labs Swiper */
+.innovation-labs-swiper-container {
+  position: relative;
   margin-top: 40px;
 }
 
-.lab-category {
-  background: #23336A;
-  text-align: left;
+.innovation-labs-swiper {
+  overflow: hidden;
+  position: relative;
 }
 
-.lab-image {
+.innovation-labs-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-left: 132px;
+  padding-right: 132px;
+  gap: 59px;
   width: 100%;
-  height: 200px;
-  margin-bottom: 24px;
+  min-height: 300px;
+}
+
+.lab-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+  height: 100%;
+}
+
+.lab-category-image {
+  width: 262px;
+  height: 137px;
+  flex-shrink: 0;
+  aspect-ratio: 262/137;
+  background: lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 24px;
+  align-self: flex-start;
 }
 
-.lab-image img {
+/* Specific background images for each lab category */
+.lab-category-container:nth-child(1) .lab-category-image {
+  background: url('../assets/images/InvInfras/1.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.lab-category-container:nth-child(2) .lab-category-image {
+  background: url('../assets/images/InvInfras/2.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.lab-category-container:nth-child(3) .lab-category-image {
+  background: url('../assets/images/InvInfras/3.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+/* Second slide images */
+.swiper-slide:nth-child(2) .lab-category-container:nth-child(1) .lab-category-image {
+  background: url('../assets/images/InvInfras/4.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.swiper-slide:nth-child(2) .lab-category-container:nth-child(2) .lab-category-image {
+  background: url('../assets/images/InvInfras/5.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.swiper-slide:nth-child(2) .lab-category-container:nth-child(3) .lab-category-image {
+  background: url('../assets/images/InvInfras/6.png') lightgray -0.193px -25.988px / 100.148% 127.737% no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.lab-category-text {
+  text-align: left;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .lab-category-title {
-  color: white;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0%;
+  color: var(--lighthouse-forge-iv-co-white, var(--color-white-solid, #FFF));
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: var(--font-weight-700, 700);
+  line-height: 32px; /* 114.286% */
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   margin: 0 0 16px 0;
 }
 
 .lab-category-description {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0%;
-  font-family: "Roboto", sans-serif;
+  width: 262px;
+  color: var(--academy-forge-iv-co-white, #FFF);
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--font-size-16, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: var(--line-height-24, 24px); /* 150% */
   margin: 0;
+}
+
+/* Innovation Labs Navigation */
+.innovation-labs-custom-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.innovation-labs-custom-button.innovation-labs-custom-prev {
+  left: 15px;
+}
+
+.innovation-labs-custom-button.innovation-labs-custom-next {
+  right: 15px;
+}
+
+.innovation-labs-custom-button img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+/* Innovation Labs Pagination */
+.innovation-labs-swiper-pagination {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.innovation-labs-swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.innovation-labs-swiper-pagination .swiper-pagination-bullet-active {
+  background: white;
+  transform: scale(1.2);
 }
 
 /* Responsive Design */
@@ -3308,9 +3412,15 @@ nav {
     padding: 40px 30px;
   }
   
-  .product-labs-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+  .innovation-labs-slide {
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 20px;
+  }
+  
+  .lab-category-image {
+    width: 220px;
+    height: 115px;
   }
   
   .product-labs-title {
@@ -3321,6 +3431,11 @@ nav {
   .product-labs-subtitle {
     font-size: 20px;
     line-height: 24px;
+  }
+  
+  .product-labs-description {
+    width: 100%;
+    max-width: 1000px;
   }
 }
 
@@ -3351,9 +3466,23 @@ nav {
     padding: 30px 20px;
   }
   
-  .product-labs-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .innovation-labs-slide {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+  }
+  
+  .lab-category-container {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .lab-category-image {
+    width: 100%;
+    max-width: 262px;
+    height: 137px;
+    margin: 0 auto;
   }
   
   .product-labs-title {
@@ -3366,13 +3495,27 @@ nav {
     line-height: 22px;
   }
   
-  .lab-image {
-    height: 180px;
+  .product-labs-description {
+    width: 100%;
+    max-width: 100%;
   }
   
   .lab-category-title {
     font-size: 18px;
     line-height: 22px;
+  }
+  
+  .innovation-labs-custom-button.innovation-labs-custom-next {
+    right: 10px;
+  }
+  
+  .innovation-labs-custom-button.innovation-labs-custom-prev {
+    left: 10px;
+  }
+  
+  .innovation-labs-custom-button img {
+    width: 28px;
+    height: 28px;
   }
 }
 
@@ -3404,8 +3547,19 @@ nav {
     line-height: 20px;
   }
   
-  .lab-image {
-    height: 160px;
+  .product-labs-description {
+    width: 100%;
+  }
+  
+  .innovation-labs-slide {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .lab-category-image {
+    width: 90%;
+    max-width: 240px;
+    height: 125px;
   }
   
   .lab-category-title {
@@ -3416,6 +3570,15 @@ nav {
   .lab-category-description {
     font-size: 12px;
     line-height: 18px;
+  }
+  
+  .innovation-labs-custom-button {
+    display: none !important;
+  }
+  
+  .innovation-labs-custom-button img {
+    width: 24px;
+    height: 24px;
   }
 }
 

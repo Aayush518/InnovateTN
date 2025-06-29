@@ -43,6 +43,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>Document</title>
   </head>
 
@@ -1138,40 +1139,59 @@
           workforceTabSwiper.slideToLoop(tabIndex);
         });
 
-        // Innovation Labs Swiper
-        const innovationLabsSwiper = new Swiper(".innovation-labs-swiper", {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          loop: true,
-          autoplay: {
-            delay: 5000, // Auto slide every 5 seconds
-            disableOnInteraction: false,
-          },
-          navigation: {
-            nextEl: ".innovation-labs-custom-next",
-            prevEl: ".innovation-labs-custom-prev",
-          },
-          pagination: {
-            el: ".innovation-labs-swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-          },
-          effect: 'slide',
-          speed: 800,
-          breakpoints: {
-            640: { 
-              slidesPerView: 1,
-              spaceBetween: 0
-            },
-            768: { 
-              slidesPerView: 1,
-              spaceBetween: 0
-            },
-            1024: { 
-              slidesPerView: 1,
-              spaceBetween: 0
+        // Innovation Labs Swiper - Only initialize on desktop
+        let innovationLabsSwiper;
+        
+        function initInnovationLabsSwiper() {
+          // Only initialize Swiper on screens larger than 768px
+          if (window.innerWidth > 768) {
+            if (!innovationLabsSwiper) {
+              innovationLabsSwiper = new Swiper(".innovation-labs-swiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                autoplay: {
+                  delay: 5000, // Auto slide every 5 seconds
+                  disableOnInteraction: false,
+                },
+                navigation: {
+                  nextEl: ".innovation-labs-custom-next",
+                  prevEl: ".innovation-labs-custom-prev",
+                },
+                pagination: {
+                  el: ".innovation-labs-swiper-pagination",
+                  clickable: true,
+                  dynamicBullets: true,
+                },
+                effect: 'slide',
+                speed: 800,
+                breakpoints: {
+                  769: { 
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                  },
+                  1024: { 
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                  }
+                },
+              });
             }
-          },
+          } else {
+            // Destroy Swiper on mobile to stop blinking
+            if (innovationLabsSwiper) {
+              innovationLabsSwiper.destroy(true, true);
+              innovationLabsSwiper = null;
+            }
+          }
+        }
+        
+        // Initialize on page load
+        initInnovationLabsSwiper();
+        
+        // Re-initialize on window resize
+        window.addEventListener('resize', function() {
+          setTimeout(initInnovationLabsSwiper, 100);
         });
       });
     </script>

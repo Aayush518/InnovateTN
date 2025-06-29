@@ -68,4 +68,8 @@ $(document).ready(function () {
       1660: { slidesPerView: 4 },
     },
   });
+  
+
 });
+
+    // Tables are hidden on mobile via CSS - no JavaScript needed

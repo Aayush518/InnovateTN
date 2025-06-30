@@ -1516,20 +1516,20 @@
   
   .product-labs-title,
   .platform-labs-title {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 18px;
   }
   
   .product-labs-subtitle {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 16px;
   }
   
   .product-labs-description,
   .innovation-infrastructure-description,
   .managed-innovation-desc {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 14px;
   }
   
   .innovation-labs-slide,
@@ -1553,20 +1553,20 @@
   }
   
   .lab-category-title {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 18px;
   }
   
   .platform-category-title {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 16px;
   }
   
   .lab-category-description,
   .platform-category-description {
-    font-size: 14px;
-    line-height: 20px;
-    width: 200px;
+    font-size: 10px;
+    line-height: 14px;
+    width: 120px;
   }
   
   /* Footer Responsive Design */
@@ -2256,4 +2256,2715 @@
     font-size: 15px !important;
     line-height: 22px !important;
   }
-} 
+}
+
+/* ===== MEDIUM DESKTOP (1201px to 1385px) - Target for 1385x886 resolution ===== */
+@media (min-width: 1201px) and (max-width: 1385px) {
+  /* Navigation adjustments for this screen size */
+  nav {
+    padding: 0 80px !important;
+    height: 120px !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .nav-logo-1 {
+    width: 220px !important;
+    height: 60px !important;
+  }
+  
+  .nav-logo-2 {
+    width: 130px !important;
+    height: 38px !important;
+  }
+  
+  .btn-orange {
+    width: 140px !important;
+    height: 48px !important;
+    font-size: 16px !important;
+    margin: 0 !important;
+  }
+
+  /* Hero section optimizations */
+  .hero {
+    height: 550px !important;
+    padding: 0 80px !important;
+    margin-bottom: 80px !important;
+  }
+  
+  .hero-content-right {
+    padding-left: 80px !important;
+  }
+  
+  .hero-content-left {
+    padding-right: 80px !important;
+  }
+  
+  .hero-heading {
+    font-size: 42px !important;
+    line-height: 46px !important;
+    width: 650px !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Innovation Practicum Section */
+  .innovation-practicum-section {
+    padding: 80px 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .innovation-practicum-container {
+    padding: 0 80px !important;
+    gap: 60px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+  }
+
+  .innovation-practicum-left {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .innovation-practicum-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .innovation-practicum-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .innovation-practicum-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .innovation-practicum-right {
+    padding-left: 20px !important;
+  }
+
+  /* Innovation Education Section */
+  .innovation-education-section {
+    padding: 80px 0 !important;
+    background: #FFF0DC !important;
+  }
+
+  .innovation-education-container {
+    padding: 0 80px !important;
+    gap: 60px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+  }
+
+  .innovation-education-left {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .innovation-education-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .innovation-education-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .innovation-education-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .innovation-education-right {
+    padding-left: 20px !important;
+  }
+
+  /* Practicum Banner Section */
+  .practicum-banner {
+    padding: 70px 80px !important;
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .practicum-workforce-container {
+    padding: 0 !important;
+    gap: 60px !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .practicum-workforce-title-wrapper {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .practicum-workforce-title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .practicum-workforce-subtitle {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .practicum-workforce-description {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .practicum-workforce-description-wrapper {
+    padding-left: 20px !important;
+  }
+
+  /* Main Tab Container */
+  .main-tab-container {
+    margin: 60px auto !important;
+    padding: 50px 80px !important;
+    width: 100% !important;
+    max-width: 1385px !important;
+    box-sizing: border-box !important;
+  }
+
+  .tab-card-container {
+    gap: 25px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .tab-header {
+    padding: 12px 20px !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+  }
+
+  .tab-slide {
+    gap: 50px !important;
+    padding: 30px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .tab-left-content {
+    width: 45% !important;
+    padding-right: 15px !important;
+  }
+
+  .tab-right-content {
+    width: 55% !important;
+    margin-left: 25px !important;
+    padding-left: 15px !important;
+  }
+
+  .tab-image {
+    margin-bottom: 20px !important;
+  }
+
+  .tab-heading-text {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .tab-bullet-points-custom {
+    margin: 0 !important;
+    padding-left: 20px !important;
+  }
+
+  .tab-bullet-points-custom li {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Large Container Section */
+  .large-container-section {
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    padding: 80px 0 !important;
+  }
+  
+  .large-container-content {
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+  }
+
+  /* Certified Professionals Section */
+  .certified-professionals-section {
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    padding: 80px 0 !important;
+  }
+
+  .certified-professionals-container {
+    padding: 50px 80px !important;
+  }
+
+  .certified-professionals-heading {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .certified-professionals-subheading {
+    font-size: 22px !important;
+    line-height: 28px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .certified-professionals-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 50px !important;
+  }
+
+  /* Phases within certified professionals */
+  .phases-wrapper,
+  .slide-2-phases {
+    gap: 35px !important;
+    margin: 40px 0 !important;
+    padding: 0 20px !important;
+  }
+
+  .phase-item,
+  .slide-2-phase {
+    padding: 25px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .phase-image {
+    margin-bottom: 18px !important;
+  }
+
+  .phase-title {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .phase-description {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Product Innovations Section */
+  .product-innovations-container {
+    margin-top: 120px !important;
+    margin-bottom: 80px !important;
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .product-innovations-heading {
+    font-size: 30px !important;
+    line-height: 36px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .product-innovations-swiper {
+    margin-top: 30px !important;
+  }
+
+  /* Labs Section */
+  .labs-section {
+    padding: 80px 100px !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    gap: 60px !important;
+  }
+
+  .labs-section-left {
+    padding-right: 30px !important;
+  }
+
+  .labs-section-heading {
+    font-size: 30px !important;
+    line-height: 36px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .labs-section-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .labs-section-right {
+    padding-left: 30px !important;
+  }
+
+  .labs-section-map {
+    width: 100% !important;
+    max-width: 450px !important;
+    height: 350px !important;
+    margin: 0 !important;
+  }
+
+  /* Performance Section */
+  .performance-section {
+    padding: 80px 0 !important;
+    margin: 80px 0 !important;
+  }
+
+  .performance-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .performance-stats {
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+    gap: 40px !important;
+  }
+
+  .stat-item {
+    padding: 30px 25px !important;
+    margin: 0 !important;
+  }
+
+  .stat-number {
+    font-size: 38px !important;
+    line-height: 44px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .stat-label {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .stat-desc {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Partners Section */
+  .partners {
+    padding: 70px 80px !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+  }
+
+  .partners .head {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 50px !important;
+  }
+
+  /* Innovation Infrastructure Section */
+  .innovation-infrastructure-wrapper {
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    height: auto !important;
+    min-height: 900px !important;
+    padding: 80px 0 !important;
+  }
+
+  .innovation-infrastructure-container {
+    gap: 60px !important;
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .innovation-infrastructure-left {
+    min-width: 350px !important;
+    flex: 0 0 350px !important;
+    padding-right: 20px !important;
+  }
+
+  .innovation-infrastructure-heading {
+    font-size: 34px !important;
+    line-height: 40px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .innovation-infrastructure-right {
+    padding-left: 40px !important;
+    flex: 1 !important;
+  }
+
+  .innovation-infrastructure-description {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 !important;
+  }
+
+  /* Innovation Infrastructure Labs Wrapper */
+  .innovation-infrastructure-labs-wrapper,
+  .platform-offerings-labs-wrapper {
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin: 0 auto 60px auto !important;
+  }
+
+  .product-innovation-labs-section,
+  .platform-offerings-labs-section {
+    padding: 60px 50px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .product-labs-header,
+  .platform-labs-header {
+    margin-bottom: 40px !important;
+  }
+
+  .product-labs-title,
+  .platform-labs-title {
+    font-size: 28px !important;
+    line-height: 34px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .product-labs-subtitle {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .product-labs-description {
+    width: 100% !important;
+    max-width: 900px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Innovation Labs Swiper Container */
+  .innovation-labs-swiper-container,
+  .platform-labs-swiper-container {
+    margin-top: 40px !important;
+  }
+
+  /* Innovation labs slide adjustments */
+  .innovation-labs-slide,
+  .platform-labs-slide {
+    padding: 0 40px !important;
+    gap: 40px !important;
+    justify-content: center !important;
+  }
+
+  .lab-category-container,
+  .platform-category-container {
+    max-width: 280px !important;
+    padding: 25px !important;
+    margin: 0 15px !important;
+  }
+
+  .lab-category-image {
+    width: 200px !important;
+    height: 110px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .platform-category-image {
+    width: 90px !important;
+    height: 90px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .lab-category-text,
+  .platform-category-text {
+    padding-top: 10px !important;
+  }
+
+  .lab-category-title {
+    font-size: 22px !important;
+    line-height: 28px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .platform-category-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .lab-category-description,
+  .platform-category-description {
+    width: 100% !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Managed Innovation Section */
+  .managed-innovation-section {
+    padding: 80px 0 !important;
+    margin: 80px 0 !important;
+  }
+
+  .managed-innovation-container {
+    padding: 0 80px !important;
+    gap: 60px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+  }
+
+  .managed-innovation-left {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .managed-innovation-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .managed-innovation-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 !important;
+  }
+
+  .managed-innovation-right {
+    padding-left: 20px !important;
+  }
+
+  /* Footer */
+  .footer {
+    width: 100% !important;
+    max-width: 1385px !important;
+    padding: 60px 80px !important;
+    margin: 80px auto 0 auto !important;
+  }
+
+  .footer > div {
+    gap: 50px !important;
+  }
+
+  .footer > div > div {
+    padding: 20px !important;
+  }
+
+  .footer .footer-head {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .footer span,
+  .footer p {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin-bottom: 12px !important;
+  }
+
+  #footer-input-container {
+    width: 100% !important;
+    max-width: 350px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+  }
+
+  /* Practicum workforce tables - optimize for this screen size */
+  .practicum-workforce-table,
+  .practicum-workforce-table.advanced-industrial-table {
+    width: 100% !important;
+    font-size: 14px !important;
+    margin: 20px 0 !important;
+  }
+
+  .practicum-workforce-table td,
+  .practicum-workforce-table.advanced-industrial-table td {
+    padding: 10px 8px !important;
+    font-size: 14px !important;
+  }
+
+  .practicum-workforce-table th,
+  .practicum-workforce-table.advanced-industrial-table th {
+    padding: 12px 10px !important;
+    font-size: 15px !important;
+  }
+
+  /* Custom navigation buttons spacing */
+  .custom-button,
+  .professionals-custom-button,
+  .innovation-labs-custom-button {
+    margin: 0 15px !important;
+  }
+
+  /* Swiper pagination spacing */
+  .swiper-pagination {
+    margin-top: 30px !important;
+  }
+}
+
+/* ===== LARGE TABLET/SMALL DESKTOP (1025px to 1200px) ===== */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .innovation-infrastructure-wrapper {
+    width: 100% !important;
+    max-width: 1200px !important;
+  }
+
+  .innovation-infrastructure-container {
+    gap: 80px !important;
+    padding: 0 60px !important;
+  }
+
+  .innovation-infrastructure-labs-wrapper {
+    padding: 0 60px !important;
+  }
+
+  .product-innovation-labs-section {
+    padding: 60px 80px !important;
+  }
+
+  .product-labs-description {
+    width: 100% !important;
+    max-width: 1000px !important;
+  }
+
+  .innovation-labs-slide {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    gap: 40px !important;
+  }
+
+  .lab-category-image {
+    width: 220px !important;
+    height: 120px !important;
+  }
+
+  .lab-category-title {
+    font-size: 24px !important;
+    line-height: 28px !important;
+  }
+
+  .lab-category-description {
+    width: 220px !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+}
+
+/* ===== MEDIUM DESKTOP (1201px to 1385px) - Target for 1385x886 resolution ===== */
+@media (min-width: 1201px) and (max-width: 1385px) {
+  /* Navigation adjustments for this screen size */
+  nav {
+    padding: 0 80px !important;
+    height: 120px !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .nav-logo-1 {
+    width: 220px !important;
+    height: 60px !important;
+  }
+  
+  .nav-logo-2 {
+    width: 130px !important;
+    height: 38px !important;
+  }
+  
+  .btn-orange {
+    width: 140px !important;
+    height: 48px !important;
+    font-size: 16px !important;
+    margin: 0 !important;
+  }
+
+  /* Hero section optimizations */
+  .hero {
+    height: 550px !important;
+    padding: 0 80px !important;
+    margin-bottom: 80px !important;
+  }
+  
+  .hero-content-right {
+    padding-left: 80px !important;
+  }
+  
+  .hero-content-left {
+    padding-right: 80px !important;
+  }
+  
+  .hero-heading {
+    font-size: 42px !important;
+    line-height: 46px !important;
+    width: 650px !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Innovation Practicum Section */
+  .innovation-practicum-section {
+    padding: 80px 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .innovation-practicum-container {
+    padding: 0 80px !important;
+    gap: 60px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+  }
+
+  .innovation-practicum-left {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .innovation-practicum-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .innovation-practicum-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .innovation-practicum-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .innovation-practicum-right {
+    padding-left: 20px !important;
+  }
+
+  /* Innovation Education Section */
+  .innovation-education-section {
+    padding: 80px 0 !important;
+    background: #FFF0DC !important;
+  }
+
+  .innovation-education-container {
+    padding: 0 80px !important;
+    gap: 60px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+  }
+
+  .innovation-education-left {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .innovation-education-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .innovation-education-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .innovation-education-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .innovation-education-right {
+    padding-left: 20px !important;
+  }
+
+  /* Practicum Banner Section */
+  .practicum-banner {
+    padding: 70px 80px !important;
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .practicum-workforce-container {
+    padding: 0 !important;
+    gap: 60px !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .practicum-workforce-title-wrapper {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .practicum-workforce-title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .practicum-workforce-subtitle {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .practicum-workforce-description {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .practicum-workforce-description-wrapper {
+    padding-left: 20px !important;
+  }
+
+  /* Main Tab Container */
+  .main-tab-container {
+    margin: 60px auto !important;
+    padding: 50px 80px !important;
+    width: 100% !important;
+    max-width: 1385px !important;
+    box-sizing: border-box !important;
+  }
+
+  .tab-card-container {
+    gap: 25px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .tab-header {
+    padding: 12px 20px !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+  }
+
+  .tab-slide {
+    gap: 50px !important;
+    padding: 30px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .tab-left-content {
+    width: 45% !important;
+    padding-right: 15px !important;
+  }
+
+  .tab-right-content {
+    width: 55% !important;
+    margin-left: 25px !important;
+    padding-left: 15px !important;
+  }
+
+  .tab-image {
+    margin-bottom: 20px !important;
+  }
+
+  .tab-heading-text {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .tab-bullet-points-custom {
+    margin: 0 !important;
+    padding-left: 20px !important;
+  }
+
+  .tab-bullet-points-custom li {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Large Container Section */
+  .large-container-section {
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    padding: 80px 0 !important;
+  }
+  
+  .large-container-content {
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+  }
+
+  /* Certified Professionals Section */
+  .certified-professionals-section {
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    padding: 80px 0 !important;
+  }
+
+  .certified-professionals-container {
+    padding: 50px 80px !important;
+  }
+
+  .certified-professionals-heading {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .certified-professionals-subheading {
+    font-size: 22px !important;
+    line-height: 28px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .certified-professionals-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 50px !important;
+  }
+
+  /* Phases within certified professionals */
+  .phases-wrapper,
+  .slide-2-phases {
+    gap: 35px !important;
+    margin: 40px 0 !important;
+    padding: 0 20px !important;
+  }
+
+  .phase-item,
+  .slide-2-phase {
+    padding: 25px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .phase-image {
+    margin-bottom: 18px !important;
+  }
+
+  .phase-title {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .phase-description {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Product Innovations Section */
+  .product-innovations-container {
+    margin-top: 120px !important;
+    margin-bottom: 80px !important;
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .product-innovations-heading {
+    font-size: 30px !important;
+    line-height: 36px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .product-innovations-swiper {
+    margin-top: 30px !important;
+  }
+
+  /* Labs Section */
+  .labs-section {
+    padding: 80px 100px !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    gap: 60px !important;
+  }
+
+  .labs-section-left {
+    padding-right: 30px !important;
+  }
+
+  .labs-section-heading {
+    font-size: 30px !important;
+    line-height: 36px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .labs-section-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .labs-section-right {
+    padding-left: 30px !important;
+  }
+
+  .labs-section-map {
+    width: 100% !important;
+    max-width: 450px !important;
+    height: 350px !important;
+    margin: 0 !important;
+  }
+
+  /* Performance Section */
+  .performance-section {
+    padding: 80px 0 !important;
+    margin: 80px 0 !important;
+  }
+
+  .performance-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .performance-stats {
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+    gap: 40px !important;
+  }
+
+  .stat-item {
+    padding: 30px 25px !important;
+    margin: 0 !important;
+  }
+
+  .stat-number {
+    font-size: 38px !important;
+    line-height: 44px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .stat-label {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .stat-desc {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Partners Section */
+  .partners {
+    padding: 70px 80px !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+  }
+
+  .partners .head {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 50px !important;
+  }
+
+  /* Innovation Infrastructure Section */
+  .innovation-infrastructure-wrapper {
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    height: auto !important;
+    min-height: 900px !important;
+    padding: 80px 0 !important;
+  }
+
+  .innovation-infrastructure-container {
+    gap: 60px !important;
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .innovation-infrastructure-left {
+    min-width: 350px !important;
+    flex: 0 0 350px !important;
+    padding-right: 20px !important;
+  }
+
+  .innovation-infrastructure-heading {
+    font-size: 34px !important;
+    line-height: 40px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .innovation-infrastructure-right {
+    padding-left: 40px !important;
+    flex: 1 !important;
+  }
+
+  .innovation-infrastructure-description {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 !important;
+  }
+
+  /* Innovation Infrastructure Labs Wrapper */
+  .innovation-infrastructure-labs-wrapper,
+  .platform-offerings-labs-wrapper {
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin: 0 auto 60px auto !important;
+  }
+
+  .product-innovation-labs-section,
+  .platform-offerings-labs-section {
+    padding: 60px 50px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .product-labs-header,
+  .platform-labs-header {
+    margin-bottom: 40px !important;
+  }
+
+  .product-labs-title,
+  .platform-labs-title {
+    font-size: 28px !important;
+    line-height: 34px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .product-labs-subtitle {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .product-labs-description {
+    width: 100% !important;
+    max-width: 900px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Innovation Labs Swiper Container */
+  .innovation-labs-swiper-container,
+  .platform-labs-swiper-container {
+    margin-top: 40px !important;
+  }
+
+  /* Innovation labs slide adjustments */
+  .innovation-labs-slide,
+  .platform-labs-slide {
+    padding: 0 40px !important;
+    gap: 40px !important;
+    justify-content: center !important;
+  }
+
+  .lab-category-container,
+  .platform-category-container {
+    max-width: 280px !important;
+    padding: 25px !important;
+    margin: 0 15px !important;
+  }
+
+  .lab-category-image {
+    width: 200px !important;
+    height: 110px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .platform-category-image {
+    width: 90px !important;
+    height: 90px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .lab-category-text,
+  .platform-category-text {
+    padding-top: 10px !important;
+  }
+
+  .lab-category-title {
+    font-size: 22px !important;
+    line-height: 28px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .platform-category-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .lab-category-description,
+  .platform-category-description {
+    width: 100% !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Managed Innovation Section */
+  .managed-innovation-section {
+    padding: 80px 0 !important;
+    margin: 80px 0 !important;
+  }
+
+  .managed-innovation-container {
+    padding: 0 80px !important;
+    gap: 60px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+  }
+
+  .managed-innovation-left {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .managed-innovation-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .managed-innovation-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 !important;
+  }
+
+  .managed-innovation-right {
+    padding-left: 20px !important;
+  }
+
+  /* Footer */
+  .footer {
+    width: 100% !important;
+    max-width: 1385px !important;
+    padding: 60px 80px !important;
+    margin: 80px auto 0 auto !important;
+  }
+
+  .footer > div {
+    gap: 50px !important;
+  }
+
+  .footer > div > div {
+    padding: 20px !important;
+  }
+
+  .footer .footer-head {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .footer span,
+  .footer p {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin-bottom: 12px !important;
+  }
+
+  #footer-input-container {
+    width: 100% !important;
+    max-width: 350px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+  }
+
+  /* Practicum workforce tables - optimize for this screen size */
+  .practicum-workforce-table,
+  .practicum-workforce-table.advanced-industrial-table {
+    width: 100% !important;
+    font-size: 14px !important;
+    margin: 20px 0 !important;
+  }
+
+  .practicum-workforce-table td,
+  .practicum-workforce-table.advanced-industrial-table td {
+    padding: 10px 8px !important;
+    font-size: 14px !important;
+  }
+
+  .practicum-workforce-table th,
+  .practicum-workforce-table.advanced-industrial-table th {
+    padding: 12px 10px !important;
+    font-size: 15px !important;
+  }
+
+  /* Custom navigation buttons spacing */
+  .custom-button,
+  .professionals-custom-button,
+  .innovation-labs-custom-button {
+    margin: 0 15px !important;
+  }
+
+  /* Swiper pagination spacing */
+  .swiper-pagination {
+    margin-top: 30px !important;
+  }
+}
+
+/* ===== LARGE TABLET/SMALL DESKTOP (1025px to 1200px) ===== */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .innovation-infrastructure-wrapper {
+    width: 100% !important;
+    max-width: 1200px !important;
+  }
+
+  .innovation-infrastructure-container {
+    gap: 80px !important;
+    padding: 0 60px !important;
+  }
+
+  .innovation-infrastructure-labs-wrapper {
+    padding: 0 60px !important;
+  }
+
+  .product-innovation-labs-section {
+    padding: 60px 80px !important;
+  }
+
+  .product-labs-description {
+    width: 100% !important;
+    max-width: 1000px !important;
+  }
+
+  .innovation-labs-slide {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    gap: 40px !important;
+  }
+
+  .lab-category-image {
+    width: 220px !important;
+    height: 120px !important;
+  }
+
+  .lab-category-title {
+    font-size: 24px !important;
+    line-height: 28px !important;
+  }
+
+  .lab-category-description {
+    width: 220px !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+}
+
+/* ===== MEDIUM DESKTOP (1201px to 1385px) - Target for 1385x886 resolution ===== */
+@media (min-width: 1201px) and (max-width: 1385px) {
+  /* Navigation adjustments for this screen size */
+  nav {
+    padding: 0 80px !important;
+    height: 120px !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .nav-logo-1 {
+    width: 220px !important;
+    height: 60px !important;
+  }
+  
+  .nav-logo-2 {
+    width: 130px !important;
+    height: 38px !important;
+  }
+  
+  .btn-orange {
+    width: 140px !important;
+    height: 48px !important;
+    font-size: 16px !important;
+    margin: 0 !important;
+  }
+
+  /* Hero section optimizations */
+  .hero {
+    height: 550px !important;
+    padding: 0 80px !important;
+    margin-bottom: 80px !important;
+  }
+  
+  .hero-content-right {
+    padding-left: 80px !important;
+  }
+  
+  .hero-content-left {
+    padding-right: 80px !important;
+  }
+  
+  .hero-heading {
+    font-size: 42px !important;
+    line-height: 46px !important;
+    width: 650px !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Innovation Practicum Section */
+  .innovation-practicum-section {
+    padding: 80px 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .innovation-practicum-container {
+    padding: 0 80px !important;
+    gap: 60px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+  }
+
+  .innovation-practicum-left {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .innovation-practicum-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .innovation-practicum-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .innovation-practicum-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .innovation-practicum-right {
+    padding-left: 20px !important;
+  }
+
+  /* Innovation Education Section */
+  .innovation-education-section {
+    padding: 80px 0 !important;
+    background: #FFF0DC !important;
+  }
+
+  .innovation-education-container {
+    padding: 0 80px !important;
+    gap: 60px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+  }
+
+  .innovation-education-left {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .innovation-education-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .innovation-education-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .innovation-education-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .innovation-education-right {
+    padding-left: 20px !important;
+  }
+
+  /* Practicum Banner Section */
+  .practicum-banner {
+    padding: 70px 80px !important;
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .practicum-workforce-container {
+    padding: 0 !important;
+    gap: 60px !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .practicum-workforce-title-wrapper {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .practicum-workforce-title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .practicum-workforce-subtitle {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .practicum-workforce-description {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .practicum-workforce-description-wrapper {
+    padding-left: 20px !important;
+  }
+
+  /* Main Tab Container */
+  .main-tab-container {
+    margin: 60px auto !important;
+    padding: 50px 80px !important;
+    width: 100% !important;
+    max-width: 1385px !important;
+    box-sizing: border-box !important;
+  }
+
+  .tab-card-container {
+    gap: 25px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .tab-header {
+    padding: 12px 20px !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+  }
+
+  .tab-slide {
+    gap: 50px !important;
+    padding: 30px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .tab-left-content {
+    width: 45% !important;
+    padding-right: 15px !important;
+  }
+
+  .tab-right-content {
+    width: 55% !important;
+    margin-left: 25px !important;
+    padding-left: 15px !important;
+  }
+
+  .tab-image {
+    margin-bottom: 20px !important;
+  }
+
+  .tab-heading-text {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .tab-bullet-points-custom {
+    margin: 0 !important;
+    padding-left: 20px !important;
+  }
+
+  .tab-bullet-points-custom li {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Large Container Section */
+  .large-container-section {
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    padding: 80px 0 !important;
+  }
+  
+  .large-container-content {
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+  }
+
+  /* Certified Professionals Section */
+  .certified-professionals-section {
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    padding: 80px 0 !important;
+  }
+
+  .certified-professionals-container {
+    padding: 50px 80px !important;
+  }
+
+  .certified-professionals-heading {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .certified-professionals-subheading {
+    font-size: 22px !important;
+    line-height: 28px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .certified-professionals-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 50px !important;
+  }
+
+  /* Phases within certified professionals */
+  .phases-wrapper,
+  .slide-2-phases {
+    gap: 35px !important;
+    margin: 40px 0 !important;
+    padding: 0 20px !important;
+  }
+
+  .phase-item,
+  .slide-2-phase {
+    padding: 25px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .phase-image {
+    margin-bottom: 18px !important;
+  }
+
+  .phase-title {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .phase-description {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Product Innovations Section */
+  .product-innovations-container {
+    margin-top: 120px !important;
+    margin-bottom: 80px !important;
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .product-innovations-heading {
+    font-size: 30px !important;
+    line-height: 36px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .product-innovations-swiper {
+    margin-top: 30px !important;
+  }
+
+  /* Labs Section */
+  .labs-section {
+    padding: 80px 100px !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    gap: 60px !important;
+  }
+
+  .labs-section-left {
+    padding-right: 30px !important;
+  }
+
+  .labs-section-heading {
+    font-size: 30px !important;
+    line-height: 36px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .labs-section-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .labs-section-right {
+    padding-left: 30px !important;
+  }
+
+  .labs-section-map {
+    width: 100% !important;
+    max-width: 450px !important;
+    height: 350px !important;
+    margin: 0 !important;
+  }
+
+  /* Performance Section */
+  .performance-section {
+    padding: 80px 0 !important;
+    margin: 80px 0 !important;
+  }
+
+  .performance-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .performance-stats {
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+    gap: 40px !important;
+  }
+
+  .stat-item {
+    padding: 30px 25px !important;
+    margin: 0 !important;
+  }
+
+  .stat-number {
+    font-size: 38px !important;
+    line-height: 44px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .stat-label {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .stat-desc {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Partners Section */
+  .partners {
+    padding: 70px 80px !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+  }
+
+  .partners .head {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 50px !important;
+  }
+
+  /* Innovation Infrastructure Section */
+  .innovation-infrastructure-wrapper {
+    width: 100% !important;
+    max-width: 1385px !important;
+    margin: 80px auto !important;
+    height: auto !important;
+    min-height: 900px !important;
+    padding: 80px 0 !important;
+  }
+
+  .innovation-infrastructure-container {
+    gap: 60px !important;
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .innovation-infrastructure-left {
+    min-width: 350px !important;
+    flex: 0 0 350px !important;
+    padding-right: 20px !important;
+  }
+
+  .innovation-infrastructure-heading {
+    font-size: 34px !important;
+    line-height: 40px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .innovation-infrastructure-right {
+    padding-left: 40px !important;
+    flex: 1 !important;
+  }
+
+  .innovation-infrastructure-description {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 !important;
+  }
+
+  /* Innovation Infrastructure Labs Wrapper */
+  .innovation-infrastructure-labs-wrapper,
+  .platform-offerings-labs-wrapper {
+    padding: 0 80px !important;
+    max-width: 1385px !important;
+    margin: 0 auto 60px auto !important;
+  }
+
+  .product-innovation-labs-section,
+  .platform-offerings-labs-section {
+    padding: 60px 50px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .product-labs-header,
+  .platform-labs-header {
+    margin-bottom: 40px !important;
+  }
+
+  .product-labs-title,
+  .platform-labs-title {
+    font-size: 28px !important;
+    line-height: 34px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .product-labs-subtitle {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .product-labs-description {
+    width: 100% !important;
+    max-width: 900px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Innovation Labs Swiper Container */
+  .innovation-labs-swiper-container,
+  .platform-labs-swiper-container {
+    margin-top: 40px !important;
+  }
+
+  /* Innovation labs slide adjustments */
+  .innovation-labs-slide,
+  .platform-labs-slide {
+    padding: 0 40px !important;
+    gap: 40px !important;
+    justify-content: center !important;
+  }
+
+  .lab-category-container,
+  .platform-category-container {
+    max-width: 280px !important;
+    padding: 25px !important;
+    margin: 0 15px !important;
+  }
+
+  .lab-category-image {
+    width: 200px !important;
+    height: 110px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .platform-category-image {
+    width: 90px !important;
+    height: 90px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .lab-category-text,
+  .platform-category-text {
+    padding-top: 10px !important;
+  }
+
+  .lab-category-title {
+    font-size: 22px !important;
+    line-height: 28px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .platform-category-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .lab-category-description,
+  .platform-category-description {
+    width: 100% !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Managed Innovation Section */
+  .managed-innovation-section {
+    padding: 80px 0 !important;
+    margin: 80px 0 !important;
+  }
+
+  .managed-innovation-container {
+    padding: 0 80px !important;
+    gap: 60px !important;
+    max-width: 1385px !important;
+    margin: 0 auto !important;
+  }
+
+  .managed-innovation-left {
+    min-width: 400px !important;
+    padding-right: 20px !important;
+  }
+
+  .managed-innovation-heading {
+    font-size: 36px !important;
+    line-height: 42px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .managed-innovation-desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 !important;
+  }
+
+  .managed-innovation-right {
+    padding-left: 20px !important;
+  }
+
+  /* Footer */
+  .footer {
+    width: 100% !important;
+    max-width: 1385px !important;
+    padding: 60px 80px !important;
+    margin: 80px auto 0 auto !important;
+  }
+
+  .footer > div {
+    gap: 50px !important;
+  }
+
+  .footer > div > div {
+    padding: 20px !important;
+  }
+
+  .footer .footer-head {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .footer span,
+  .footer p {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    margin-bottom: 12px !important;
+  }
+
+  #footer-input-container {
+    width: 100% !important;
+    max-width: 350px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+  }
+
+  /* Practicum workforce tables - optimize for this screen size */
+  .practicum-workforce-table,
+  .practicum-workforce-table.advanced-industrial-table {
+    width: 100% !important;
+    font-size: 14px !important;
+    margin: 20px 0 !important;
+  }
+
+  .practicum-workforce-table td,
+  .practicum-workforce-table.advanced-industrial-table td {
+    padding: 10px 8px !important;
+    font-size: 14px !important;
+  }
+
+  .practicum-workforce-table th,
+  .practicum-workforce-table.advanced-industrial-table th {
+    padding: 12px 10px !important;
+    font-size: 15px !important;
+  }
+
+  /* Custom navigation buttons spacing */
+  .custom-button,
+  .professionals-custom-button,
+  .innovation-labs-custom-button {
+    margin: 0 15px !important;
+  }
+
+  /* Swiper pagination spacing */
+  .swiper-pagination {
+    margin-top: 30px !important;
+     }
+
+   /* Platform Offerings Section - Enhanced for 1385x886 */
+   .platform-offerings-labs-wrapper {
+     padding: 0 80px !important;
+     max-width: 1385px !important;
+     margin: 60px auto 80px auto !important;
+   }
+
+   .platform-offerings-labs-section {
+     background: #23336A !important;
+     border-radius: 16px !important;
+     padding: 50px 40px !important;
+     box-shadow: 0 8px 24px rgba(35, 51, 106, 0.15) !important;
+   }
+
+   .platform-labs-header {
+     text-align: center !important;
+     margin-bottom: 40px !important;
+   }
+
+   .platform-labs-title {
+     font-size: 30px !important;
+     line-height: 36px !important;
+     color: #F6AC1F !important;
+     font-weight: 800 !important;
+     text-transform: uppercase !important;
+     margin: 0 !important;
+   }
+
+   /* Platform offerings - 2x2 grid layout for better fit on 1385x886 */
+   .platform-labs-slide {
+     display: grid !important;
+     grid-template-columns: 1fr 1fr !important;
+     grid-template-rows: 1fr 1fr !important;
+     gap: 40px 50px !important;
+     width: 100% !important;
+     min-height: auto !important;
+     align-items: start !important;
+     justify-content: center !important;
+   }
+
+   .platform-category-container {
+     display: flex !important;
+     flex-direction: column !important;
+     align-items: flex-start !important;
+     text-align: left !important;
+     height: 100% !important;
+     justify-content: flex-start !important;
+     background: rgba(255, 255, 255, 0.05) !important;
+     border-radius: 12px !important;
+     padding: 25px !important;
+     border: 1px solid rgba(255, 255, 255, 0.1) !important;
+     transition: all 0.3s ease !important;
+     max-width: none !important;
+   }
+
+   .platform-category-container:hover {
+     background: rgba(255, 255, 255, 0.08) !important;
+     border-color: rgba(246, 172, 31, 0.3) !important;
+     transform: translateY(-2px) !important;
+   }
+
+   .platform-category-image {
+     width: 80px !important;
+     height: 80px !important;
+     flex-shrink: 0 !important;
+     border-radius: 8px !important;
+     overflow: hidden !important;
+     margin-bottom: 20px !important;
+     align-self: flex-start !important;
+   }
+
+   .platform-category-text {
+     text-align: left !important;
+     width: 100% !important;
+     flex: 1 !important;
+     display: flex !important;
+     flex-direction: column !important;
+   }
+
+   .platform-category-title {
+     width: 100% !important;
+     color: #F6AC1F !important;
+     font-family: Roboto !important;
+     font-size: 20px !important;
+     font-weight: 600 !important;
+     line-height: 26px !important;
+     text-transform: uppercase !important;
+     margin: 0 0 15px 0 !important;
+     text-align: left !important;
+     height: auto !important;
+   }
+
+   .platform-category-description {
+     width: 100% !important;
+     color: #FFF !important;
+     font-family: Roboto !important;
+     font-size: 14px !important;
+     font-weight: 400 !important;
+     line-height: 21px !important;
+     margin: 0 !important;
+     text-align: left !important;
+     flex: 1 !important;
+   }
+
+   /* Specific styling for each platform offering */
+   .platform-category-container:nth-child(1) {
+     grid-column: 1 !important;
+     grid-row: 1 !important;
+   }
+
+   .platform-category-container:nth-child(2) {
+     grid-column: 2 !important;
+     grid-row: 1 !important;
+   }
+
+   .platform-category-container:nth-child(3) {
+     grid-column: 1 !important;
+     grid-row: 2 !important;
+   }
+
+   .platform-category-container:nth-child(4) {
+     grid-column: 2 !important;
+     grid-row: 2 !important;
+   }
+
+   /* Enhanced spacing for Managed Innovation heading spans */
+   .managed-innovation-heading .managed-text,
+   .managed-innovation-heading .innovation-text {
+     font-weight: 500 !important;
+   }
+
+   .managed-innovation-heading .projects-text {
+     font-weight: 800 !important;
+     display: block !important;
+     margin-top: 8px !important;
+   }
+
+   /* Better text readability for long description */
+   .managed-innovation-desc {
+     text-align: justify !important;
+     text-justify: inter-word !important;
+   }
+ }
+
+/* ===== MACBOOK AIR M1 13" & SIMILAR (1386px to 1500px) - Extended responsive support ===== */
+@media (min-width: 1386px) and (max-width: 1500px) {
+  /* Platform Offerings Section - MacBook Air M1 13" Optimization */
+  .platform-offerings-labs-wrapper {
+    padding: 0 40px !important;
+    max-width: 1500px !important;
+    margin: 60px auto 80px auto !important;
+  }
+
+  .platform-offerings-labs-section {
+    background: #23336A !important;
+    border-radius: 18px !important;
+    padding: 45px 35px !important;
+    box-shadow: 0 12px 32px rgba(35, 51, 106, 0.2) !important;
+  }
+
+  .platform-labs-header {
+    text-align: center !important;
+    margin-bottom: 35px !important;
+  }
+
+  .platform-labs-title {
+    font-size: 30px !important;
+    line-height: 36px !important;
+    color: #F6AC1F !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+  }
+
+  /* Platform offerings - Enhanced 2x2 grid for MacBook Air - Fixed for 100% zoom */
+  .platform-labs-slide {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    gap: 35px 45px !important;
+    width: 100% !important;
+    min-height: auto !important;
+    align-items: start !important;
+    justify-content: center !important;
+    max-width: 1350px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+  }
+
+  .platform-category-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    height: 100% !important;
+    min-height: 180px !important;
+    justify-content: flex-start !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border-radius: 14px !important;
+    padding: 24px !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    transition: all 0.3s ease !important;
+    max-width: none !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .platform-category-container:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(246, 172, 31, 0.4) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .platform-category-image {
+    width: 75px !important;
+    height: 75px !important;
+    flex-shrink: 0 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    margin-bottom: 18px !important;
+    align-self: flex-start !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .platform-category-text {
+    text-align: left !important;
+    width: 100% !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .platform-category-title {
+    width: 100% !important;
+    color: #F6AC1F !important;
+    font-family: Roboto !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 23px !important;
+    text-transform: uppercase !important;
+    margin: 0 0 14px 0 !important;
+    text-align: left !important;
+    height: auto !important;
+    letter-spacing: 0.3px !important;
+  }
+
+  .platform-category-description {
+    width: 100% !important;
+    color: #FFF !important;
+    font-family: Roboto !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    margin: 0 !important;
+    text-align: left !important;
+    flex: 1 !important;
+    opacity: 0.95 !important;
+  }
+
+  /* Specific grid positioning for platform offerings */
+  .platform-category-container:nth-child(1) {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .platform-category-container:nth-child(2) {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  .platform-category-container:nth-child(3) {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+  }
+
+  .platform-category-container:nth-child(4) {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+  }
+}
+ 
+ /* ===== HERO SECTION COMPREHENSIVE RESPONSIVE STYLES ===== */
+
+/* ===== LARGE TABLETS (900px to 1024px) ===== */
+@media (min-width: 901px) and (max-width: 1024px) {
+  .hero {
+    height: 650px !important;
+    flex-direction: column !important;
+    gap: 45px !important;
+    justify-content: center !important;
+    padding: 40px 0 !important;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 50px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .hero-content-right {
+    order: 1 !important;
+  }
+  
+  .hero-content-left {
+    order: 2 !important;
+    align-items: center !important;
+  }
+  
+  .hero-heading {
+    font-size: 42px !important;
+    line-height: 46px !important;
+    width: 100% !important;
+    max-width: 750px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .hero-right-image {
+    width: 320px !important;
+    height: 150px !important;
+  }
+  
+  .hero-bg-video {
+    object-position: center center !important;
+  }
+}
+
+/* ===== MEDIUM TABLETS (769px to 900px) ===== */
+@media (min-width: 769px) and (max-width: 900px) {
+  .hero {
+    height: 600px !important;
+    flex-direction: column !important;
+    gap: 35px !important;
+    justify-content: center !important;
+    padding: 30px 0 !important;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 40px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .hero-content-right {
+    order: 1 !important;
+  }
+  
+  .hero-content-left {
+    order: 2 !important;
+    align-items: center !important;
+  }
+  
+  .hero-heading {
+    font-size: 38px !important;
+    line-height: 42px !important;
+    width: 100% !important;
+    max-width: 650px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .hero-right-image {
+    width: 280px !important;
+    height: 130px !important;
+  }
+  
+  .hero-bg-video {
+    object-position: center center !important;
+  }
+}
+
+/* ===== TABLET PORTRAIT ENHANCED (481px to 768px) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    height: 500px !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+    justify-content: center !important;
+    padding: 25px 0 !important;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 25px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .hero-content-right {
+    order: 1 !important;
+  }
+  
+  .hero-content-left {
+    order: 2 !important;
+    align-items: center !important;
+  }
+  
+  .hero-heading {
+    font-size: 32px !important;
+    line-height: 36px !important;
+    width: 100% !important;
+    max-width: 550px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    font-weight: 700 !important;
+  }
+  
+  .hero-right-image {
+    width: 250px !important;
+    height: 116px !important;
+  }
+  
+  .hero-bg-video {
+    object-position: center center !important;
+  }
+  
+  .overlay-black-linear-gradient {
+    background: rgba(0,0,0,0.55) !important;
+  }
+}
+
+/* ===== LARGE MOBILE (430px to 480px) ===== */
+@media (min-width: 431px) and (max-width: 480px) {
+  .hero {
+    height: 450px !important;
+    flex-direction: column !important;
+    gap: 25px !important;
+    justify-content: center !important;
+    padding: 20px 0 !important;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .hero-content-right {
+    order: 1 !important;
+  }
+  
+  .hero-content-left {
+    order: 2 !important;
+    align-items: center !important;
+  }
+  
+  .hero-heading {
+    font-size: 26px !important;
+    line-height: 30px !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    font-weight: 700 !important;
+  }
+  
+  .hero-right-image {
+    width: 220px !important;
+    height: 102px !important;
+  }
+  
+  .hero-bg-video {
+    object-position: center center !important;
+  }
+  
+  .overlay-black-linear-gradient {
+    background: rgba(0,0,0,0.6) !important;
+  }
+}
+
+/* ===== MEDIUM MOBILE (376px to 430px) ===== */
+@media (min-width: 376px) and (max-width: 430px) {
+  .hero {
+    height: 420px !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    justify-content: center !important;
+    padding: 15px 0 !important;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 18px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .hero-content-right {
+    order: 1 !important;
+  }
+  
+  .hero-content-left {
+    order: 2 !important;
+    align-items: center !important;
+  }
+  
+  .hero-heading {
+    font-size: 24px !important;
+    line-height: 28px !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    font-weight: 700 !important;
+  }
+  
+  .hero-right-image {
+    width: 200px !important;
+    height: 93px !important;
+  }
+  
+  .hero-bg-video {
+    object-position: center center !important;
+  }
+  
+  .overlay-black-linear-gradient {
+    background: rgba(0,0,0,0.65) !important;
+  }
+}
+
+/* ===== SMALL MOBILE (321px to 375px) ===== */
+@media (min-width: 321px) and (max-width: 375px) {
+  .hero {
+    height: 400px !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+    justify-content: center !important;
+    padding: 15px 0 !important;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 15px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .hero-content-right {
+    order: 1 !important;
+  }
+  
+  .hero-content-left {
+    order: 2 !important;
+    align-items: center !important;
+  }
+  
+  .hero-heading {
+    font-size: 22px !important;
+    line-height: 26px !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    font-weight: 700 !important;
+  }
+  
+  .hero-right-image {
+    width: 180px !important;
+    height: 84px !important;
+  }
+  
+  .hero-bg-video {
+    object-position: center center !important;
+  }
+  
+  .overlay-black-linear-gradient {
+    background: rgba(0,0,0,0.7) !important;
+  }
+}
+
+/* ===== ULTRA SMALL MOBILE (up to 320px) ===== */
+@media (max-width: 320px) {
+  .hero {
+    height: 380px !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    justify-content: center !important;
+    padding: 10px 0 !important;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 12px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .hero-content-right {
+    order: 1 !important;
+  }
+  
+  .hero-content-left {
+    order: 2 !important;
+    align-items: center !important;
+  }
+  
+  .hero-heading {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    font-weight: 700 !important;
+  }
+  
+  .hero-right-image {
+    width: 160px !important;
+    height: 74px !important;
+  }
+  
+  .hero-bg-video {
+    object-position: center center !important;
+    object-fit: cover !important;
+  }
+  
+  .overlay-black-linear-gradient {
+    background: rgba(0,0,0,0.75) !important;
+  }
+}
+
+/* ===== LANDSCAPE ORIENTATION OPTIMIZATIONS ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    height: 100vh !important;
+    min-height: 400px !important;
+    max-height: 500px !important;
+  }
+  
+  .hero-heading {
+    font-size: 28px !important;
+    line-height: 32px !important;
+  }
+  
+  .hero-right-image {
+    width: 200px !important;
+    height: 93px !important;
+  }
+}
+
+/* ===== HIGH DPI SCREENS OPTIMIZATION ===== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-bg-video {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+  }
+  
+  .hero-right-image {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+  }
+}

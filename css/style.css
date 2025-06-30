@@ -857,20 +857,24 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 257px;
-  padding-right: 302.64px;
+  padding-left: 181px;
+  padding-right: 181px;
   padding-top: 0;
   margin-top: 110px;
   padding-bottom: 60px;
   width: 100%;
   min-width: 100%;
   box-sizing: border-box;
-  gap: 60px;
+  gap: 80px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .labs-section-left {
   flex: 1;
-  max-width: 600px;
+  max-width: none;
+  min-width: 400px;
   padding-left: 0;
   margin-left: 0;
 }
@@ -893,14 +897,16 @@ nav {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 19.2px;
+  line-height: 24px;
   margin: 0;
+  text-align: justify;
 }
 
 .labs-section-right {
-  flex: 1;
+  flex: 0 0 auto;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .labs-section-map {
@@ -908,8 +914,10 @@ nav {
   height: 490px;
   flex-shrink: 0;
   aspect-ratio: 606.36/490.00;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Performance Section Container (Inside Large Container) */

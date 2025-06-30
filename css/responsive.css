@@ -644,8 +644,9 @@
   }
   
   .labs-section {
-    padding-left: 180px;
-    padding-right: 200px;
+    padding-left: 140px;
+    padding-right: 140px;
+    gap: 60px;
   }
   
   .product-innovations-container {
@@ -866,19 +867,33 @@
   /* Labs section */
   .labs-section {
     flex-direction: column;
-    padding: 0 40px;
+    padding: 60px 40px;
     gap: 40px;
     text-align: center;
+    align-items: center;
   }
   
   .labs-section-left {
     max-width: 100%;
+    text-align: center;
+  }
+  
+  .labs-section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .labs-section-desc {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .labs-section-map {
     width: 100%;
     max-width: 500px;
-    height: 400px;
+    height: auto;
+    object-fit: contain;
   }
   
   /* Performance section */
@@ -1397,25 +1412,38 @@
   
   /* Labs section */
   .labs-section {
-    padding: 0 20px;
+    padding: 40px 20px;
     margin-top: 60px;
     gap: 30px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .labs-section-left {
+    text-align: center;
+    max-width: 100%;
   }
   
   .labs-section-heading {
     font-size: 18px;
     line-height: 22px;
+    text-align: center;
+    margin-bottom: 16px;
   }
   
   .labs-section-desc {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 100%;
   }
   
   .labs-section-map {
     width: 100%;
     max-width: 400px;
-    height: 320px;
+    height: auto;
+    object-fit: contain;
   }
   
   /* Performance section */
@@ -1866,17 +1894,38 @@
   
   /* Labs section */
   .labs-section {
-    padding: 0 10px;
+    padding: 30px 15px;
     margin-top: 30px;
+    gap: 25px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .labs-section-left {
+    text-align: center;
+    max-width: 100%;
   }
   
   .labs-section-heading {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 12px;
   }
   
   .labs-section-desc {
-    font-size: 11px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .labs-section-map {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
     line-height: 13px;
   }
   

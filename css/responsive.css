@@ -605,6 +605,72 @@
 }
 
 /* ===== DESKTOP/LAPTOP - 1440px and down ===== */
+/* ===== HERO & PRODUCT LABS ZOOM 10% RESPONSIVE - 1728px and down ===== */
+@media (max-width: 1728px) {
+  /* Hero Section */
+  .hero {
+    height: 780px;
+  }
+  
+  .hero-content-right {
+    padding-left: 160px;
+  }
+  
+  .hero-content-left {
+    padding-right: 160px;
+  }
+  
+  .hero-heading {
+    font-size: 54px;
+    line-height: 54px;
+    width: 980px;
+    max-width: 100%;
+  }
+  
+  .hero-right-image {
+    width: 380px;
+    height: 176px;
+  }
+  
+  /* Product Innovation Labs */
+  .product-labs-title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  
+  .product-labs-subtitle {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .product-labs-description {
+    width: 1350px;
+    max-width: 100%;
+    font-size: 17px;
+    line-height: 26px;
+  }
+  
+  .lab-category-title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  
+  .lab-category-description {
+    width: 290px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+  
+  .lab-category-image {
+    width: 290px;
+    height: 152px;
+  }
+  
+  .innovation-labs-slide {
+    gap: 65px;
+  }
+}
+
 @media (max-width: 1440px) {
   /* Navigation adjustments */
   nav {
@@ -664,6 +730,78 @@
     max-width: none !important;
     min-width: 100% !important;
     box-sizing: border-box !important;
+  }
+}
+
+/* ===== HERO & PRODUCT LABS ZOOM 10% RESPONSIVE - 1296px and down ===== */
+@media (max-width: 1296px) {
+  /* Hero Section */
+  .hero {
+    height: 700px;
+  }
+  
+  .hero-content-right {
+    padding-left: 100px;
+  }
+  
+  .hero-content-left {
+    padding-right: 100px;
+  }
+  
+  .hero-heading {
+    font-size: 48px;
+    line-height: 50px;
+    width: 850px;
+    max-width: 100%;
+  }
+  
+  .hero-right-image {
+    width: 350px;
+    height: 162px;
+  }
+  
+  /* Product Innovation Labs */
+  .product-innovation-labs-section {
+    padding: 50px 70px 50px 110px;
+  }
+  
+  .product-labs-title {
+    font-size: 34px;
+    line-height: 38px;
+  }
+  
+  .product-labs-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .product-labs-description {
+    width: 1200px;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .lab-category-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .lab-category-description {
+    width: 270px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .lab-category-image {
+    width: 270px;
+    height: 141px;
+  }
+  
+  .innovation-labs-slide {
+    padding-left: 110px;
+    padding-right: 70px;
+    gap: 50px;
   }
 }
 
@@ -1099,6 +1237,98 @@
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+  }
+}
+
+/* ===== HERO & PRODUCT LABS ZOOM 10% RESPONSIVE - 922px and down ===== */
+@media (max-width: 922px) {
+  /* Hero Section */
+  .hero {
+    height: 580px;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 30px;
+    text-align: center;
+  }
+  
+  .hero-heading {
+    font-size: 38px;
+    line-height: 42px;
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+  }
+  
+  .hero-right-image {
+    width: 300px;
+    height: 139px;
+  }
+  
+  /* Product Innovation Labs */
+  .product-innovation-labs-section {
+    padding: 40px 30px;
+  }
+  
+  .product-labs-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .product-labs-title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  
+  .product-labs-subtitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  .product-labs-description {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+  }
+  
+  .innovation-labs-slide {
+    flex-direction: column;
+    padding: 0;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .lab-category-container {
+    max-width: 350px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .lab-category-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+  
+  .lab-category-description {
+    width: 100%;
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+  }
+  
+  .lab-category-image {
+    width: 250px;
+    height: 131px;
+    margin: 0 auto 20px;
   }
 }
 
@@ -1693,6 +1923,148 @@
   #footer-input::placeholder {
     color: rgba(255, 255, 255, 0.7) !important;
     font-size: 14px !important;
+  }
+}
+
+/* ===== HERO & PRODUCT LABS ZOOM 10% RESPONSIVE - 691px and down ===== */
+@media (max-width: 691px) {
+  /* Hero Section */
+  .hero {
+    height: 500px;
+    padding: 15px;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 15px;
+  }
+  
+  .hero-heading {
+    font-size: 30px;
+    line-height: 34px;
+    width: 100%;
+    max-width: 550px;
+  }
+  
+  .hero-right-image {
+    width: 250px;
+    height: 116px;
+  }
+  
+  /* Product Innovation Labs */
+  .product-innovation-labs-section {
+    padding: 30px 20px;
+  }
+  
+  .product-labs-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .product-labs-subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .product-labs-description {
+    width: 100%;
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .lab-category-container {
+    max-width: 300px;
+  }
+  
+  .lab-category-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .lab-category-description {
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .lab-category-image {
+    width: 220px;
+    height: 115px;
+  }
+}
+
+/* ===== HERO & PRODUCT LABS ZOOM 10% RESPONSIVE - 432px and down ===== */
+@media (max-width: 432px) {
+  /* Hero Section */
+  .hero {
+    height: 450px;
+    padding: 10px;
+  }
+  
+  .hero-content-right,
+  .hero-content-left {
+    padding: 0 10px;
+  }
+  
+  .hero-heading {
+    font-size: 26px;
+    line-height: 30px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .hero-right-image {
+    width: 220px;
+    height: 102px;
+  }
+  
+  /* Product Innovation Labs */
+  .product-innovation-labs-section {
+    padding: 25px 15px;
+  }
+  
+  .product-labs-title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  .product-labs-subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .product-labs-description {
+    width: 100%;
+    max-width: 380px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+  
+  .lab-category-container {
+    max-width: 280px;
+  }
+  
+  .lab-category-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .lab-category-description {
+    width: 100%;
+    max-width: 280px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+  
+  .lab-category-image {
+    width: 200px;
+    height: 105px;
+  }
+  
+  .innovation-labs-slide {
+    gap: 30px;
   }
 }
 

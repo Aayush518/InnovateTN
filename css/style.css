@@ -443,6 +443,52 @@ nav {
   overflow: hidden;
 }
 
+/* Enhanced content adaptation for slides 3 and 4 */
+.slide-innovation-certification .certified-professionals-container,
+.slide-grassroot-innovators .certified-professionals-container {
+  max-width: 1500px;
+  padding-left: 150px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+/* Specific padding for slides 3 and 4 */
+.slide-innovation-certification .certified-professionals-section,
+.slide-grassroot-innovators .certified-professionals-section {
+  padding: 50px 60px 30px 60px;
+}
+
+/* Improved text spacing for slide 3 */
+.slide-innovation-certification .certified-professionals-heading {
+  margin-bottom: 12px;
+  max-width: 1100px;
+}
+
+.slide-innovation-certification .certified-professionals-subheading {
+  margin-bottom: 15px;
+  max-width: 950px;
+}
+
+.slide-innovation-certification .certified-professionals-desc {
+  margin-bottom: 14px;
+  max-width: 1200px;
+  line-height: 22px;
+}
+
+/* Improved text spacing for slide 4 */
+.slide-grassroot-innovators .certified-professionals-heading {
+  margin-bottom: 15px;
+  max-width: 1000px;
+  line-height: 26px;
+}
+
+.slide-grassroot-innovators .certified-professionals-desc {
+  margin-bottom: 14px;
+  max-width: 1200px;
+  line-height: 22px;
+}
+
 .certified-professionals-container {
   text-align: left;
   max-width: 1400px;
@@ -509,6 +555,7 @@ nav {
   margin: 0;
   position: relative;
   background: transparent;
+  height: auto;
 }
 
 /* Wrapper for proper arrow positioning */
@@ -519,15 +566,16 @@ nav {
 .professionals-swiper .swiper-wrapper {
   display: flex;
   align-items: flex-start;
+  height: auto;
 }
 
 .professionals-swiper .swiper-slide {
   display: flex !important;
   justify-content: flex-start !important;
   align-items: flex-start !important;
-  height: 700px !important;
-  min-height: 700px !important;
-  max-height: 700px !important;
+  height: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
   width: 100% !important;
   overflow-y: hidden !important;
   overflow-x: hidden !important;
@@ -535,6 +583,8 @@ nav {
   background: transparent !important;
   box-sizing: border-box !important;
 }
+
+
 
 /* Ensure consistent slide positioning for loop */
 .professionals-swiper .swiper-slide-duplicate {
@@ -692,13 +742,13 @@ nav {
 /* Slide 3 Layout (Innovation Certification) */
 .slide-3-logo-wrapper {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 40px;
   z-index: 10;
 }
 
 .protosem-logo {
-  width: 300px;
+  width: 280px;
   height: auto;
   object-fit: contain;
 }

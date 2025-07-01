@@ -68,8 +68,133 @@ $(document).ready(function () {
       1660: { slidesPerView: 4 },
     },
   });
-  
 
+  // Professionals Swiper
+  const professionalsSwiper = new Swiper(".professionals-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".professionals-swiper .swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".professionals-custom-next",
+      prevEl: ".professionals-custom-prev",
+    },
+    on: {
+      slideChange: function () {
+        // Get the active slide index (0-based)
+        const activeIndex = this.realIndex;
+        const blueContainer = document.querySelector('.certified-professionals-section');
+        
+        if (blueContainer) {
+          // Disable transitions completely for instant change
+          blueContainer.style.transition = 'none';
+          
+          // Get screen width for responsive behavior
+          const screenWidth = window.innerWidth;
+          
+          // Apply sizes immediately based on slide and screen size
+          if (activeIndex === 2) { // Slide 3 - Innovation Certification
+            if (screenWidth <= 768) {
+              // Mobile
+              blueContainer.style.width = '100%';
+              blueContainer.style.height = 'auto';
+              blueContainer.style.minHeight = '2000px';
+              blueContainer.style.maxHeight = 'none';
+            } else if (screenWidth <= 1024) {
+              // Tablet
+              blueContainer.style.width = '95%';
+              blueContainer.style.height = '550px';
+              blueContainer.style.minHeight = '550px';
+              blueContainer.style.maxHeight = '550px';
+            } else if (screenWidth <= 1440) {
+              // Large tablet/small desktop
+              blueContainer.style.width = '1400px';
+              blueContainer.style.height = '580px';
+              blueContainer.style.minHeight = '580px';
+              blueContainer.style.maxHeight = '580px';
+            } else {
+              // Desktop
+              blueContainer.style.width = '1600px';
+              blueContainer.style.height = '580px';
+              blueContainer.style.minHeight = '580px';
+              blueContainer.style.maxHeight = '580px';
+            }
+          } else if (activeIndex === 3) { // Slide 4 - Grassroot Innovators
+            if (screenWidth <= 768) {
+              // Mobile
+              blueContainer.style.width = '100%';
+              blueContainer.style.height = 'auto';
+              blueContainer.style.minHeight = '2000px';
+              blueContainer.style.maxHeight = 'none';
+            } else if (screenWidth <= 1024) {
+              // Tablet
+              blueContainer.style.width = '95%';
+              blueContainer.style.height = '520px';
+              blueContainer.style.minHeight = '520px';
+              blueContainer.style.maxHeight = '520px';
+            } else if (screenWidth <= 1440) {
+              // Large tablet/small desktop
+              blueContainer.style.width = '1400px';
+              blueContainer.style.height = '550px';
+              blueContainer.style.minHeight = '550px';
+              blueContainer.style.maxHeight = '550px';
+            } else {
+              // Desktop
+              blueContainer.style.width = '1600px';
+              blueContainer.style.height = '550px';
+              blueContainer.style.minHeight = '550px';
+              blueContainer.style.maxHeight = '550px';
+            }
+          } else { // Slides 1 & 2 - Default size
+            if (screenWidth <= 768) {
+              // Mobile
+              blueContainer.style.width = '100%';
+              blueContainer.style.height = 'auto';
+              blueContainer.style.minHeight = '2000px';
+              blueContainer.style.maxHeight = 'none';
+            } else {
+              // Tablet and above - standard size
+              blueContainer.style.width = '1520px';
+              blueContainer.style.height = '700px';
+              blueContainer.style.minHeight = '700px';
+              blueContainer.style.maxHeight = '700px';
+            }
+          }
+        }
+      },
+      init: function () {
+        // Set initial size for first slide with responsive behavior
+        const blueContainer = document.querySelector('.certified-professionals-section');
+        if (blueContainer) {
+          blueContainer.style.transition = 'none';
+          const screenWidth = window.innerWidth;
+          
+          if (screenWidth <= 768) {
+            // Mobile
+            blueContainer.style.width = '100%';
+            blueContainer.style.height = 'auto';
+            blueContainer.style.minHeight = '2000px';
+            blueContainer.style.maxHeight = 'none';
+          } else {
+            // Tablet and above - standard size
+            blueContainer.style.width = '1520px';
+            blueContainer.style.height = '700px';
+            blueContainer.style.minHeight = '700px';
+            blueContainer.style.maxHeight = '700px';
+          }
+        }
+      }
+    }
+  });
+  
 });
 
     // Tables are hidden on mobile via CSS - no JavaScript needed

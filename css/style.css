@@ -920,12 +920,90 @@ nav {
   height: auto;
 }
 
-/* Performance Section Container (Inside Large Container) */
-.performance-section-container {
+/* Old Performance Section Container (Inside Large Container) */
+.performance-section-container-old {
   margin-top: 100px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
+}
+
+/* New Performance Section Container */
+.new-performance-section {
+  background: white;
+  padding: 80px 0;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.new-performance-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+  background: white;
+}
+
+.new-performance-heading {
+  color: #23336A;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45.6px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.new-performance-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.new-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 130px;
+  text-align: left;
+}
+
+.new-stat-number {
+  color: var(--academy-forge-iv-co-buttercup, var(--color-orange-54, #F6AC1F));
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: var(--font-weight-700, 700);
+  line-height: var(--line-height-36, 36px); /* 90% */
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.new-stat-label {
+  width: 130px;
+  color: #000;
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--font-size-14, 14px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--line-height-21, 21px); /* 150% */
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.new-stat-desc {
+  width: 130px;
+  color: #000;
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--font-size-14, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height-21, 21px); /* 150% */
+  text-align: left;
 }
 
 .performance-heading {

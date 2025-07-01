@@ -4877,6 +4877,178 @@
    }
  }
 
+/* ===== 110% ZOOM SUPPORT FOR LAST TWO SECTIONS (2100px to 2200px) ===== */
+@media (min-width: 2100px) and (max-width: 2200px) {
+  /* Managed Innovation Section - 110% Zoom Responsive */
+  .managed-innovation-section {
+    background: white !important;
+    padding: 88px 0 !important;
+  }
+
+  .managed-innovation-container {
+    max-width: 2112px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 132px !important;
+    padding: 0 225px !important;
+    box-sizing: border-box !important;
+  }
+
+  .managed-innovation-left {
+    flex: 0 0 auto !important;
+    min-width: 440px !important;
+  }
+
+  .managed-innovation-heading {
+    color: #23336A !important;
+    font-family: Roboto !important;
+    font-size: 35px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 42px !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+  }
+
+  .managed-innovation-heading .managed-text {
+    font-weight: 500 !important;
+  }
+
+  .managed-innovation-heading .innovation-text {
+    font-weight: 500 !important;
+  }
+
+  .managed-innovation-heading .projects-text {
+    font-weight: 800 !important;
+  }
+
+  .managed-innovation-right {
+    flex: 1 !important;
+    padding-left: 26px !important;
+  }
+
+  .managed-innovation-desc {
+    color: #212529 !important;
+    font-family: Roboto !important;
+    font-size: 17px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 26px !important;
+    margin: 0 !important;
+    text-align: left !important;
+    max-width: 100% !important;
+  }
+
+  /* Platform Offerings Section - 110% Zoom Responsive */
+  .platform-offerings-labs-wrapper {
+    max-width: 2112px !important;
+    margin: 0 auto !important;
+    padding: 0 225px !important;
+    margin-top: 44px !important;
+    margin-bottom: 87px !important;
+  }
+
+  .platform-offerings-labs-section {
+    background: #23336A !important;
+    border-radius: 18px !important;
+    padding: 66px 145px !important;
+    box-shadow: 0 9px 26px rgba(35, 51, 106, 0.15) !important;
+  }
+
+  .platform-labs-header {
+    text-align: center !important;
+    margin-bottom: 55px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .platform-labs-title {
+    display: flex !important;
+    width: 100% !important;
+    height: 37px !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    color: #F6AC1F !important;
+    text-align: center !important;
+    font-family: Roboto !important;
+    font-size: 31px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: 37px !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+  }
+
+  .platform-labs-slide {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    gap: 65px !important;
+    width: 100% !important;
+    min-height: 330px !important;
+  }
+
+  .platform-category-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    flex: 1 !important;
+    height: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+  .platform-category-image {
+    width: 110px !important;
+    height: 110px !important;
+    flex-shrink: 0 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    margin-bottom: 18px !important;
+    align-self: flex-start !important;
+  }
+
+  .platform-category-text {
+    text-align: left !important;
+    width: 100% !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .platform-category-title {
+    width: 286px !important;
+    height: 81px !important;
+    color: #F6AC1F !important;
+    font-family: Roboto !important;
+    font-size: 26px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 32px !important;
+    text-transform: uppercase !important;
+    margin: 0 0 18px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  .platform-category-description {
+    width: 286px !important;
+    color: #FFF !important;
+    font-family: Roboto !important;
+    font-size: 17px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 26px !important;
+    margin: 0 !important;
+    text-align: left !important;
+    flex: 1 !important;
+  }
+}
+
 /* ===== MACBOOK AIR M1 13" & SIMILAR (1386px to 1500px) - Extended responsive support ===== */
 @media (min-width: 1386px) and (max-width: 1500px) {
   /* Platform Offerings Section - MacBook Air M1 13" Optimization */

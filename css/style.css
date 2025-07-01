@@ -2425,7 +2425,7 @@ nav {
 }
 
 .platform-category-title {
-  width: 260px;
+  width: 280px;
   height: 73.6px;
   color: #F6AC1F;
   font-family: var(--font-family-Font-1, Roboto);
@@ -2434,7 +2434,7 @@ nav {
   font-weight: var(--font-weight-500, 500);
   line-height: var(--line-height-28_8, 28.8px); /* 120% */
   text-transform: uppercase;
-  margin: 0 0 16px 0;
+  margin: 0 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

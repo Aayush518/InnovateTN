@@ -1197,7 +1197,7 @@
   
   .product-innovation-labs-section,
   .platform-offerings-labs-section {
-    padding: 40px 20px;
+    padding: 30px 20px;
   }
   
   .innovation-labs-slide,
@@ -1776,11 +1776,12 @@
   .innovation-infrastructure-labs-wrapper,
   .platform-offerings-labs-wrapper {
     padding: 0 20px;
+    margin-top: 10px;
   }
   
   .product-innovation-labs-section,
   .platform-offerings-labs-section {
-    padding: 30px 15px;
+    padding: 25px 15px;
   }
   
   .product-labs-title,

@@ -2333,7 +2333,7 @@ nav {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 205px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 79.64px;
 }
 
@@ -2341,13 +2341,13 @@ nav {
 .platform-offerings-labs-section {
   background: #23336A;
   border-radius: 16px;
-  padding: 60px 132px;
+  padding: 45px 132px;
   box-shadow: 0 8px 24px rgba(35, 51, 106, 0.15);
 }
 
 .platform-labs-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   display: flex;
   justify-content: center;
 }

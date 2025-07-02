@@ -354,3 +354,19 @@ window.addEventListener('scroll', () => {
 
 // Also check on page load in case section is already visible
 window.addEventListener('load', checkScrollPosition);
+
+// Product Innovations Swiper - 4 at a time, grouped carousel effect
+const productInnovationsSwiper = new Swiper('.product-innovations-swiper', {
+  slidesPerView: 4,
+  slidesPerGroup: 4,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  allowTouchMove: false,
+  navigation: false,
+  pagination: false,
+  effect: 'slide',
+});

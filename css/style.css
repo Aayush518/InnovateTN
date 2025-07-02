@@ -880,15 +880,33 @@ nav {
   align-self: flex-start;
 }
 
+/* Product Innovations Swiper: enforce 4-image boundary and smooth transition */
 .product-innovations-swiper {
   max-width: 1100px;
   width: 100%;
-  overflow: visible;
-  height: 174px !important;
-  position: relative !important;
-  margin: 0;
-  text-align: left;
-  align-self: flex-start;
+  overflow: hidden !important;
+  margin: 0 auto;
+}
+.product-innovations-swiper .swiper-wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.product-innovations-swiper .swiper-slide {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove custom flex/grid for Swiper in Product Innovations */
+.product-innovations-swiper .swiper-wrapper,
+.product-innovations-swiper .swiper-slide {
+  display: unset !important;
+  width: unset !important;
+}
+
+/* Grayscale for Product Innovations images */
+.product-innovation-image {
+  filter: grayscale(100%);
 }
 
 .product-innovations-swiper .swiper-wrapper {
@@ -2364,7 +2382,7 @@ nav {
   display: flex;
   align-items: flex-start;
   gap: 120px;
-  padding: 0 205px;
+  padding: 0 181px;
   box-sizing: border-box;
 }
 
@@ -2417,7 +2435,8 @@ nav {
 .platform-offerings-labs-wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 205px;
+  padding: 0 181px;
+  box-sizing: border-box;
   margin-top: 20px;
   margin-bottom: 79.64px;
 }

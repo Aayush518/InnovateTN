@@ -751,25 +751,36 @@
         </div>
 
         <div class="innovation-infrastructure-labs-wrapper">
-          <!-- Bottom section with product innovation labs -->
+          <!-- Product Innovation Labs Section -->
           <div class="product-innovation-labs-section">
+            <!-- Header Content -->
             <div class="product-labs-header">
               <h3 class="product-labs-title">PRODUCT INNOVATION LABS</h3>
               <h4 class="product-labs-subtitle">PRODUCT DESIGN & DEVELOPMENT</h4>
               <p class="product-labs-description">
-                Forge's Innovation Catalyst program leverages a sequence of systematic, structured sprints to inculcate an innovation mindset in students - from understanding problems to delivering prototypes, ultimately enabling them to leverage frameworks, tools and technologies to create impactful industrial solutions.
+                Product Innovation Lab provides the necessary resources and services to verify, validate, and pre-certify products, ensuring they meet regulatory & industry standards. By facilitating rigorous testing and compliance checks, the lab helps innovators and startups navigate the complex approval processes efficiently, reducing time to market and mitigating risks associated with non-compliance.
               </p>
             </div>
 
             <!-- Innovation Labs Swiper -->
             <div class="innovation-labs-swiper-container">
+              <!-- Custom Navigation arrows -->
+              <div class="innovation-labs-custom-button innovation-labs-custom-prev">
+                <img src="assets/images/arrows/arrow-left.png" alt="Previous" />
+              </div>
+              <div class="innovation-labs-custom-button innovation-labs-custom-next">
+                <img src="assets/images/arrows/arrow-right.png" alt="Next" />
+              </div>
+              
               <div class="swiper innovation-labs-swiper">
                 <div class="swiper-wrapper">
                   <!-- First slide with 3 lab categories -->
                   <div class="swiper-slide">
                     <div class="innovation-labs-slide">
                       <div class="lab-category-container">
-                        <div class="lab-category-image" aria-label="Electronics Design"></div>
+                        <div class="lab-category-image" aria-label="Electronics Design">
+                          <img src="assets/images/InvInfras/1.png" alt="Electronics Design" />
+                        </div>
                         <div class="lab-category-text">
                           <h5 class="lab-category-title">
                             ELECTRONICS<br>
@@ -783,7 +794,9 @@
                       </div>
 
                       <div class="lab-category-container">
-                        <div class="lab-category-image" aria-label="Industrial Design"></div>
+                        <div class="lab-category-image" aria-label="Industrial Design">
+                          <img src="assets/images/InvInfras/2.png" alt="Industrial Design" />
+                        </div>
                         <div class="lab-category-text">
                           <h5 class="lab-category-title">
                             INDUSTRIAL DESIGN<br>
@@ -796,7 +809,9 @@
                       </div>
 
                       <div class="lab-category-container">
-                        <div class="lab-category-image" aria-label="Accelerated Computing"></div>
+                        <div class="lab-category-image" aria-label="Accelerated Computing">
+                          <img src="assets/images/InvInfras/3.png" alt="Accelerated Computing" />
+                        </div>
                         <div class="lab-category-text">
                           <h5 class="lab-category-title">
                             ACCELERATED<br>
@@ -815,7 +830,9 @@
                   <div class="swiper-slide">
                     <div class="innovation-labs-slide">
                       <div class="lab-category-container">
-                        <div class="lab-category-image" aria-label="Cyber Physical Control Systems"></div>
+                        <div class="lab-category-image" aria-label="Cyber Physical Control Systems">
+                          <img src="assets/images/InvInfras/4.png" alt="Cyber Physical Control Systems" />
+                        </div>
                         <div class="lab-category-text">
                           <h5 class="lab-category-title">
                             CYBER PHYSICAL<br>
@@ -828,7 +845,9 @@
                       </div>
 
                       <div class="lab-category-container">
-                        <div class="lab-category-image" aria-label="Additive Manufacturing"></div>
+                        <div class="lab-category-image" aria-label="Additive Manufacturing">
+                          <img src="assets/images/InvInfras/5.png" alt="Additive Manufacturing" />
+                        </div>
                         <div class="lab-category-text">
                           <h5 class="lab-category-title">
                             ADDITIVE<br>
@@ -841,7 +860,9 @@
                       </div>
 
                       <div class="lab-category-container">
-                        <div class="lab-category-image" aria-label="Electronics Rapid Prototyping"></div>
+                        <div class="lab-category-image" aria-label="Electronics Rapid Prototyping">
+                          <img src="assets/images/InvInfras/6.png" alt="Electronics Rapid Prototyping" />
+                        </div>
                         <div class="lab-category-text">
                           <h5 class="lab-category-title">
                             ELECTRONICS RAPID<br>
@@ -855,17 +876,6 @@
                     </div>
                   </div>
                 </div>
-                
-                <!-- Custom Navigation arrows -->
-                <div class="innovation-labs-custom-button innovation-labs-custom-prev">
-                  <img src="assets/images/arrows/arrow-left.png" alt="Previous" />
-                </div>
-                <div class="innovation-labs-custom-button innovation-labs-custom-next">
-                  <img src="assets/images/arrows/arrow-right.png" alt="Next" />
-                </div>
-                
-                <!-- Pagination -->
-                <div class="swiper-pagination innovation-labs-swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -1194,11 +1204,6 @@
                 navigation: {
                   nextEl: ".innovation-labs-custom-next",
                   prevEl: ".innovation-labs-custom-prev",
-                },
-                pagination: {
-                  el: ".innovation-labs-swiper-pagination",
-                  clickable: true,
-                  dynamicBullets: true,
                 },
                 effect: 'slide',
                 speed: 800,

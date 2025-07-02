@@ -69,6 +69,8 @@ $(document).ready(function () {
     },
   });
 
+  // Professionals swiper arrows now use standard CSS positioning like all other swipers
+
   // Professionals Swiper
   const professionalsSwiper = new Swiper(".professionals-swiper", {
     slidesPerView: 1,
@@ -111,9 +113,9 @@ $(document).ready(function () {
             } else if (screenWidth <= 1024) {
               // Tablet
               blueContainer.style.width = '95%';
-              blueContainer.style.height = '550px';
-              blueContainer.style.minHeight = '550px';
-              blueContainer.style.maxHeight = '550px';
+              blueContainer.style.height = '580px';
+              blueContainer.style.minHeight = '580px';
+              blueContainer.style.maxHeight = '580px';
             } else if (screenWidth <= 1440) {
               // Large tablet/small desktop
               blueContainer.style.width = '1400px';
@@ -137,37 +139,51 @@ $(document).ready(function () {
             } else if (screenWidth <= 1024) {
               // Tablet
               blueContainer.style.width = '95%';
-              blueContainer.style.height = '520px';
-              blueContainer.style.minHeight = '520px';
-              blueContainer.style.maxHeight = '520px';
+              blueContainer.style.height = '580px';
+              blueContainer.style.minHeight = '580px';
+              blueContainer.style.maxHeight = '580px';
             } else if (screenWidth <= 1440) {
               // Large tablet/small desktop
               blueContainer.style.width = '1400px';
-              blueContainer.style.height = '550px';
-              blueContainer.style.minHeight = '550px';
-              blueContainer.style.maxHeight = '550px';
+              blueContainer.style.height = '580px';
+              blueContainer.style.minHeight = '580px';
+              blueContainer.style.maxHeight = '580px';
             } else {
               // Desktop
               blueContainer.style.width = '1600px';
-              blueContainer.style.height = '550px';
-              blueContainer.style.minHeight = '550px';
-              blueContainer.style.maxHeight = '550px';
+              blueContainer.style.height = '580px';
+              blueContainer.style.minHeight = '580px';
+              blueContainer.style.maxHeight = '580px';
             }
-          } else { // Slides 1 & 2 - Default size
+          } else { // Slides 1 & 2 - Uniform size with other slides
             if (screenWidth <= 768) {
               // Mobile
               blueContainer.style.width = '100%';
               blueContainer.style.height = 'auto';
               blueContainer.style.minHeight = '2000px';
               blueContainer.style.maxHeight = 'none';
+            } else if (screenWidth <= 1024) {
+              // Tablet
+              blueContainer.style.width = '95%';
+              blueContainer.style.height = '580px';
+              blueContainer.style.minHeight = '580px';
+              blueContainer.style.maxHeight = '580px';
+            } else if (screenWidth <= 1440) {
+              // Large tablet/small desktop
+              blueContainer.style.width = '1400px';
+              blueContainer.style.height = '580px';
+              blueContainer.style.minHeight = '580px';
+              blueContainer.style.maxHeight = '580px';
             } else {
-              // Tablet and above - standard size
-              blueContainer.style.width = '1520px';
-              blueContainer.style.height = '700px';
-              blueContainer.style.minHeight = '700px';
-              blueContainer.style.maxHeight = '700px';
+              // Desktop
+              blueContainer.style.width = '1600px';
+              blueContainer.style.height = '580px';
+              blueContainer.style.minHeight = '580px';
+              blueContainer.style.maxHeight = '580px';
             }
           }
+          
+          // Arrows now use standard CSS positioning like other swipers
         }
       },
       init: function () {
@@ -183,17 +199,33 @@ $(document).ready(function () {
             blueContainer.style.height = 'auto';
             blueContainer.style.minHeight = '2000px';
             blueContainer.style.maxHeight = 'none';
+          } else if (screenWidth <= 1024) {
+            // Tablet
+            blueContainer.style.width = '95%';
+            blueContainer.style.height = '580px';
+            blueContainer.style.minHeight = '580px';
+            blueContainer.style.maxHeight = '580px';
+          } else if (screenWidth <= 1440) {
+            // Large tablet/small desktop
+            blueContainer.style.width = '1400px';
+            blueContainer.style.height = '580px';
+            blueContainer.style.minHeight = '580px';
+            blueContainer.style.maxHeight = '580px';
           } else {
-            // Tablet and above - standard size
-            blueContainer.style.width = '1520px';
-            blueContainer.style.height = '700px';
-            blueContainer.style.minHeight = '700px';
-            blueContainer.style.maxHeight = '700px';
+            // Desktop
+            blueContainer.style.width = '1600px';
+            blueContainer.style.height = '580px';
+            blueContainer.style.minHeight = '580px';
+            blueContainer.style.maxHeight = '580px';
           }
+          
+          // Arrows use standard CSS positioning like other swipers
         }
       }
     }
   });
+  
+  // Professionals swiper arrows use standard CSS positioning - no dynamic positioning needed
   
 });
 

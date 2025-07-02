@@ -432,7 +432,7 @@ nav {
 .certified-professionals-section {
   background: #23336A;
   border-radius: 24px;
-  padding: 60px 40px;
+  padding: 40px 30px;
   margin: 100px auto 0 auto;
   width: 1520px;
   height: 700px;
@@ -443,50 +443,69 @@ nav {
   overflow: hidden;
 }
 
-/* Enhanced content adaptation for slides 3 and 4 */
-.slide-innovation-certification .certified-professionals-container,
-.slide-grassroot-innovators .certified-professionals-container {
+/* Enhanced content adaptation for slide 3 */
+.slide-innovation-certification .certified-professionals-container {
   max-width: 1500px;
   padding-left: 150px;
   padding-right: 60px;
   padding-top: 15px;
   padding-bottom: 20px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Enhanced content adaptation for slide 4 - Better vertical spacing */
+.slide-grassroot-innovators .certified-professionals-container {
+  max-width: 1500px;
+  padding-left: 150px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 /* Specific padding for slides 3 and 4 */
 .slide-innovation-certification .certified-professionals-section,
 .slide-grassroot-innovators .certified-professionals-section {
-  padding: 50px 60px 30px 60px;
+  padding: 40px 50px 30px 50px;
 }
 
 /* Improved text spacing for slide 3 */
 .slide-innovation-certification .certified-professionals-heading {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   max-width: 1100px;
 }
 
 .slide-innovation-certification .certified-professionals-subheading {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   max-width: 950px;
 }
 
 .slide-innovation-certification .certified-professionals-desc {
-  margin-bottom: 14px;
+  margin-bottom: 25px;
   max-width: 1200px;
   line-height: 22px;
 }
 
-/* Improved text spacing for slide 4 */
+/* Improved text spacing for slide 4 - Proper heading placement with good spacing */
 .slide-grassroot-innovators .certified-professionals-heading {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   max-width: 1000px;
   line-height: 26px;
 }
 
+.slide-grassroot-innovators .certified-professionals-subheading {
+  margin-bottom: 30px;
+  max-width: 950px;
+}
+
 .slide-grassroot-innovators .certified-professionals-desc {
-  margin-bottom: 14px;
+  margin-bottom: 0;
   max-width: 1200px;
-  line-height: 22px;
+  line-height: 26px;
+  font-size: 17px;
+  padding-bottom: 20px;
 }
 
 .certified-professionals-container {
@@ -495,8 +514,8 @@ nav {
   margin: 0 auto;
   padding-left: 132px;
   padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
   position: relative;
   display: flex !important;
   flex-direction: column !important;
@@ -504,7 +523,7 @@ nav {
   justify-content: flex-start !important;
   box-sizing: border-box !important;
   height: 100% !important;
-  min-height: 700px !important;
+  min-height: 580px !important;
 }
 
 .certified-professionals-heading {
@@ -517,7 +536,7 @@ nav {
   font-weight: 700;
   line-height: 38px;
   text-transform: uppercase;
-  margin: 0 0 16px 0;
+  margin: 0 0 10px 0;
   text-align: left;
 }
 
@@ -533,7 +552,7 @@ nav {
   font-weight: 700;
   line-height: 28.8px;
   text-transform: uppercase;
-  margin: 0 0 24px 0;
+  margin: 0 0 15px 0;
   text-align: left;
 }
 
@@ -543,8 +562,8 @@ nav {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
-  margin: 0 0 50px 0;
+  line-height: 22px; /* 137.5% */
+  margin: 0 0 25px 0;
   text-align: left;
   max-width: none;
 }
@@ -591,9 +610,9 @@ nav {
   display: flex !important;
   justify-content: flex-start !important;
   align-items: flex-start !important;
-  height: 700px !important;
-  min-height: 700px !important;
-  max-height: 700px !important;
+  height: 580px !important;
+  min-height: 580px !important;
+  max-height: 580px !important;
   width: 100% !important;
   overflow-y: hidden !important;
   overflow-x: hidden !important;
@@ -603,7 +622,7 @@ nav {
 }
 
 .phase-content {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .phase-title {
@@ -612,9 +631,9 @@ nav {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28.8px;
+  line-height: 26px;
   text-transform: uppercase;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
   text-align: left;
 }
 
@@ -629,21 +648,21 @@ nav {
   align-items: flex-start;
   width: 100%;
   overflow: visible;
-  margin: 20px 0 0 0;
-  padding-bottom: 30px;
+  margin: 15px 0 0 0;
+  padding-bottom: 15px;
   flex: 1;
-  min-height: 400px;
+  min-height: 320px;
 }
 
 .phase-item {
   display: flex !important;
   flex-direction: column;
   height: auto;
-  min-height: 400px;
+  min-height: 320px;
   flex: 1;
   max-width: 350px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 8px;
   border-radius: 12px;
   border: none;
   text-align: left;
@@ -653,10 +672,10 @@ nav {
 
 .phase-image {
   width: 250px;
-  height: 160px;
+  height: 140px;
   object-fit: contain;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .phase-description {
@@ -665,7 +684,7 @@ nav {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 18px;
   margin: 0;
   text-align: left !important;
   word-wrap: break-word;
@@ -673,7 +692,7 @@ nav {
   hyphens: auto;
   width: 100%;
   max-width: 307.18px;
-  height: 168px;
+  height: 140px;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -686,27 +705,27 @@ nav {
 /* Second Slide Phases Layout (4 phases) */
 .slide-2-phases {
   display: flex !important;
-  gap: 60px;
-  justify-content: flex-start;
+  gap: 20px;
+  justify-content: space-between;
   align-items: flex-start;
   width: 100%;
   overflow: visible;
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
   flex-wrap: nowrap;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   flex: 1;
-  min-height: 400px;
+  min-height: 320px;
 }
 
 .slide-2-phase {
   display: flex !important;
   flex-direction: column;
   height: auto;
-  min-height: 400px;
+  min-height: 320px;
   flex: 1;
-  max-width: 250px;
+  max-width: 230px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 8px;
   border-radius: 12px;
   border: none;
   text-align: left;
@@ -714,22 +733,22 @@ nav {
 }
 
 .slide-2-phase .phase-image {
-  width: 230px;
-  height: 110px;
+  width: 220px;
+  height: 100px;
   object-fit: contain;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .slide-2-phase .phase-description {
-  width: 230px;
-  height: 192px;
+  width: 220px;
+  height: 160px;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 18px;
   margin: 0;
   text-align: left !important;
   word-wrap: break-word;
@@ -778,7 +797,7 @@ nav {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  margin: 0 0 73px 0;
+  margin: 0 0 15px 0;
 }
 
 /* Slide 3 Description Text Specifications - Works on both original and duplicate slides */
@@ -786,7 +805,7 @@ nav {
 .swiper-slide-duplicate.slide-innovation-certification .certified-professionals-desc {
   font-size: 16px;
   line-height: 24px;
-  margin: 0 0 20px 0;
+  margin: 0 0 25px 0;
 }
 
 /* Professionals Swiper Navigation Arrows */

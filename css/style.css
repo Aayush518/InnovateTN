@@ -151,7 +151,7 @@ body {
 nav {
   width: 100%;
   min-width: 100%;
-  height: 161.54px;
+  height: 90px;
   flex-shrink: 0;
   z-index: 1000;
   color: white;
@@ -167,18 +167,18 @@ nav {
 .nav-logos-container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
 }
 
 .nav-logo-1 {
-  width: 283.49px;
-  height: 78px;
+  width: 200px;
+  height: 55px;
   object-fit: contain;
 }
 
 .nav-logo-2 {
-  width: 180.36px;
-  height: 52.72px;
+  width: 120px;
+  height: 36px;
   object-fit: contain;
 }
 
@@ -187,14 +187,14 @@ nav {
   color: #23336A !important;
   text-align: center;
   font-family: Roboto;
-  font-size: 21.186px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 31.779px;
+  line-height: 24px;
   cursor: pointer;
-  width: 139.03px;
-  height: 50.32px;
-  padding: 17.2px 9.27px !important;
+  width: 110px;
+  height: 38px;
+  padding: 10px 8px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1840,8 +1840,8 @@ nav {
 .footer {
   width: 1920px;
   height: auto;
-  min-height: 248px;
-  padding: 48px 200px 48px 200px;
+  min-height: 120px;
+  padding: 24px 100px 24px 100px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1866,14 +1866,14 @@ nav {
 }
 
 .footer .footer-logo img {
-  max-height: 60px;
+  max-height: 40px;
   width: auto;
 }
 
 /* Contact Us Section Styling - Sync with Newsletter */
 .footer > div > div:nth-child(2) {
   border-radius: 24px;
-  padding: 32px 24px;
+  padding: 16px 12px;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -1896,7 +1896,7 @@ nav {
 /* Logo Section Styling - Sync with Newsletter */
 .footer > div > div:nth-child(1) {
   border-radius: 24px;
-  padding: 32px 24px;
+  padding: 16px 12px;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -1911,7 +1911,7 @@ nav {
 /* Quick Links Section Styling - Sync with Newsletter */
 .footer > div > div:nth-child(3) {
   border-radius: 24px;
-  padding: 32px 24px;
+  padding: 16px 12px;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -1934,7 +1934,7 @@ nav {
 /* Newsletter Signup Section Styling */
 .footer .col-md-3 {
   border-radius: 24px;
-  padding: 32px 24px;
+  padding: 16px 12px;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -2558,5 +2558,16 @@ nav {
 /* Nudge the '1' image on the first slide further left */
 .tab-slide.swiper-slide:first-child .tab-left-content img {
   margin-left: -16px !important;
+}
+
+/* Vertical separator between nav logos - no horizontal margin */
+.nav-logo-separator {
+  width: 1.5px;
+  height: 56px;
+  background: #fff;
+  margin: 0;
+  display: inline-block;
+  border-radius: 1px;
+  align-self: center;
 }
 

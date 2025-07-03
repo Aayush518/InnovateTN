@@ -1691,34 +1691,35 @@
   }
   
   /* Performance section */
-  .performance-heading {
-    font-size: 28px;
-    line-height: 34px;
+  .new-performance-heading {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
   }
   
-  .performance-stats {
+  .new-performance-stats {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, auto);
-    gap: 30px;
+    grid-template-rows: repeat(6, auto);
+    gap: 25px;
     padding: 0 20px;
   }
   
   /* Reset positioning for mobile - single column layout */
-  .stat-item:nth-child(1) { grid-column: 1; grid-row: 1; transform: none; }
-  .stat-item:nth-child(2) { grid-column: 1; grid-row: 2; transform: none; }
-  .stat-item:nth-child(3) { grid-column: 1; grid-row: 3; transform: none; }
-  .stat-item:nth-child(4) { grid-column: 1; grid-row: 4; transform: none; }
-  .stat-item:nth-child(5) { grid-column: 1; grid-row: 5; transform: none; }
-  .stat-item:nth-child(6) { grid-column: 1; grid-row: 6; transform: none; }
-  .stat-item:nth-child(7) { grid-column: 1; grid-row: 7; transform: none; }
+  .new-stat-item:nth-child(1) { grid-column: 1; grid-row: 1; transform: none; }
+  .new-stat-item:nth-child(2) { grid-column: 1; grid-row: 2; transform: none; }
+  .new-stat-item:nth-child(3) { grid-column: 1; grid-row: 3; transform: none; }
+  .new-stat-item:nth-child(4) { grid-column: 1; grid-row: 4; transform: none; }
+  .new-stat-item:nth-child(5) { grid-column: 1; grid-row: 5; transform: none; }
+  .new-stat-item:nth-child(6) { grid-column: 1; grid-row: 6; transform: none; }
   
-  .stat-number {
+  .new-stat-number {
     font-size: 32px;
     line-height: 38px;
   }
   
-  .stat-label,
-  .stat-desc {
+  .new-stat-label,
+  .new-stat-desc {
     font-size: 16px;
     line-height: 22px;
   }
@@ -2294,25 +2295,166 @@
   }
   
   /* Performance section */
-  .performance-heading {
+  .new-performance-heading {
     font-size: 18px;
     line-height: 22px;
   }
   
-  .performance-stats {
+  .new-performance-stats {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
     padding: 0 10px;
     gap: 12px;
   }
   
-  .stat-number {
+  .new-stat-number {
     font-size: 20px;
     line-height: 24px;
   }
   
-  .stat-label,
-  .stat-desc {
+  .new-stat-label,
+  .new-stat-desc {
     font-size: 12px;
     line-height: 16px;
+  }
+  
+  /* Performance Section Container Old - Second Metrics Section */
+  .performance-section-container-old {
+    padding: 20px;
+  }
+  
+  .performance-section-container-old .performance-heading {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .performance-section-container-old .performance-stats {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .performance-section-container-old .stat-item:nth-child(1) { grid-column: 1; grid-row: 1; transform: none; }
+  .performance-section-container-old .stat-item:nth-child(2) { grid-column: 1; grid-row: 2; transform: none; }
+  .performance-section-container-old .stat-item:nth-child(3) { grid-column: 1; grid-row: 3; transform: none; }
+  .performance-section-container-old .stat-item:nth-child(4) { grid-column: 1; grid-row: 4; transform: none; }
+  .performance-section-container-old .stat-item:nth-child(5) { grid-column: 1; grid-row: 5; transform: none; }
+  .performance-section-container-old .stat-item:nth-child(6) { grid-column: 1; grid-row: 6; transform: none; }
+  .performance-section-container-old .stat-item:nth-child(7) { grid-column: 1; grid-row: 7; transform: none; }
+  
+  .performance-section-container-old .stat-number {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .performance-section-container-old .stat-label,
+  .performance-section-container-old .stat-desc {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  /* Innovation Foundations Section - Slide 2 of Certified Professionals */
+  .certified-professionals-container .certified-professionals-heading {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .certified-professionals-container .certified-professionals-subheading {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .certified-professionals-container .certified-professionals-desc {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Innovation Foundations Phase Layout */
+  .slide-2-phases {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .slide-2-phase {
+    background: linear-gradient(135deg, #23336A 0%, #1A2551 100%);
+    border-radius: 12px;
+    padding: 15px;
+    border: 2px solid #F6AC1F;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .slide-2-phase .phase-image {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+  
+  .slide-2-phase .phase-description {
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Innovation Foundations - Tablet Responsive */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .slide-2-phases {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      padding: 0 20px;
+    }
+    
+    .slide-2-phase {
+      padding: 20px;
+    }
+    
+    .slide-2-phase .phase-image {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .slide-2-phase .phase-description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  
+  /* Innovation Foundations - Desktop Responsive */
+  @media (min-width: 1025px) {
+    .slide-2-phases {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 0 30px;
+    }
+    
+    .slide-2-phase {
+      padding: 25px;
+    }
+    
+    .slide-2-phase .phase-image {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .slide-2-phase .phase-description {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
   
   /* Partners */

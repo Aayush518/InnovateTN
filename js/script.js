@@ -261,7 +261,16 @@ function animateCounter(element, target, duration = 2000) {
     if (progress < 1) {
       requestAnimationFrame(step);
     } else {
-      element.textContent = target + suffix;
+      // Format the final value as well
+      let finalValue;
+      if (target < 1) {
+        finalValue = target.toFixed(1);
+      } else if (target >= 1000) {
+        finalValue = Math.floor(target).toLocaleString();
+      } else {
+        finalValue = Math.floor(target);
+      }
+      element.textContent = finalValue + suffix;
     }
   }
   
@@ -329,7 +338,7 @@ function checkScrollPosition() {
         const counters = section.querySelectorAll('.new-stat-number[data-target], .stat-number[data-target]');
         
         counters.forEach(counter => {
-          // Always restart animation when in view
+          // Reset counter to 0 and start animation
           counter.textContent = '0';
           const target = parseFloat(counter.getAttribute('data-target'));
           animateCounter(counter, target);

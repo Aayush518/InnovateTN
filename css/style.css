@@ -434,6 +434,7 @@ nav {
 .certified-professionals-section {
   background: #23336A;
   border-radius: 24px;
+  
   padding: 40px 30px;
   margin: 100px auto 0 auto;
   width: 1520px;
@@ -448,19 +449,22 @@ nav {
 /* Enhanced content adaptation for slide 3 */
 .slide-innovation-certification .certified-professionals-container {
   max-width: 1500px;
-  padding-left: 150px;
-  padding-right: 60px;
+  width: 100%;
+  position: relative;
+  /* padding-left: 150px; */
+  padding-inline: 60px;
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   justify-content: space-between;
   height: 100%;
 }
 
+
 /* Enhanced content adaptation for slide 4 - Better vertical spacing */
 .slide-grassroot-innovators .certified-professionals-container {
   max-width: 1500px;
-  padding-left: 150px;
-  padding-right: 60px;
+  /* padding-left: 150px; */
+  padding-inline: 60px;
   padding-top: 30px;
   padding-bottom: 40px;
   justify-content: flex-start;
@@ -480,13 +484,12 @@ nav {
 }
 
 .slide-innovation-certification .certified-professionals-subheading {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   max-width: 950px;
 }
 
 .slide-innovation-certification .certified-professionals-desc {
-  margin-bottom: 25px;
-  max-width: 1200px;
+  max-width: 100%;
   line-height: 22px;
 }
 
@@ -512,17 +515,16 @@ nav {
 
 .certified-professionals-container {
   text-align: left;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding-left: 132px;
-  padding-right: 40px;
+  max-width: 100%;
+  /* margin: 0 auto; */
+  padding-inline: 40px;
   padding-top: 10px;
   padding-bottom: 15px;
   position: relative;
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
-  justify-content: flex-start !important;
+  justify-content: space-between !important;
   box-sizing: border-box !important;
   height: 100% !important;
   min-height: 580px !important;
@@ -764,7 +766,7 @@ nav {
 .slide-3-logo-wrapper {
   position: absolute;
   top: 10px;
-  right: 40px;
+  right: 0px;
   z-index: 10;
 }
 
@@ -855,7 +857,7 @@ nav {
 
 /* Product Innovations Section (Inside Large Container) */
 .product-innovations-container {
-  margin-top: 286px;
+  margin-top: 100px;
   width: 100%;
   text-align: left;
   box-sizing: border-box;
@@ -1247,7 +1249,7 @@ nav {
   display: flex;
   align-items: flex-start;
   gap: 120px;
-  padding: 0 181px;
+  padding: 0 120px;
 }
 
 .practicum-workforce-title-wrapper {
@@ -1690,7 +1692,7 @@ nav {
 }
 
 .practicum-workforce-container {
-  margin-bottom: 50px !important;
+  margin-bottom: 0pxx !important;
   padding: 40px 0 !important;
   max-width: none !important;
   width: 100% !important;
@@ -2590,3 +2592,12 @@ nav {
   align-self: center;
 }
 
+
+.certified-professionals-container{
+  padding-left: unset;
+  padding-inline: 60px;
+}
+
+.slide-innovation-certification{
+  background-color: purple;
+}

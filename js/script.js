@@ -367,9 +367,9 @@ window.addEventListener('load', checkScrollPosition);
 // Product Innovations Swiper - 4 at a time, grouped carousel effect
 const productInnovationsSwiper = new Swiper('.product-innovations-swiper', {
   slidesPerView: 4,
-  slidesPerGroup: 1,
   spaceBetween: 20,
   loop: true,
+  speed: 600, 
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -377,7 +377,7 @@ const productInnovationsSwiper = new Swiper('.product-innovations-swiper', {
   allowTouchMove: false,
   navigation: false,
   pagination: false,
-  effect: 'slide',
+  effect: 'slide', 
 });
 
 

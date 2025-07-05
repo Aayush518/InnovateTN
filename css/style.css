@@ -461,13 +461,13 @@ nav {
 
 
 /* Enhanced content adaptation for slide 4 - Better vertical spacing */
-.slide-grassroot-innovators .certified-professionals-container {
+.slide-grassroot-innovators .certified-professionals-container, .slide-innovation-certification .certified-professionals-container {
   max-width: 1500px;
   /* padding-left: 150px; */
   padding-inline: 60px;
   padding-top: 30px;
   padding-bottom: 40px;
-  justify-content: flex-start;
+  justify-content: flex-start !important;
   height: 100%;
 }
 
